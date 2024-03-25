@@ -1,7 +1,9 @@
 # FREECODECAMP COURSE ONE (HTML & CSS NOTES) - BASICS
 
 Headers can be h1-h6
+
 Comments can be made using the <!--task still to do->
+
 The style of code can begin with the following structure: 
 
 <!DOCTYPE html>
