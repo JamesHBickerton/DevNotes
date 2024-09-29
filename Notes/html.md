@@ -46,7 +46,7 @@ Usually anchor tags should also have a target which makes sure the link opens in
 
 <a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a>
 
-You can also nest a the <img> information within a <figure> element and use <figcaption>This is my dog</figcaption></figure> as a caption under the <img>.
+You can also nest a the <img> information within a <figure> element and use <figcaption>This is my dog</figcaption></figure> as a caption under the img.
 
 listed items can be ordered <ol> or unordered <ul> and between these elements will require <li> elements.
 
