@@ -6,13 +6,11 @@ Comments can be made using the <!--task still to do->
 
 A good structure to have at the top of your CSS stylesheet is as follows: 
 
-* {
+<b>* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-}
-<<<<<<< Updated upstream
-=======
+}</b>
 
 <b><'img'></b> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
