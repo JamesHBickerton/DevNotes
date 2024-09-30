@@ -6,7 +6,7 @@ Comments can be made using the <!--task still to do->
 
 The style of code can begin with the following structure: 
 
-<!DOCTYPE html>
+<b><'!DOCTYPE html'>
     <html lang="en"> - means the default language is english
     <head>
     <meta charset="UTF-8"> - standard for most sites
@@ -22,7 +22,7 @@ The style of code can begin with the following structure:
                             </body>
                                 <footer>
                                     </footer>
-                                        </html>
+                                        </html'></b>
 
 A good structure to have at the top of your CSS stylesheet is as follows: 
 
@@ -38,34 +38,34 @@ A good structure to have at the top of your CSS stylesheet is as follows:
 
 <'img src="link-of-photo" alt="picture-of-dog"'>
 
-<'a'> tags are anchor tags that source links from another page and are not self-closing tags.
+<b><'a'></b> tags are anchor tags that source links from another page and are not self-closing tags.
 
-<'a href="link to website">Click for link</a'> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
+<b><'a href="link to website">Click for link</a'></b> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
 
 Usually anchor tags should also have a target which makes sure the link opens in a new tab. For example: 
 
-<"a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a"> which would equal - <a target="_blank" href="link_to_website"><img src="link-to-picture" alt="picture-of-dog"/>
+<b><"a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a"></b> which would equal - <a target="_blank" href="link_to_website"><img src="link-to-picture" alt="picture-of-dog"/>
 
-You can also nest a the <img> information within a <figure> element and use <figcaption>This is my dog</figcaption></figure> as a caption under the img.
+You can also nest a the </b><'img'></b> information within a <b><'figure'></b> element and use <b><'figcaption'>This is my dog</figcaption></figure'></b> as a caption under the img.
 
-listed items can be ordered <ol> or unordered <ul> and between these elements will require <li> elements.
+listed items can be ordered <b><'ol'></b> or unordered <b><'ul'><b/> and between these elements will require <b><'li'></b> elements.
 
-<form> elements can be used to submit form information on your website. These are usually paired with <action> elements which indicate where the form is sent to. For example: 
+<b><'form'></b> elements can be used to submit form information on your website. These are usually paired with <b><'action'></b> elements which indicate where the form is sent to. For example: 
 
-<form action="url">information</form> - the url is obviously where the information is sent to. 
+<b><'form action="url">information</form'></b> - the url is obviously where the information is sent to. 
 
-<input> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to): 
+<b><'input'></b> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to): 
 
-<input type="button">
+<ul>
+<li><'input type="button"'></li>
 
-<input type="checkbox>
+<li><'input type="checkbox"'></li>
 
-<input type="date">
+<li><'input type="date"'></li>
 
-<input type="email">
+<li><'input type="email"'></li>
 
-<input type="submit">
+<li><'input type="submit"'></li>
+</ul>
 
-<input> elements require <label> elements to define the values. 
-
->>>>>>> Stashed changes
+input elements require <b><'label'></b> elements to define the values. 
