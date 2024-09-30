@@ -1,6 +1,8 @@
-# FREECODECAMP COURSE NOTES (HTML & CSS NOTES) - BASICS
+# HTML & UDEMY COURSE NOTES (HTML & CSS NOTES) - BASICS
 
 Headers can be h1-h6
+
+<strong><'em'></strong> is a tag to make things italic and <strong><'strong'></strong> is a tag to make things bold - this is more semantic and better practice when compared to <'i'> and <'e'>.
 
 Comments can be made using the <!--task still to do->
 
