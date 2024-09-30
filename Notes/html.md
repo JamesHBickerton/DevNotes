@@ -6,33 +6,33 @@ Comments can be made using the <!--task still to do->
 
 A good structure to have at the top of your CSS stylesheet is as follows: 
 
-<b>* {
+<strong>* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-}</b>
+}</strong>
 
-<b><'img'></b> tag is a self closing tag and usually require a source and alternate comment. For example: 
+<strong><'img'></strong> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
 <'img src="link-of-photo" alt="picture-of-dog"'>
 
-<b><'a'></b> tags are anchor tags that source links from another page and are not self-closing tags.
+<strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
-<b><'a href="link to website">Click for link</a'></b> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
+<strong><'a href="link to website">Click for link</a'></strong> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
 
 Usually anchor tags should also have a target which makes sure the link opens in a new tab. For example: 
 
-<b><"a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a"></b> which would equal - <a target="_blank" href="link_to_website"><img src="link-to-picture" alt="picture-of-dog"/>
+<strong><"a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a"></strong> which would equal - <a target="_blank" href="link_to_website"><img src="link-to-picture" alt="picture-of-dog"/>
 
-You can also nest a the </b><'img'></b> information within a <b><'figure'></b> element and use <b><'figcaption'>This is my dog</figcaption></figure'></b> as a caption under the img.
+You can also nest a the </strong><'img'></strong> information within a <strong><'figure'></strong> element and use <strong><'figcaption'>This is my dog</figcaption></figure'></strong> as a caption under the img.
 
-listed items can be ordered <b><'ol'></b> or unordered <b><'ul'><b/> and between these elements will require <b><'li'></b> elements.
+listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><b/> and between these elements will require <strong><'li'></strong> elements.
 
-<b><'form'></b> elements can be used to submit form information on your website. These are usually paired with <b><'action'></b> elements which indicate where the form is sent to. For example: 
+<strong><'form'></strong> elements can be used to submit form information on your website. These are usually paired with <strong><'action'></strong> elements which indicate where the form is sent to. For example: 
 
-<b><'form action="url">information</form'></b> - the url is obviously where the information is sent to. 
+<strong><'form action="url">information</form'></strong> - the url is obviously where the information is sent to. 
 
-<b><'input'></b> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to): 
+<strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to): 
 
 <ul>
 <li><'input type="button"'></li>
@@ -46,4 +46,4 @@ listed items can be ordered <b><'ol'></b> or unordered <b><'ul'><b/> and between
 <li><'input type="submit"'></li>
 </ul>
 
-input elements require <b><'label'></b> elements to define the values. 
+input elements require <strong><'label'> elements to define the values. 
