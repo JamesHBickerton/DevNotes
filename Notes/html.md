@@ -6,7 +6,7 @@ Comments can be made using the <!--task still to do->
 
 The style of code can begin with the following structure: 
 
-<b><'!DOCTYPE html'>
+<!--DOCTYPE html>
     <html lang="en"> - means the default language is english
     <head>
     <meta charset="UTF-8"> - standard for most sites
@@ -22,7 +22,7 @@ The style of code can begin with the following structure:
                             </body>
                                 <footer>
                                     </footer>
-                                        </html'></b>
+                                        </html><-->
 
 A good structure to have at the top of your CSS stylesheet is as follows: 
 
