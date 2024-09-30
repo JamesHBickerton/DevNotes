@@ -46,4 +46,4 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <li><'input type="submit"'></li>
 </ul>
 
-input elements require <strong><'label'> elements to define the values. 
+input elements require <strong><'label'></strong> elements to define the values. 
