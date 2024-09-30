@@ -26,7 +26,7 @@ Usually anchor tags should also have a target which makes sure the link opens in
 
 You can also nest a the </strong><'img'></strong> information within a <strong><'figure'></strong> element and use <strong><'figcaption'>This is my dog</figcaption></figure'></strong> as a caption under the img.
 
-listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><b/> and between these elements will require <strong><'li'></strong> elements.
+listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'></strong> and between these elements will require <strong><'li'></strong> elements.
 
 <strong><'form'></strong> elements can be used to submit form information on your website. These are usually paired with <strong><'action'></strong> elements which indicate where the form is sent to. For example: 
 
