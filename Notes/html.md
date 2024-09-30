@@ -34,17 +34,17 @@ A good structure to have at the top of your CSS stylesheet is as follows:
 <<<<<<< Updated upstream
 =======
 
-<img> tag is a self closing tag and usually require a source and alternate comment. For example: 
+<'img'> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
-<img src="link-of-photo" alt="picture-of-dog">
+<'img src="link-of-photo" alt="picture-of-dog"'>
 
-<a> tags are anchor tags that source links from another page and are not self-closing tags.
+<'a'> tags are anchor tags that source links from another page and are not self-closing tags.
 
-<a href="link to website">Click for link</a>
+<'a href="link to website">Click for link</a'> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
 
 Usually anchor tags should also have a target which makes sure the link opens in a new tab. For example: 
 
-<a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a>
+<"a target="_blank" href="link to website"><img src="link-to-picture" alt="picture-of-dog"/></a"> which would equal - <a target="_blank" href="link_to_website"><img src="link-to-picture" alt="picture-of-dog"/>
 
 You can also nest a the <img> information within a <figure> element and use <figcaption>This is my dog</figcaption></figure> as a caption under the img.
 
