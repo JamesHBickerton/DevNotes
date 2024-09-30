@@ -34,7 +34,7 @@ A good structure to have at the top of your CSS stylesheet is as follows:
 <<<<<<< Updated upstream
 =======
 
-<'img'> tag is a self closing tag and usually require a source and alternate comment. For example: 
+<b><'img'></b> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
 <'img src="link-of-photo" alt="picture-of-dog"'>
 
