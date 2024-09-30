@@ -32,7 +32,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 
 <strong><'form action="url">information</form'></strong> - the url is obviously where the information is sent to. 
 
-<strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):</strong>
+<strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):
 
 <ul>
 <li><'input type="button"'></li>
