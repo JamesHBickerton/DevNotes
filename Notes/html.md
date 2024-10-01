@@ -32,6 +32,8 @@ Usually anchor tags should also have a target which makes sure the link opens in
 
 You can also use the # as a placeholder after the link - <'a' href="#"></'a>. 
 
+A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>
+
 You can also nest a the </strong><'img'></strong> information within a <strong><'figure'></strong> element and use <strong><'figcaption'>This is my dog</figcaption></figure'></strong> as a caption under the img.
 
 listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'></strong> and between these elements will require <strong><'li'></strong> elements.
