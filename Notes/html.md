@@ -18,7 +18,7 @@ A good structure to have at the top of your CSS stylesheet is as follows:
 
 <strong><'img'></strong> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
-<'img src="link-of-photo" alt="picture-of-dog"'>
+<'img src="link-of-photo" alt="picture-of-dog"'> - src is an example of an attribute which can describe elements. Alt will allow search engines to know what the image is actually about & allows blind people to use our website!
 
 <strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
