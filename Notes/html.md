@@ -14,6 +14,8 @@ A good structure to have at the top of your CSS stylesheet is as follows:
     box-sizing: border-box; 
 }</strong>
 
+<strong><'li'></strong> items can form a list within a paragraph which can either be an unordered list <strong><'ul'></strong> or ordered list <strong><'ol'></strong>
+
 <strong><'img'></strong> tag is a self closing tag and usually require a source and alternate comment. For example: 
 
 <'img src="link-of-photo" alt="picture-of-dog"'>
