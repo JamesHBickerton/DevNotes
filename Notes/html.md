@@ -22,6 +22,8 @@ A good structure to have at the top of your CSS stylesheet is as follows:
 
 <'img src="link-of-photo" alt="picture-of-dog"'> - src is an example of an attribute which can describe elements. Alt will allow search engines to know what the image is actually about & allows blind people to use our website!
 
+Also always make sure you put your images in a seperate folder on the explorer tag.
+
 <strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
 <strong><'a href="link to website">Click for link</a'></strong> - this would be an example, which would translate to: <a href="link_to_website">Click for link</a>.
@@ -32,7 +34,9 @@ Usually anchor tags should also have a target which makes sure the link opens in
 
 You can also use the # as a placeholder after the link - <'a' href="#"></'a>. 
 
-A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>
+A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>. These can sometime also contain your h1/h2 elements for example.
+
+An <strong><'article'></strong> element can be a multitude of things, it doesn't necessarily mean it will be an article. 
 
 You can also nest a the </strong><'img'></strong> information within a <strong><'figure'></strong> element and use <strong><'figcaption'>This is my dog</figcaption></figure'></strong> as a caption under the img.
 
@@ -57,3 +61,9 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 </ul>
 
 input elements require <strong><'label'></strong> elements to define the values. 
+
+A <strong><'footer'></strong> element should still be based within the body.
+
+<strong><'div'></strong> are used when we don't want to attach a certain meaning to a certain container. <'nav'> for example will be needing to ensure that the links are under a navigation for example - to give the element meaning.
+
+An <'aside'> element is used for secondary information - related posts about the main part or as a sidebar. 
