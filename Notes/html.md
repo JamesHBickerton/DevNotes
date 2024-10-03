@@ -74,3 +74,9 @@ CSS includes selectors (i.e. h1) and then the style which includes properties (i
 
 <'link href="styles.css" rel="stylesheet"/> - is a good way to let the html know that this is a stylesheet - this is put in the head of the HTML. 
 
+<strong>line-height property</strong> - 1.5 would mean that the line height is 1.5 x the font-size. By default it is 1.0.
+
+The normal font-size is 16px. 
+
+
+
