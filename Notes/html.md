@@ -64,6 +64,10 @@ input elements require <strong><'label'></strong> elements to define the values.
 
 A <strong><'footer'></strong> element should still be based within the body.
 
+# CSS notes
+
+CSS includes selectors (i.e. h1) and then the style which includes properties (i.e. color, font-size) and values (i.e. blue, 14px). Properties and values together are called declarations/styles. The declaration block includes ALL the properties and values for the selector. ALL of this together (including the selector) is called a <strong>CSS rule</strong>. 
+
 <strong><'div'></strong> are used when we don't want to attach a certain meaning to a certain container. <'nav'> for example will be needing to ensure that the links are under a navigation for example - to give the element meaning.
 
 An <'aside'> element is used for secondary information - related posts about the main part or as a sidebar. 
