@@ -78,5 +78,7 @@ CSS includes selectors (i.e. h1) and then the style which includes properties (i
 
 The normal font-size is 16px. 
 
+<strong>eA descendant selector</strong> in CSS (i.e 'footer p {') will select all the p elements inside of all the 'footer' elements as it is a child element of the footer. 
 
+To add comments or block out comments on CSS - /* */ 
 
