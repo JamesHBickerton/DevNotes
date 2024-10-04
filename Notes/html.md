@@ -80,5 +80,9 @@ The normal font-size is 16px.
 
 <strong>eA descendant selector</strong> in CSS (i.e 'footer p {') will select all the p elements inside of all the 'footer' elements as it is a child element of the footer. 
 
-To add comments or block out comments on CSS - /* */ 
+To add comments or block out comments on CSS - /* */ . "ctrl /" will automatically comment out a CSS declaration.
+
+For classes, it is good to use - between spaces. 
+
+
 
