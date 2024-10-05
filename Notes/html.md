@@ -82,9 +82,12 @@ The normal font-size is 16px.
 
 To add comments or block out comments on CSS - /* */ . "ctrl /" will automatically comment out a CSS declaration.
 
-For classes, it is good to use - between spaces. Classes should be used before ID's (always use classes). 
+For classes, it is good to use - between spaces. Classes should be used before ID's (always use classes). This makes sure you avoid any errors by using ID's in the future - especially if you have a very big project full of code.
 
-To remove bullet points from lists, you need to use the list-style selector. 
+To remove bullet points from lists, you need to use the <strong>list-style</strong> property. 
 
+<strong>Colours</strong> can be represented by <em>the RGB model</em> (R, G, B). These can be values up to 255. I.e. Red would be (255, 0, 0). You can also use the <em>RGBA</em> model - the extra colour option is for transparency/alpha (which is used as a decimal). Colours can also be used with the <em>hexadecimal notation</em>. This is more commonly used - i.e. '#00ffff" (00 is red, ff is green, ff is blue). You can also use shorthand with this, i.e. '#0ff'. 
+
+A pseudo class is used by writing a ':' in between selectors. An example would be the 'li:first-child' which means that the first child element inside of the parent element will be selected, and then whatever property and value is selected will only impact the first-child of that container. This can be the same for last-child, nth-child(2), nth-child(3), nth-child(odd), nth-child(even) etc. 
 
 
