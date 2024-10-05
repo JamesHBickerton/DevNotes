@@ -90,9 +90,10 @@ To remove bullet points from lists, you need to use the <strong>list-style</stro
 
 A pseudo class is used by writing a ':' in between selectors. An example would be the 'li:first-child' which means that the first child element inside of the parent element will be selected, and then whatever property and value is selected will only impact the first-child of that container. This can be the same for last-child, nth-child(2), nth-child(3), nth-child(odd), nth-child(even) etc. 
 
-When styling hyperlinks or 'a', you should make sure to style the 'a' in all of the different states. I.e. 
+When styling hyperlinks or 'a', you should make sure to style the 'a' in all of the different states. These are listed below and <strong>MUST</strong> be in this order below <em>(LVHA)</em> 
 </ul>
 <li>'a:link' - this will style the anchor elements that have an 'href' attribute</li>
 <li>'a:visited' - this will style the anchor when the link is visited. This should be the same color as the above 'a:link'</li>
 <li>'a:hover' - this will style the anchor elements when you hover over the hyperlink</li>
+<li>'a:active' - this will style the anchor element when you click the hyperlink</li>
 </ul>
