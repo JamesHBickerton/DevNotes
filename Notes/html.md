@@ -82,7 +82,9 @@ The normal font-size is 16px.
 
 To add comments or block out comments on CSS - /* */ . "ctrl /" will automatically comment out a CSS declaration.
 
-For classes, it is good to use - between spaces. 
+For classes, it is good to use - between spaces. Classes should be used before ID's (always use classes). 
+
+To remove bullet points from lists, you need to use the list-style selector. 
 
 
 
