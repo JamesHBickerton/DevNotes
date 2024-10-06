@@ -97,3 +97,7 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 <li>'a:hover' - this will style the anchor elements when you hover over the hyperlink</li>
 <li>'a:active' - this will style the anchor element when you click the hyperlink</li>
 </ul>
+
+# Conflicts between SELECTORS (IMPORTANT PART OF CSS)
+
+
