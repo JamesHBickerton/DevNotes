@@ -103,6 +103,8 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 Highest priority in CSS
 
 <ol>
+    <li>!important - not really used either, but can use if stuck</li>
+    <li>inline styles (not necessarily used)</li>
     <li>ID selector (#)</li>
     <li>class selector (.) or pseudoclass selector (:) </li>
     <li>element selector (i.e. div, p)</li>
