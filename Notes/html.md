@@ -100,4 +100,12 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 
 # Conflicts between SELECTORS (IMPORTANT PART OF CSS)
 
+Highest priority in CSS
+
+<ol>
+    <li>ID selector (#)</li>
+    <li>class selector (.) or pseudoclass selector (:) </li>
+    <li>element selector (i.e. div, p)</li>
+    <li>universal selector (*)</li>
+</ol>
 
