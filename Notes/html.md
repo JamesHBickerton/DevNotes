@@ -111,3 +111,8 @@ Highest priority in CSS
     <li>universal selector (*)</li>
 </ol>
 
+To find out which css style has priority, hover over the CSS and look at the Selector Specificity (1, 0, 0)
+
+<ul>
+    <li>Hovering over a property with (1,0,0) would mean that this is the declaration that has the highest priority, followed by (0,1,0) and then (0,0,2) for example.</li>
+</ul>
