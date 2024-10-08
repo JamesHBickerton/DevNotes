@@ -98,6 +98,16 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 <li>'a:active' - this will style the anchor element when you click the hyperlink</li>
 </ul>
 
+To style the above in CSS - you can save some time by doing the following (this is usually best practice): For example: 
+
+.class-name:link, .class-name:visited {
+color: black; 
+}
+.class-name:hover, .class-name:active {
+color: white; 
+}
+
+
 # Conflicts between SELECTORS (IMPORTANT PART OF CSS)
 
 Highest priority in CSS
