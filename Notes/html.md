@@ -128,3 +128,14 @@ To find out which css style has priority, hover over the CSS and look at the Sel
 </ul>
 
 <strong>Inheritence</strong> - most properties related to text will get inherited
+
+# BOX MODEL - Will need to brush up on this 
+
+<ul>
+<li>The border is still inside of the element</li>
+<li>The padding is the space between the border and the content - this is still <strong>inside</strong> of the element too</li>
+<li>The margin is the space <strong>outside</strong> of the element - between elements. This is used to create space betwen elements</li>
+    <li>The <strong>fill area</strong> is the area (excluding the margin - as this is the space between elements) that will be filled with the background color and background images</li>
+    <li>All of the above are optional</li>
+</ul>
+
