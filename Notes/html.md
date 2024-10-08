@@ -8,7 +8,7 @@ Comments can be made using the <!--task still to do->
 
 <'meta charset="UTF-8/'> - meta stands for meta data (data about the data). Charset is the character set and then UTF-8 encapsulates all the characters we use in the english language.
 
-A good structure to have at the top of your CSS stylesheet is as follows: 
+A good structure to have at the top of your CSS stylesheet is as follows: <strong>This is used as a global reset</strong> to make it easier to style our pages. 
 
 <strong>* {
     margin: 0;
@@ -146,4 +146,10 @@ This means that the margin is not involved in the final width and height.
 
 Short hand for padding: first number = (paddingtop + paddingbottom) second number = (paddingleft + paddingright)
 
-When styling list items, you want to make sure you don't have any space at the end of the last item of the list. You only want to have space between list items. 
+When styling list items, you want to make sure you don't have any space at the end of the last item of the list. You only want to have space between list items. To do this you would have li:last-child margin: 0;
+
+It is usually more common to have space at the bottom, to achieve vertical space. 
+
+<strong>Collapsing margins</strong> is a phenomenon when you have (for example) a margin-top of one element set at 40px and a margin-bottom of another element set at 15px. You would expect them to be added to a total of 55px between the margins of the two, but in fact it is usually only 40px total (usually the bigger number). This is called collapsing margins. 
+
+When styling images for size under CSS - you can also use percentages. The percentage of the image's width/height (i.e. 100%) would be 100% of the parent container's width/height. 
