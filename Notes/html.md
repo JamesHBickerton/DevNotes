@@ -143,3 +143,7 @@ The final height of an element would be the bottom border, bottom padding, heigh
 The final width of an element would be the left border, left padding, width, right padding, right border.
 This above is just the default behaviour, you can change this throughout. 
 This means that the margin is not involved in the final width and height. 
+
+Short hand for padding: first number = (paddingtop + paddingbottom) second number = (paddingleft + paddingright)
+
+When styling list items, you want to make sure you don't have any space at the end of the last item of the list. You only want to have space between list items. 
