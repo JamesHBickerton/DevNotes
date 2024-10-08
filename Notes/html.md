@@ -139,3 +139,7 @@ To find out which css style has priority, hover over the CSS and look at the Sel
     <li>All of the above are optional</li>
 </ul>
 
+The final height of an element would be the bottom border, bottom padding, height, top padding, top border.
+The final width of an element would be the left border, left padding, width, right padding, right border.
+This above is just the default behaviour, you can change this throughout. 
+This means that the margin is not involved in the final width and height. 
