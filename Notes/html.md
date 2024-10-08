@@ -49,7 +49,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):
 
 <ul>
-<li><'input type="button"'></li>
+<li><'input type="button"'></li> - in CSS buttons can have hover styles.
 
 <li><'input type="checkbox"'></li>
 
@@ -116,3 +116,5 @@ To find out which css style has priority, hover over the CSS and look at the Sel
 <ul>
     <li>Hovering over a property with (1,0,0) would mean that this is the declaration that has the highest priority, followed by (0,1,0) and then (0,0,2) for example.</li>
 </ul>
+
+<strong>Inheritence</strong> - most properties related to text will get inherited
