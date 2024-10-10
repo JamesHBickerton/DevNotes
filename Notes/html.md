@@ -153,3 +153,5 @@ It is usually more common to have space at the bottom, to achieve vertical space
 <strong>Collapsing margins</strong> is a phenomenon when you have (for example) a margin-top of one element set at 40px and a margin-bottom of another element set at 15px. You would expect them to be added to a total of 55px between the margins of the two, but in fact it is usually only 40px total (usually the bigger number). This is called collapsing margins. 
 
 When styling images for size under CSS - you can also use percentages. The percentage of the image's width/height (i.e. 100%) would be 100% of the parent container's width/height. 
+
+A good way to centre your page would be to add a <'div'> element just after your <'body'> element and close it when the <'/body'> element ends. You could then for example make a class from that element, and style it with a set width. The margin-left and margin-right properties could then have a value of auto (meaning that the browser will make sure that the margin to the left and right is always the same). 
