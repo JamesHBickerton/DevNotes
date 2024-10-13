@@ -166,4 +166,8 @@ A good way to centre your page would be to add a <'div'> element just after your
 
 <strong>Inline block elements</strong> look like inline blocks from the outside, but behave like block level elements on the inside. They do not cause any line breaks but you can use heights, width, paddings and margins (combines the best of both worlds between the two). Display: inline-block. IMG's behave like inline-block elements. 
 
+Normal flow is the normal/default positioning (position: relative). 
+Absolute flow (position: absolute) means that the element will be out of the flow. This would mean it doesn't have impact around the surrounding elements. You can use the top, bottom, left or right properties in order to position the element from it's <em>relatively positioned container</em>. This can be a great way to "fix" an item on the page, so it doesn't move elements around it when shifting the page. 
+When setting top, bottom, left or right - the pixels are in relation to the viewport (which is the visible part of the page in the browser). Usually this is not what we want, we usually want to make sure that it is positioned in relation to a <em>parent element</em>. Meaning we should set the parent element to relative. 
+We only use absolute positioning for buttons really, or small elements. 
 
