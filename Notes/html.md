@@ -175,4 +175,6 @@ We only use absolute positioning for buttons really, or small elements.
 
 <em>Siblings</em> are all elements that are under the parent element. Using the <strong>adjacent-sibling</strong> pesudo-element will style the very next element in the HTML. The adjacent sibling selector would be for example: h3 <strong>+</strong> p::first-line - would mean only the paragraphs immediately after the h3 would be selected (and the first line obviously). 
 
-The most used pseudo-elements are the after and before pseudo-elements. Within both you need to specify the content.
+The most used pseudo-elements are the after and before pseudo-elements. Within both you need to specify the content. This way you can create elements outside of the "html" and create items in the "CSS". 
+
+
