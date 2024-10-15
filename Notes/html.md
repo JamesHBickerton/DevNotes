@@ -173,4 +173,6 @@ We only use absolute positioning for buttons really, or small elements.
 
 <strong>Pseudo-elements</strong> are written in the CSS with two colons (::). An example would be <em>'h1::first-letter'</em> which would mean that you can style every first leader of the h1 class. 
 
-<em>Siblings</em> are all elements that are under the parent element. Using the adjacent-sibling pesudo-element will style the very next element in the HTML. The adjacent sibling 
+<em>Siblings</em> are all elements that are under the parent element. Using the <strong>adjacent-sibling</strong> pesudo-element will style the very next element in the HTML. The adjacent sibling selector would be for example: h3 <strong>+</strong> p::first-line - would mean only the paragraphs immediately after the h3 would be selected (and the first line obviously). 
+
+The most used pseudo-elements are the after and before pseudo-elements. Within both you need to specify the content.
