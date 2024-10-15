@@ -183,5 +183,6 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <ul>
     <li>Stack overflow</li>
     <li>CSS tricks</li>
-    <li>Developer.mozilla.org - which is the MDN documentation</li>
+    <li>Developer.mozilla.org - which is the <strong>MDN documentation</strong></li>
+    <li>HTML validator (W3) version - copy and pasting the code to see where the errors are.</li>
 </ul>
