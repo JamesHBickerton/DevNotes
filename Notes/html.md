@@ -171,6 +171,6 @@ Absolute flow (position: absolute) means that the element will be out of the flo
 When setting top, bottom, left or right - the pixels are in relation to the viewport (which is the visible part of the page in the browser). Usually this is not what we want, we usually want to make sure that it is positioned in relation to a <em>parent element</em>. Meaning we should set the parent element to relative. 
 We only use absolute positioning for buttons really, or small elements. 
 
-<em>Pseudo-elements</em> are written in the CSS with two colons (::). 
+<strong>Pseudo-elements</strong> are written in the CSS with two colons (::). An example would be <em>'h1::first-letter'</em> which would mean that you can style every first leader of the h1 class. 
 
-Siblings are all elements that are under the parent element. Using the adjacent-sibling pesudo-element will style the very next element in the HTML. The adjacent sibling 
+<em>Siblings</em> are all elements that are under the parent element. Using the adjacent-sibling pesudo-element will style the very next element in the HTML. The adjacent sibling 
