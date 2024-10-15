@@ -177,4 +177,9 @@ We only use absolute positioning for buttons really, or small elements.
 
 The most used pseudo-elements are the after and before pseudo-elements. Within both you need to specify the content. This way you can create elements outside of the "html" and create items in the "CSS". 
 
-
+# Good Websites for Reference & HELP
+<ul>
+    <li>Stack overflow</li>
+    <li>CSS tricks</li>
+    <li>Developer.mozilla.org - which is the MDN documentation</li>
+</ul>
