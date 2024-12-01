@@ -195,5 +195,11 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <ol>
     <li><strong>Float layouts -</strong> older version of layouts that are becoming outdated</li>
     <li><strong>Flexbox -</strong> modern way to build one dimensional layouts - perfect for component layouts</li>
-    <li>CSS Grid -</strong> perfect for big page layouts and complex components (2 dimensional grid)</li>
+    <li><strong>CSS Grid -</strong> perfect for big page layouts and complex components (2 dimensional grid)</li>
 </ol>
+
+# Float Layouts 
+
+<p>Float layouts will take the element completely out of the "flow" (i.e. float:'left' or float:'right').</p>
+<p>Float elements are still able to create margins around them.</p>
+<p>Floats may seem similar to absolute positioning, as the elements are moved "out of the flow" - but text and inline elements will wrap around the floated element. The container will also not adjust it's height to the element and this can result in "collapsing heights". </p>
