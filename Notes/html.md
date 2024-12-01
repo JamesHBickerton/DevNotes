@@ -187,3 +187,13 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>HTML validator (W3) version - copy and pasting the code to see where the errors are.</li>
     <li>Diff Checker - to compare code between your creation and another sites</li>
 </ul>
+
+# Building Layouts 
+
+<p>Layouts are ways to build visual structure, instead of just having them in the "normal flow"</p>
+<p>There are three ways to make layouts</p>
+<ol>
+    <li><strong>Float layouts -</strong> older version of layouts that are becoming outdated</li>
+    <li><strong>Flexbox -</strong> modern way to build one dimensional layouts - perfect for component layouts</li>
+    <li>CSS Grid -</strong> perfect for big page layouts and complex components (2 dimensional grid)</li>
+</ol>
