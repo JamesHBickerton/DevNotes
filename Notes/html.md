@@ -217,8 +217,9 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>The main axis is the line that goes from left to right, and the cross axis is up and down.</li>
     <li>The flex container is the main container (parent container) that holds all of the flex items (child elements). </li>
     <li>Flex box is allowed to shrink elements so that they fit the container. </li>
+    <li>The default direction is "row" which means the main axis is horizontal and the cross axis is vertical. When this switches to "column" i.e. flex-direction: column - this axis then changes and the main axis becomes the vertical axis, and cross axis becomes the horizontal axis.</li>
 </ul>
-<p><strong>The flex container properties - </strong> include mainly the following:</p>
+<p><strong>THE FLEX CONTAINER PROPERTIES- </strong> include mainly the following:</p>
 <ol>
     <li><strong>The GAP property: which has a default of 0</strong> - length: this creates space between lines without using margins</li>
     <li><strong>The JUSTIFY-CONTENT property: which has a default of flex-start</strong> - flex-start, flex-end, center, space-between, space-around, space-evenly: this aligns items along the <strong>main axis</strong></li>
@@ -227,12 +228,12 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
         <li><strong>The FLEX-WRAP property: which has a default of nowrap</strong> - wrap, wrap-reverse: this allows items to wrap into a new line if they are too big</li>
     <li><strong>The ALIGN-CONTENT property: which has a default of stretch</strong> - flex-start, flex-end, center, space-between, space-around: only applies when there are multiple lines. </li>
 </ol>
-<p><strong>The flex item properties - </strong> include mainly the following:</p>
+<p><strong>THE FLEX ITEM PROPERTIES - </strong> include mainly the following:</p>
 <ol>
     <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for individual flex items.</li>
     <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes). If all flex items have 1 it means they will all grow to the same size.</li>
-    <li><strong>Flex Shrink which has a default of 1</strong> - allows an item/element to shrink to fit inside of the container (0 means no, +1 means yes)</li>
-    <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property. Flex basis acts as a recommendation to the browser (it is not really a rule).</li>
+    <li><strong>Flex Shrink which has a default of 1</strong> - allows an item/element to shrink to fit inside of the container (0 means no, +1 means yes). There are no negative values for this. </li>
+    <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property. Flex basis acts as a recommendation to the browser (it is not really a rule) but acts as the starting measurement/width.</li>
     <li>The short hand of all the above goes flex: grow, shrink, basis - always use the shorthand</li>
     <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
