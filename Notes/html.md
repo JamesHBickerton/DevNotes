@@ -216,6 +216,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>It makes it a lot easier to align items one another inside of a parent container (both horizontally and vertically).</li>
     <li>The main axis is the line that goes from left to right, and the cross axis is up and down.</li>
     <li>The flex container is the main container (parent container) that holds all of the flex items (child elements). </li>
+    <li>Flex box is allowed to shrink elements so that they fit the container. </li>
 </ul>
 <p><strong>The flex container properties - </strong> include mainly the following:</p>
 <ol>
@@ -230,8 +231,8 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <ol>
     <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for individual flex items.</li>
     <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes)</li>
-    <li><strong>Flex Shrink which has a default of 1</strong> - allows an item to shrink (0 means no, +1 means yes)</li>
-    <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property</li>
-    <li>The short hand of all the above goes flex: grow, shrink, basis</li>
+    <li><strong>Flex Shrink which has a default of 1</strong> - allows an item/element to shrink to fit inside of the container (0 means no, +1 means yes)</li>
+    <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property. Flex basis acts as a recommendation to the browser (it is not really a rule).</li>
+    <li>The short hand of all the above goes flex: grow, shrink, basis - always use the shorthand</li>
     <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
