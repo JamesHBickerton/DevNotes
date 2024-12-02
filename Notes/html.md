@@ -233,4 +233,5 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li><strong>Flex Shrink which has a default of 1</strong> - allows an item to shrink (0 means no, +1 means yes)</li>
     <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property</li>
     <li>The short hand of all the above goes flex: grow, shrink, basis</li>
+    <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
