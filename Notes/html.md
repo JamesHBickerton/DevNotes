@@ -230,7 +230,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <p><strong>The flex item properties - </strong> include mainly the following:</p>
 <ol>
     <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for individual flex items.</li>
-    <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes)</li>
+    <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes). If all flex items have 1 it means they will all grow to the same size.</li>
     <li><strong>Flex Shrink which has a default of 1</strong> - allows an item/element to shrink to fit inside of the container (0 means no, +1 means yes)</li>
     <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property. Flex basis acts as a recommendation to the browser (it is not really a rule).</li>
     <li>The short hand of all the above goes flex: grow, shrink, basis - always use the shorthand</li>
