@@ -207,3 +207,12 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <strong>Clearing Floats -</strong>: you will need to create a new element (usually a div with the class - clear) and then style it for clear: left, right or both. This is if you have collapsing heights. This is not usually best practice however so you can do the following: create another class for the element you are adjusting and name this clearfix. On CSS you can then create a pseudo property (usually ::after) and then define content (because it has to have some content - even if it is just '') and then display: block, then you can create another property clear: both; and it should do the same thing (rather than making an extra div for each). 
 
 <p>Box-sizing: border box - is a great tool to use in majority of the elements. It takes away from the default box model to make sure that the height and the width are fixed inside the border of an element when designing layouts. If there is extra padding and margins, it will subtract it from the total width to make sure the element does not disappear or go where you don't want it to go. <strong>It is usually applied to the universal selector at the start of the CSS</strong></p>
+
+#Flex Box 
+
+<ul>
+    <li>This is an easier way that 'floats' to bring elements side by side (display: flex).</li>
+    <li>Vertically by default, all the flex items are as tall as the tallest element. It is the best way to build 1 dimensional layouts. </li>
+    <li>It makes it a lot easier to align items one another inside of a parent container (both horizontally and vertically).</li>
+    <li>The main axis is the line that goes from left to right, and the cross axis is up and down.</li>
+    <li>The flex container is the main container (parent container) that holds all of the flex items (child elements). </li>
