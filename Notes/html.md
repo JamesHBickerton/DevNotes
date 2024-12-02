@@ -226,3 +226,11 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
         <li><strong>The FLEX-WRAP property: which has a default of nowrap</strong> - wrap, wrap-reverse: this allows items to wrap into a new line if they are too big</li>
     <li><strong>The ALIGN-CONTENT property: which has a default of stretch</strong> - flex-start, flex-end, center, space-between, space-around: only applies when there are multiple lines. </li>
 </ol>
+<p><strong>The flex item properties - </strong> include mainly the following:</p>
+<ol>
+    <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for individual flex items.</li>
+    <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes)</li>
+    <li><strong>Flex Shrink which has a default of 1</strong> - allows an item to shrink (0 means no, +1 means yes)</li>
+    <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property</li>
+    <li>The short hand of all the above goes flex: grow, shrink, basis</li>
+</ol>
