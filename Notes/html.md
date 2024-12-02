@@ -208,7 +208,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 
 <p>Box-sizing: border box - is a great tool to use in majority of the elements. It takes away from the default box model to make sure that the height and the width are fixed inside the border of an element when designing layouts. If there is extra padding and margins, it will subtract it from the total width to make sure the element does not disappear or go where you don't want it to go. <strong>It is usually applied to the universal selector at the start of the CSS</strong></p>
 
-#Flex Box 
+# Flex Box 
 
 <ul>
     <li>This is an easier way that 'floats' to bring elements side by side (display: flex).</li>
@@ -216,3 +216,10 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>It makes it a lot easier to align items one another inside of a parent container (both horizontally and vertically).</li>
     <li>The main axis is the line that goes from left to right, and the cross axis is up and down.</li>
     <li>The flex container is the main container (parent container) that holds all of the flex items (child elements). </li>
+</ul>
+<p><strong>The flex container properties - </strong> include mainly the following:</p>
+<ol>
+    <li><strong>The GAP property: which has a default of 0</strong> - length: this creates space between lines without using margins</li>
+    <li><strong>The JUSTIFY-CONTENT property: which has a default of flex-start</strong> - flex-start, flex-end, center, space-between, space-around, space-evenly: this aligns items along the <strong>main axis</strong></li>
+    <li><strong>The ALIGN-ITEMS property: which has a default of stretch</strong> - flex-start, flex-end, center, baseline - this aligns items along the <strong>cross axis</strong></li>
+</ol>
