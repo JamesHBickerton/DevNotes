@@ -1,6 +1,6 @@
 # HTML & UDEMY COURSE NOTES (HTML & CSS NOTES) - BASICS
 
-Headers can be h1-h6
+Headers can be h1-h6 throughout the document. 
 
 <strong><'em'></strong> is a tag to make things italic and <strong><'strong'></strong> is a tag to make things bold - this is more semantic and better practice when compared to <'i'> and <'e'>.
 
