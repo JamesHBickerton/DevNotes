@@ -1,6 +1,6 @@
 # HTML & UDEMY COURSE NOTES (HTML & CSS NOTES) - BASICS
 
-Headers can be h1-h6 throughout the document. 
+Headers can be h1-h6 throughout the document. Usually the header is within the BODY of the document. 
 
 <strong><'em'></strong> is a tag to make things italic and <strong><'strong'></strong> is a tag to make things bold - this is more semantic and better practice when compared to <'i'> and <'e'>.
 
@@ -230,7 +230,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 </ol>
 <p><strong>THE FLEX ITEM PROPERTIES - </strong> include mainly the following:</p>
 <ol>
-    <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for individual flex items.</li>
+    <li><strong>The ALIGN-SELF property which has a default of auto</strong> - stretch, flex-start, flex-end, center, baseline: this overrides the align-items for <strong>individual flex items</strong>.</li>
     <li><strong>Flex Grow which has a default of 0</strong> - allows an item to grow (0 means no, +1 means yes). If all flex items have 1 it means they will all grow to the same size.</li>
     <li><strong>Flex Shrink which has a default of 1</strong> - allows an item/element to shrink to fit inside of the container (0 means no, +1 means yes). There are no negative values for this. </li>
     <li><strong>Flex Basis which has a default of auto</strong> - defines an items width instead of the "width" property. Flex basis acts as a recommendation to the browser (it is not really a rule) but acts as the starting measurement/width.</li>
