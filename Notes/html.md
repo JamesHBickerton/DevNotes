@@ -223,7 +223,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <ol>
     <li><strong>The GAP property: which has a default of 0</strong> - length: this creates space between lines without using margins</li>
     <li><strong>The JUSTIFY-CONTENT property: which has a default of flex-start</strong> - flex-start, flex-end, center, space-between, space-around, space-evenly: this aligns items along the <strong>main axis</strong></li>
-    <li><strong>The ALIGN-ITEMS property: which has a default of stretch</strong> - flex-start, flex-end, center, baseline - this aligns items along the <strong>cross axis</strong>. If this doesn't work, usually you need to specify a height - i.e. height: 100vh </li>
+    <li><strong>The ALIGN-ITEMS property: which has a default of stretch</strong> - flex-start, flex-end, center, baseline - this aligns items along the <strong>cross axis</strong>. If this doesn't work, usually you need to specify a height - i.e. height: 100vh. Baseline usually keeps all the text even, no matter how big the size of the flex-item is. </li>
     <li><strong>The FLEX-DIRECTION property: which has a default of row</strong> - row-reverse, column, column-reverse: this defines which is the main axis</li>
         <li><strong>The FLEX-WRAP property: which has a default of nowrap</strong> - wrap, wrap-reverse: this allows items to wrap into a new line if they are too big</li>
     <li><strong>The ALIGN-CONTENT property: which has a default of stretch</strong> - flex-start, flex-end, center, space-between, space-around: only applies when there are multiple lines. </li>
