@@ -60,7 +60,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <li><'input type="submit"'></li>
 </ul>
 
-input elements require <strong><'label'></strong> elements to define the values. 
+input elements require <strong><'label'></strong> elements to define the values. Input elements have a lot of default styling - such as borders, backgrounds and outlines. 
 
 A <strong><'footer'></strong> element should still be based within the body.
 
