@@ -239,7 +239,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
 
-#CSS Grid - 
+# CSS Grid - 
 
 CSS grid makes two dimensional layouts. It divides the container elements into rows and columns to make easier to read HTML and CSS. Display: grid. 
 To use CSS grid, you use grid-template-columns and grid-template-rows. 
