@@ -238,3 +238,8 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>If flex:1 then it means that flex-grow is 1 AND flex-shrink is 1.</li>
     <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
+
+#CSS Grid - 
+
+To use CSS grid, you use grid-template-columns and grid-template-rows. 
+Always use gap when doing grids, <strong>not margins</strong>.
