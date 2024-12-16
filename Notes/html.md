@@ -241,12 +241,28 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 
 #CSS Grid - 
 
-CSS grid makes two dimensional layouts. It divides the container elements into rows and columns to make easier to read HTML and CSS. 
+CSS grid makes two dimensional layouts. It divides the container elements into rows and columns to make easier to read HTML and CSS. Display: grid. 
 To use CSS grid, you use grid-template-columns and grid-template-rows. 
 Always use gap when doing grids, <strong>not margins</strong>.
 <ol>
     <li>column-gap: makes the gap between columns</li>
     <li>row-gap: makes the gap between rows</li>
+    <li>Gaps are also called gutters.</li>
 </ol>
 
-If you want a one dimensional layout - use flexbox, but if you want a two dimensional layout, use CSS grid. 
+If you want a one dimensional layout - use flexbox, but if you want a two dimensional layout, use CSS grid. You cannot change the axis for CSS grids. 
+
+<strong>Grid Container</strong> has 3 MAIN properties you can use: 
+
+<ol>
+    <li>grid-template-rows and grid-template-columns which show the track size usually in pixels or fr (fractional). Fr kind of acts as flex:1 on flexbox. To make 4 columns the same width using the fr property, you would write - grid-template-columns: repeat(4, 1fr); </li>
+    <li>row-gaps and column-gaps - to create empty space between tracks</li>
+    <li>justify-items and align-items - to align items horizontally and vertically</li>
+</ol>
+
+<strong>Grid Items</strong> has 2 MAIN properties you can use: 
+
+<ol>
+    <li>grid-column and grid-row - which have a start and end line (usually span)to place a grid item in a specific cell</li>
+    <li>justify-self and align-self - to overwrite align-items and justify-items for SINGULAR items</li>
+</ol>
