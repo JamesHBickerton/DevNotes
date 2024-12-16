@@ -241,5 +241,12 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 
 #CSS Grid - 
 
+CSS grid makes two dimensional layouts. It divides the container elements into rows and columns to make easier to read HTML and CSS. 
 To use CSS grid, you use grid-template-columns and grid-template-rows. 
 Always use gap when doing grids, <strong>not margins</strong>.
+<ol>
+    <li>column-gap: makes the gap between columns</li>
+    <li>row-gap: makes the gap between rows</li>
+</ol>
+
+If you want a one dimensional layout - use flexbox, but if you want a two dimensional layout, use CSS grid. 
