@@ -266,3 +266,6 @@ If you want a one dimensional layout - use flexbox, but if you want a two dimens
     <li>grid-column and grid-row - which have a start and end line (usually span)to place a grid item in a specific cell</li>
     <li>justify-self and align-self - to overwrite align-items and justify-items for SINGULAR items</li>
 </ol>
+
+<strong>Justify-content and align-content</strong> - if you wanted to do flex-end and flex-start (similar to flexbox) then you need to use "start" and "end" instead of "flex-end" and "flex-start". The <strong>Justify-content and align-content</strong> will align the tracks INSIDE THE CONTAINER whereas <strong>justify-items and align-items</strong> will aign items INSIDE THE CELL (both for the container). 
+
