@@ -286,7 +286,8 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>Some good examples of serif are: <strong>Merriweather, Aleo, Playfair Display, Cormorant, Cardo and Lora.</strong></p>
             <p>Try to limit your typefaces to 1-2 per webpage. </p>
         <p><strong>Font size guidelines:</strong> use a "typescale tool" and normal text should be around 16px-32px in size. For long-text (like a blogpost) text should be 20px-32px. For big headlines, you can go >50px and bold >600, depending on personality. Do not use a font-weight <400 for any text.</p>
-            <p><strong>Create a good user experience:</strong>Use less than 75 characters per line, use a line height between 1.5-2 (the more text there is, the bigger the line height), if it looks unnatural - decrease letter spacing, experiment with ALL CAPS for short titles (make them small and bold and increase letter spacing), and don't justify your text (also don't center the text, as this can make it harder to read).</p>
+            <p><strong>Create a good user experience:</strong> Use less than 75 characters per line, use a line height between 1.5-2 (the more text there is, the bigger the line height), if it looks unnatural - decrease letter spacing, experiment with ALL CAPS for short titles (make them small and bold and increase letter spacing), and don't justify your text (also don't center the text, as this can make it harder to read).</p>
+            <p>A good font-size system as is follows: FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98</p>
     </li>
     <li>2. Colours</li>
     <li>3. Images & Illustrations</li>
