@@ -273,7 +273,7 @@ If you want a one dimensional layout - use flexbox, but if you want a two dimens
 
 <strong>Justify-content and align-content</strong> - if you wanted to do flex-end and flex-start (similar to flexbox) then you need to use "start" and "end" instead of "flex-end" and "flex-start". The <strong>Justify-content and align-content</strong> will align the tracks INSIDE THE CONTAINER whereas <strong>justify-items and align-items</strong> will aign items INSIDE THE CELL (both for the container). 
 
-#WEB DESIGN
+# WEB DESIGN
 
 Web designers are designers who create the overall look and feel for the web page, whereas web developers implement the design using HTML, CSS and Javascript. 
 
