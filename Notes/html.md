@@ -7,6 +7,8 @@ Headers can be h1-h6 throughout the document. Usually the header is within the B
 Comments can be made using the <!--task still to do->
 
 a <'section'> element can be used to give the html meaning rather than a <'div'> for web design, as a <'div'> element holds no semantic meaning.
+a <'span'> element can be used for inline text (and is preferred over a div - but this doesn't hold any semantic meaning. 
+a <'blockquote'> element is used when you want to quote text. 
 
 <'meta charset="UTF-8/'> - meta stands for meta data (data about the data). Charset is the character set and then UTF-8 encapsulates all the characters we use in the english language.
 
@@ -270,4 +272,37 @@ If you want a one dimensional layout - use flexbox, but if you want a two dimens
 </ol>
 
 <strong>Justify-content and align-content</strong> - if you wanted to do flex-end and flex-start (similar to flexbox) then you need to use "start" and "end" instead of "flex-end" and "flex-start". The <strong>Justify-content and align-content</strong> will align the tracks INSIDE THE CONTAINER whereas <strong>justify-items and align-items</strong> will aign items INSIDE THE CELL (both for the container). 
+
+#WEB DESIGN
+
+Web designers are designers who create the overall look and feel for the web page, whereas web developers implement the design using HTML, CSS and Javascript. 
+
+<strong>10 Ingredients to Good Web Design</strong>
+
+<ol>
+    <li><strong>1. Typography (most important):</strong> This is the art and technique of making text beautiful and easy to read. 
+        <p>Serif typefaces creates a traditional/luxurious feel and is good for long text</p>
+    </li>
+    <li>2. Colours</li>
+    <li>3. Images & Illustrations</li>
+    <li>4. Icons</li>
+    <li>5. Shadows</li>
+    <li>6. Border Radius</li>
+    <li>7. White Space</li>
+    <li>8. Visual Hierarchy</li>
+    <li>9. User Experience/Responsiveness</li>
+    <li>10. Components/Layouts</li>
+</ol>
+
+<strong>Website Personalities</strong>
+
+<ol>
+    <li><strong>Serious/Elegant:</strong> thin serif typefaces, golden or pastel colours and big, high quality images.</li>
+    <li><strong>Minimalist/Sipmle:</strong> focuses on essential text content, using small or medium sized sans-serif black text, lines and very few images and icons.</li>
+    <li><strong>Plain/Neutral:</strong> neutral and small typefaces with a very structured layout. This is common for big corporations (like Adobe and Microsoft.</li>
+    <li><strong>Bold/Confident:</strong> features big/bold typography with confident use of big and bright coloured blocks.</li>
+    <li><strong>Calm/Peaceful:</strong> features products and services that care (calming pastel colours, soft serif headings and matching images/illustrations).</li>
+    <li><strong>Startup/Upbeat:</strong> modern looking sans-serif type faces, light grey and text backgrounds with rounded elements (commonly used in start up companies).</li>
+    <li><strong>Playful/Fun:</strong>Colourful and round designs, fueled by creative elements like hand-drawn icons, illustrations and fun languages.</li>
+</ol>
 
