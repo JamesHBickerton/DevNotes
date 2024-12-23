@@ -281,7 +281,10 @@ Web designers are designers who create the overall look and feel for the web pag
 
 <ol>
     <li><strong>1. Typography (most important):</strong> This is the art and technique of making text beautiful and easy to read. 
-        <p>Serif typefaces creates a traditional/luxurious feel and is good for long text</p>
+        <p>Serif typefaces creates a traditional/luxurious feel and is good for long text. Sans-serif type faces do not have the 'curvy' lines when compared to serif typefaces and gives a more modern look (easier to work with for beginners).</p>
+        <p>Some good examples of Sans-serif are: <strong>Inter, Open Sans, Roboto, Monsterrat, Work Sans and Lato.</strong></p>
+        <p>Some good examples of serif are: <strong>Merriweather, Aleo, Playfair Display, Cormorant, Cardo and Lora.</p>
+            <p>Try to limit your typefaces to 1-2 per webpage. </p>
     </li>
     <li>2. Colours</li>
     <li>3. Images & Illustrations</li>
