@@ -298,8 +298,19 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>On dark coloured backgrounds, try to use a tint (lighter version) of the background for text. </p>
         <p>Text should not be completely black. Lighten it up if it looks heavy and uninviting (and never make the text too light otherwise it'll affect accessibility). To enhance accessibility, you can use the "coolors" tool to make sure the contrast ratio is at least 4.5:1 for normal text, and 3:1 for larger text (>18px). </p>
     </li>
-    <li>3. Images & Illustrations</li>
-    <li>4. Icons</li>
+    <li><strong>3. Images & Illustrations:</strong> Different types of images include <strong>product photos, storytelling photos (most important - i.e. a site about journalling showing someone journalling), illustrations (abstract way of doing story telling) and patterns</strong>
+    <p>The best websites to get "free" high quality stock photos (if nil other photos are available) are: "Unsplash" - which is the best, "Pexels", "Drawkit" and "UnDraw". 
+    </p>
+        <p>Show real people to trigger people's emotions.</p>
+        <p>Crop your images in order to fit your message.</p>
+        <p>Combine photos, illustrations and patterns.</p>
+        <p>To handle text on images, it is usually a good idea to darken the image with lighter text, or partially darken an image using a gradient. You can also place the text in an 'image neutral area'. You can also put text in a box. </p>
+        <p>You need to account for high resolution screens - make the image dimensions 2 x as big as their displayed size (if it's 300 x 300, the original image should be 600x600). </p>
+        <p>You need to compress the image for lower file size and better performance. To do this use "Squoosh" to reduce file sizes.</p>
+        <p>When using images side by side, you need to make sure the images are of the same dimensions.</p>
+    </li>
+    <li><strong>4. Icons:</strong> it's best to use a good icon pack such as "Phosphor icons", "ionicons" and "icons8". Don't mix icons from different icon packs.
+    <p>Use SVG icons or icon fonts, don't use jpg or png icon files.</p></li>
     <li>5. Shadows</li>
     <li>6. Border Radius</li>
     <li>7. White Space</li>
