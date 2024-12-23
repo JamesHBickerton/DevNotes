@@ -288,8 +288,16 @@ Web designers are designers who create the overall look and feel for the web pag
         <p><strong>Font size guidelines:</strong> use a "typescale tool" and normal text should be around 16px-32px in size. For long-text (like a blogpost) text should be 20px-32px. For big headlines, you can go >50px and bold >600, depending on personality. Do not use a font-weight <400 for any text.</p>
             <p><strong>Create a good user experience:</strong> Use less than 75 characters per line, use a line height between 1.5-2 (the more text there is, the bigger the line height), if it looks unnatural - decrease letter spacing, experiment with ALL CAPS for short titles (make them small and bold and increase letter spacing), and don't justify your text (also don't center the text, as this can make it harder to read).</p>
             <p>A good font-size system as is follows: FONT SIZE SYSTEM (px) 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98</p>
+            <p>A good spacing systems as is follows: SPACING SYSTEM (px) 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128</p>
     </li>
-    <li>2. Colours</li>
+    <li><strong>2. Colours:</strong> You can use "open colour" and "tailwind CSS" to use custom selected colours.
+    <p>You need at least two types of colours in your colour palette - a main colour, and a grey colour (doesn't have to be grey, just a darker shade of a colour). You can also have an accent colour with more experience. </p>
+        <p>For diversity, you will need tints (lighter versions of your colour) and shades (darker versions of your colour) which is usually important of your 'grey colour'. To do this you can use tint and shade generator (such as "pallenton.com" and "coolors". </p>
+        <p>Use the <strong>Main Colour</strong> to draw attention (such as buttons, headers, and logos).</p>
+        <p>You can also link the main colour into images and illustrations to make them stand out. </p>
+        <p>On dark coloured backgrounds, try to use a tint (lighter version) of the background for text. </p>
+        <p>Text should not be completely black. Lighten it up if it looks heavy and uninviting (and never make the text too light otherwise it'll affect accessibility). To enhance accessibility, you can use the "coolors" tool to make sure the contrast ratio is at least 4.5:1 for normal text, and 3:1 for larger text (>18px). </p>
+    </li>
     <li>3. Images & Illustrations</li>
     <li>4. Icons</li>
     <li>5. Shadows</li>
