@@ -6,6 +6,8 @@ Headers can be h1-h6 throughout the document. Usually the header is within the B
 
 Comments can be made using the <!--task still to do->
 
+a <'section'> element can be used to give the html meaning rather than a <'div'> for web design, as a <'div'> element holds no semantic meaning.
+
 <'meta charset="UTF-8/'> - meta stands for meta data (data about the data). Charset is the character set and then UTF-8 encapsulates all the characters we use in the english language.
 
 A good structure to have at the top of your CSS stylesheet is as follows: <strong>This is used as a global reset</strong> to make it easier to style our pages. 
