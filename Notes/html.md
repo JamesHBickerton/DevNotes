@@ -316,7 +316,7 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>Dont make icons bigger than they are designed for - if anything, encase them in a shape.</p>
         <p>To fill outlined icons with a colour - use the "stroke" CSS property. For filled icons, use the "fill" property in CSS.</p>
     </li>
-    <li>5. Shadows</li>
+    <li><strong>5. Shadows:</strong> The more shadow there is, the further away the element is away from the interface. Shadows help to create depth. Use less shadows for more serious websites. Use light shadows to make things look more natural (mainly on items you want to draw attention to. Use medium sized shadows for bigger elements that you want to stand out. Use larger shadows for navigations and items that float above the rest of the website. To use shadows, use the box-shadow CSS property (or text-shadow CSS property for text - the only difference is that text-shadow does not have the fourth value) - example 20px (horizontal shadow - usually 0px) 20px (vertical shadow) 20px (blur) 10px (scales the shadow as a radius - if you don't specify the fourth it will just automatically be 0 - usually do leave it to 0), color (rgba). The value of shadow should be <0.1 (can look good as 0.07). Usually for shadows you want the light to be coming from the top. </li>
     <li>6. Border Radius</li>
     <li>7. White Space</li>
     <li>8. Visual Hierarchy</li>
