@@ -310,7 +310,12 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>When using images side by side, you need to make sure the images are of the same dimensions.</p>
     </li>
     <li><strong>4. Icons:</strong> it's best to use a good icon pack such as "Phosphor icons", "ionicons" and "icons8". Don't mix icons from different icon packs.
-    <p>Use SVG icons or icon fonts, don't use jpg or png icon files.</p></li>
+    <p>Use SVG icons or icon fonts, don't use jpg or png icon files as these may tend to blur on high resolution screens.</p>
+        <p>Adjust your icons to fit your website's typography.</p>
+        <p>Use icons to create "feature blocks" which can help to describe the features of a website/service. To keep icons neutral, use the same colour as your text. To draw more attention, use brand or different colours.</p>
+        <p>Dont make icons bigger than they are designed for - if anything, encase them in a shape.</p>
+        <p>To fill outlined icons with a colour - use the "stroke" CSS property. For filled icons, use the "fill" property in CSS.</p>
+    </li>
     <li>5. Shadows</li>
     <li>6. Border Radius</li>
     <li>7. White Space</li>
