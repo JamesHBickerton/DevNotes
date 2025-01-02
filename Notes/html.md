@@ -279,7 +279,7 @@ Web designers are designers who create the overall look and feel for the web pag
 
 <strong>10 Ingredients to Good Web Design</strong>
 
-<ol>
+<ul>
     <li><strong>1. Typography (most important):</strong> This is the art and technique of making text beautiful and easy to read. 
         <p>Serif typefaces creates a traditional/luxurious feel and is good for long text. Sans-serif type faces do not have the 'curvy' lines when compared to serif typefaces and gives a more modern look (easier to work with for beginners).</p>
         <p>Some good examples of Sans-serif are: <strong>Inter, Open Sans, Roboto, Monsterrat, Work Sans and Lato.</strong></p>
@@ -338,7 +338,7 @@ Web designers are designers who create the overall look and feel for the web pag
         <p></p>
     </li>
     <li>10. Components/Layouts</li>
-</ol>
+</ul>
 
 <strong>Website Personalities</strong>
 
