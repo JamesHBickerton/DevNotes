@@ -337,7 +337,7 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>UX rules include: use descriptive keywords for headlines and don't make them too fancy or wordy.</p>
         <p></p>
     </li>
-    <li>10. Components/Layouts</li>
+    <li><strong>10. Components/Layouts</strong></li> - steal like an artist (finding websites that you like, and copy aspects of a certain design to make it fit your own design). Websites that are useful are land-book.com, onepagelove.com, and awwwards.com (in collections and websites) and screenlane.com (for individual components). 
 </ul>
 
 <strong>Website Personalities</strong>
