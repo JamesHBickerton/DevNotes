@@ -325,7 +325,18 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>For text elements - use font size, font weight, color (both background and text color) and white space to help convey importance. It is important to emphasize title, sub-titles, links, buttons, icons and data points (and then important to de-emphasize less important text like labels or secondary information).</p>
         <p>To establish visual hierarchy bewteen components - use background color, shadow and borders. It is important to emphasize things like testimonials, call-to-action sections, highlight sections, preview cards, forms, pricing tables, and important rows/columns.</p>
     </li>
-    <li>9. User Experience/Responsiveness</li>
+    <li><strong>9. User Experience/Responsiveness (UI/UX):</strong> UI is the graphical interface and UX is the user experience. 
+    <p>Goals for UX design is to ensure that the goals are met for both company/business and the user. 
+    </p>
+    <p>Examples of bad UX design are using pop ups, hiding a cancel subscription button, etc</p>
+        <p>Always make your "call to action" more prominent to stand out</p>
+        <p>Only use blue text and underlines for links</p>
+        <p>Animations should be between 200 to 500ms</p>
+        <p>Always only have a singluar line for forms to make it easier to read</p>
+        <p>Always have a section to offer user feedback - i.e. when you click submit a form and it says "form has been submitted". </p>
+        <p>UX rules include: use descriptive keywords for headlines and don't make them too fancy or wordy.</p>
+        <p></p>
+    </li>
     <li>10. Components/Layouts</li>
 </ol>
 
