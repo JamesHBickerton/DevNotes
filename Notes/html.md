@@ -342,6 +342,8 @@ Web designers are designers who create the overall look and feel for the web pag
 
 <strong>Website Personalities</strong>
 
+<p>You need to have a look at the lecture slides for this - The Website Personalities Framework</p>
+
 <ol>
     <li><strong>Serious/Elegant:</strong> thin serif typefaces, golden or pastel colours and big, high quality images.</li>
     <li><strong>Minimalist/Sipmle:</strong> focuses on essential text content, using small or medium sized sans-serif black text, lines and very few images and icons.</li>
