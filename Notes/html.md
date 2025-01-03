@@ -198,7 +198,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <p>There are three ways to make layouts</p>
 <ol>
     <li><strong>Float layouts -</strong> older version of layouts that are becoming outdated</li>
-    <li><strong>Flexbox -</strong> modern way to build one dimensional layouts - perfect for component layouts</li>
+    <li><strong>Flexbox -</strong> modern way to build one dimensional layouts - perfect for component layouts. CHECK LECTURE 87 FOR GOOD TRICK FOR FLEX BOX.</li>
     <li><strong>CSS Grid -</strong> perfect for big page layouts and complex components (2 dimensional grid)</li>
 </ol>
 
