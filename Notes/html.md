@@ -354,3 +354,8 @@ Web designers are designers who create the overall look and feel for the web pag
     <li><strong>Playful/Fun:</strong>Colourful and round designs, fueled by creative elements like hand-drawn icons, illustrations and fun languages.</li>
 </ol>
 
+# Components and Layouts (Rule no. 10) 
+
+<p>Elements are organised into components, which are then formed into layouts (with patterns) and then made into the web page.</p>
+<p>Have a look at Lecture 86 for inspiration of elements (i.e. text, inputs, images, tags). </p>
+<p>Common components can be: breadcrumbs, pagination, alert and status bars, statistics (usually about the service), image galleries, feature boxes, preview and profile cards, accordions (usually for FAQ), TABS (for data that you want to initially hide until clicked), Carousel, Customer Testimonials, Customer Logos, Featured-In Logos, Steps (showing a customer how to get/use the product - best way to show how your product works), Forms, Tables (for specifications etc), Pricing Tables, and Modal Windows (usually a window that pops up for sign ins and sales - marketing pop up windows). </p>
