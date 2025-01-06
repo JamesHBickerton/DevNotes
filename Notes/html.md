@@ -371,3 +371,9 @@ To hide an accordion box - the easiest thing to do is set the display of the con
 To design testimonials, a common way is to use a "blockquote" element. 
 
 The transform CSS property can be used to "scale" images - i.e. transform: scale(1) - will keep the image the same size, transform:scale(2) would mean that the image would double in size. You can also use transform CSS property to translate an element across the page - i.e. transform: translate(x,y) - x: horizontal, y: vertical. An example would be to move an object halfway down the page/of the element you would use transform: translate(0, -50%) - as this would move the element down 50% of the ACTUAL element's height (as opposed to using the height of the parents). 
+
+Tables aren't really used in CSS anymore (due to flex box and grid) - but still have a place when having to display data. This is done through the <"table"> element. Inside the table element you have <"tr"> which is the "table row" and then inside of the "tr" you used the <"td"> element which contains the data. In order to give the table a heading, you need to wrap the particular <tr> section into a <"thead"> element (inside of this thead - you need to change the td to th values. You would then wrap the rest of it in <"tbody"> element. You can also use <th> elements inside of the tbody elements as well, to emphasize the text. Th elements will also center. 
+
+To create "zebra stripes" in tables, you would just use the pseudo selector :nth-child(odds) and :nth-child(evens) to change the background colours.
+
+Border-collapse CSS property can help to get rid of borders that are too close together. You would write border-collapse: collapse. This can also get rid of gaps between columns in tables. 
