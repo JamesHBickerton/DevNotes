@@ -53,7 +53,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):
 
 <ul>
-<li><'input type="button"'></li> - in CSS buttons can have hover styles.
+<li><'input type="button"'></li> - in CSS buttons can have hover styles. - A button will always have a border so make sure the style is set to none if you want to style it.
 
 <li><'input type="checkbox"'></li>
 
@@ -133,6 +133,10 @@ To find out which css style has priority, hover over the CSS and look at the Sel
 
 <strong>Inheritence</strong> - most properties related to text will get inherited
 
+When using absolute positioning to take a complete element out of the flow of the page, you must make sure to make the parent container's position to relative. Top and left will only use the dimensions of the PARENT element as the reference. 
+
+#nbsp; - is a non-breaking space to use in your code instead of "empty space". 
+
 # BOX MODEL - Will need to brush up on this 
 
 <ul>
@@ -148,7 +152,7 @@ The final width of an element would be the left border, left padding, width, rig
 This above is just the default behaviour, you can change this throughout. 
 This means that the margin is not involved in the final width and height. 
 
-Short hand for padding: first number = (paddingtop + paddingbottom) second number = (paddingleft + paddingright)
+Short hand for padding: first number = (paddingtop + paddingbottom) second number = (paddingleft + paddingright) - <strong>goes round in a clockwise direction</strong>
 
 When styling list items, you want to make sure you don't have any space at the end of the last item of the list. You only want to have space between list items. To do this you would have li:last-child margin: 0;
 
@@ -365,3 +369,5 @@ Web designers are designers who create the overall look and feel for the web pag
 To hide an accordion box - the easiest thing to do is set the display of the content to none. To set it back - display: block.
 
 To design testimonials, a common way is to use a "blockquote" element. 
+
+The transform CSS property can be used to "scale" images - i.e. transform: scale(1) - will keep the image the same size, transform:scale(2) would mean that the image would double in size. You can also use transform CSS property to translate an element across the page - i.e. transform: translate(x,y) - x: horizontal, y: vertical. An example would be to move an object halfway down the page/of the element you would use transform: translate(0, -50%) - as this would move the element down 50% of the ACTUAL element's height (as opposed to using the height of the parents). 
