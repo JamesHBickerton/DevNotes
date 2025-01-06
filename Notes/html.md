@@ -26,7 +26,7 @@ A good structure to have at the top of your CSS stylesheet is as follows: <stron
 
 <'img src="link-of-photo" alt="picture-of-dog"'> - src is an example of an attribute which can describe elements. Alt will allow search engines to know what the image is actually about & allows blind people to use our website!
 
-Also always make sure you put your images in a seperate folder on the explorer tag.
+Also always make sure you put your images in a seperate folder on the explorer tag. Images will also always take as much space as they can.
 
 <strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
@@ -361,3 +361,7 @@ Web designers are designers who create the overall look and feel for the web pag
 <p>Elements are organised into components, which are then formed into layouts (with patterns) and then made into the web page.</p>
 <p>Have a look at Lecture 86 for inspiration of elements (i.e. text, inputs, images, tags). </p>
 <p>Common components can be: breadcrumbs, pagination, alert and status bars, statistics (usually about the service), image galleries, feature boxes, preview and profile cards, accordions (usually for FAQ), TABS (for data that you want to initially hide until clicked), Carousel, Customer Testimonials, Customer Logos, Featured-In Logos, Steps (showing a customer how to get/use the product - best way to show how your product works), Forms, Tables (for specifications etc), Pricing Tables, and Modal Windows (usually a window that pops up for sign ins and sales - marketing pop up windows). </p>
+
+To hide an accordion box - the easiest thing to do is set the display of the content to none. To set it back - display: block.
+
+To design testimonials, a common way is to use a "blockquote" element. 
