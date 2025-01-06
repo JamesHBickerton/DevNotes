@@ -147,8 +147,8 @@ When using absolute positioning to take a complete element out of the flow of th
     <li>All of the above are optional</li>
 </ul>
 
-The final height of an element would be the bottom border, bottom padding, height, top padding, top border.
-The final width of an element would be the left border, left padding, width, right padding, right border.
+The final height of an element would be the bottom border, bottom padding, height, top padding, top border (NO COMMAS). 
+The final width of an element would be the left border, left padding, width, right padding, right border (NO COMMAS). 
 This above is just the default behaviour, you can change this throughout. 
 This means that the margin is not involved in the final width and height. 
 
