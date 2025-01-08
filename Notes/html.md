@@ -377,3 +377,5 @@ Tables aren't really used in CSS anymore (due to flex box and grid) - but still 
 To create "zebra stripes" in tables, you would just use the pseudo selector :nth-child(odds) and :nth-child(evens) to change the background colours.
 
 Border-collapse CSS property can help to get rid of borders that are too close together. You would write border-collapse: collapse. This can also get rid of gaps between columns in tables. 
+
+
