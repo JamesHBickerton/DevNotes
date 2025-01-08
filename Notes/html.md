@@ -40,6 +40,8 @@ You can also use the # as a placeholder after the link - <'a' href="#"></'a>.
 
 A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>. These can sometime also contain your h1/h2 elements for example.
 
+<strong>WHEN STYLING A NAV SECTION, SET THE DISPLAY OF THE NAV TO FLEX AND THEN YOU CAN ORGANISE YOUR CONTENT AS YOU LIKE (I.E. JUSTIFY-CONTENT: SPACE BETWEEN). 
+
 An <strong><'article'></strong> element can be a multitude of things, it doesn't necessarily mean it will be an article. 
 
 You can also nest a the </strong><'img'></strong> information within a <strong><'figure'></strong> element and use <strong><'figcaption'>This is my dog</figcaption></figure'></strong> as a caption under the img.
@@ -53,7 +55,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):
 
 <ul>
-<li><'input type="button"'></li> - in CSS buttons can have hover styles. - A button will always have a border so make sure the style is set to none if you want to style it.
+<li><'input type="button"'></li> - in CSS buttons can have hover styles. - A button will always have a border so make sure the style is set to none if you want to style it. 
 
 <li><'input type="checkbox"'></li>
 
@@ -175,6 +177,8 @@ A good way to centre your page would be to add a <'div'> element just after your
 <strong>Block level elements</strong> occupy all the space that they can, and can create linebreaks after them (meaning they cannot be side by side with one another). These <em>elements occupy 100% of the parent's width</em>. These elements can be stacked one after another by default. Default block elements are usually: <em>body, main, header, section, nav, li, div, aside, h1-h6, p, ol, ul etc.</em>.
 
 <strong>Inline block elements</strong> look like inline blocks from the outside, but behave like block level elements on the inside. They do not cause any line breaks but you can use heights, width, paddings and margins (combines the best of both worlds between the two). Display: inline-block. IMG's behave like inline-block elements. 
+
+<strong>In order to give a button padding, you may need to set the display to inline-block to create a border-radius.</strong>
 
 Normal flow is the normal/default positioning (position: relative). 
 Absolute flow (position: absolute) means that the element will be out of the flow. This would mean it doesn't have impact around the surrounding elements. You can use the top, bottom, left or right properties in order to position the element from it's <em>relatively positioned container</em>. This can be a great way to "fix" an item on the page, so it doesn't move elements around it when shifting the page. 
@@ -377,5 +381,25 @@ Tables aren't really used in CSS anymore (due to flex box and grid) - but still 
 To create "zebra stripes" in tables, you would just use the pseudo selector :nth-child(odds) and :nth-child(evens) to change the background colours.
 
 Border-collapse CSS property can help to get rid of borders that are too close together. You would write border-collapse: collapse. This can also get rid of gaps between columns in tables. 
+
+<strong>Hero sections:</strong> Hero sections are sections that you usually see on a website's home page. The most common is where the text is on one side and then an image is on the other. The next most common is where there is background image and then text on the top (this is becoming less popular). You can have a hybrid layout too (which is a mix of the two). 
+
+<strong>Call to action sections</strong> usually come at the end of the page where we want the user to take some 'action'. Usually this will need to stand out using some visual hierarchy. Call to action sections can also be used to get the user to contact the company (just using contact details or forms). 
+
+<strong>Feature rows</strong> usually have an image on one side, text on the other side (heading + description + button) that describes a specific feature. 
+
+# Layout Patterns 
+
+<ol>
+    <li>Rows of cards/boxes</li>
+    <li>Grids of cards/boxes</li>
+    <li>Asides - you can also nest patterns inside of components</li>
+    <li>Z pattern - using a "Z" pattern for the eyes that moves down the page from top to bottom left to right - usually 3 rows are used, but more can also be used</li>
+    <li>F pattern - Always has images on the one side (so they are fixed) with content on the opposite side.</li>
+    <li>Single columns - usually just used for mobile and side bars</li>
+    <li>Sidebars - can be used for blogs or options in a web application, table of contents, or summary.</li>
+    <li>Multi-column/magazine layout</li>
+    <li>Asymmetrical layouts</li>
+</ol>
 
 
