@@ -139,8 +139,6 @@ When using absolute positioning to take a complete element out of the flow of th
 
 #nbsp; - is a non-breaking space to use in your code instead of "empty space". 
 
-In order to create an image in the background - you should apply the HTML property - background-image: url(). 
-
 # BOX MODEL - Will need to brush up on this 
 
 <ul>
@@ -409,4 +407,7 @@ Border-collapse CSS property can help to get rid of borders that are too close t
     <li>Asymmetrical layouts</li>
 </ol>
 
+In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). 
+
+<strong>How to darken background images:</strong> in order to do this, you need to create a background linear gradient. This would be by using the following: background-image: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6), url(img); - you have to use rgba in order to create opacity. This obviously doesn't have to be the above - you can use any other colours. Using greys can give "a softer touch". 
 
