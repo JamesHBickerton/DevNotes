@@ -74,7 +74,7 @@ A <strong><'footer'></strong> element should still be based within the body.
 
 An <'aside'> element is used for secondary information - related posts about the main part or as a sidebar. The main element is where you would want to use for your main information.  
 
-# CSS notes
+## CSS notes
 
 CSS includes selectors (i.e. h1) and then the style which includes properties (i.e. color, font-size) and values (i.e. blue, 14px). Properties and values together are called declarations/styles. The declaration block includes ALL the properties and values for the selector. ALL of this together (including the selector) is called a <strong>CSS rule</strong>. 
 
@@ -114,7 +114,7 @@ color: white;
 }
 
 
-# Conflicts between SELECTORS (IMPORTANT PART OF CSS)
+## Conflicts between SELECTORS (IMPORTANT PART OF CSS)
 
 Highest priority in CSS
 
@@ -139,7 +139,7 @@ When using absolute positioning to take a complete element out of the flow of th
 
 #nbsp; - is a non-breaking space to use in your code instead of "empty space". 
 
-# BOX MODEL - Will need to brush up on this 
+## BOX MODEL - Will need to brush up on this 
 
 <ul>
 <li>The border is still inside of the element</li>
@@ -171,7 +171,7 @@ A good way to centre your page would be to add a <'div'> element just after your
 
 <strong>What I got stuck on - you can't use margins on elements such as links!</strong>
 
-# Types of Boxes
+### Types of Boxes
 
 <strong>Inline elements</strong> occupy only the exact space that they need. They can be side by side with one another. Padding and margins are only applied <em>horizontally</em>. This is extremely important to keep in mind! Default inline elements would be <em>strong, em, a, button etc.</em>. They do not make line breaks. 
 
@@ -196,7 +196,7 @@ The most used pseudo-elements are the ::after and ::before pseudo-elements. With
 
 If having trouble centering text, try to use "'text-align: center'" on the parent element - as they could be inline or inline-block elements. 
 
-# Good Websites for Reference & HELP
+### Good Websites for Reference & HELP
 <ul>
     <li>Stack overflow</li>
     <li>CSS tricks</li>
@@ -205,7 +205,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li>Diff Checker - to compare code between your creation and another sites</li>
 </ul>
 
-# Building Layouts 
+### Building Layouts 
 
 <p>Layouts are ways to build visual structure, instead of just having them in the "normal flow"</p>
 <p>There are three ways to make layouts</p>
@@ -215,7 +215,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
     <li><strong>CSS Grid -</strong> perfect for big page layouts and complex components (2 dimensional grid)</li>
 </ol>
 
-# Float Layouts 
+### Float Layouts 
 
 <p>Float layouts will take the element completely out of the "flow" (i.e. float:'left' or float:'right').</p>
 <p>Float elements are still able to create margins around them.</p>
@@ -227,7 +227,7 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 
 When styling a container and wanting to center it (i.e. margin: 0 auto) you must provide a specific width. (i.e. width: 1200px). 
 
-# Flex Box 
+## Flex Box 
 
 <ul>
     <li>This is an easier way that 'floats' to bring elements side by side (display: flex).</li>
@@ -258,7 +258,7 @@ When styling a container and wanting to center it (i.e. margin: 0 auto) you must
     <li><strong>The ORDER property which has a default of 0</strong> - which controls the order of the flex items (-1 makes it first, 1 makes it last)</li>
 </ol>
 
-# CSS Grid - 
+## CSS Grid - 
 
 CSS grid makes two dimensional layouts. It divides the container elements into rows and columns to make easier to read HTML and CSS. Display: grid. 
 To use CSS grid, you use grid-template-columns and grid-template-rows. 
@@ -288,7 +288,7 @@ If you want a one dimensional layout - use flexbox, but if you want a two dimens
 
 <strong>Justify-content and align-content</strong> - if you wanted to do flex-end and flex-start (similar to flexbox) then you need to use "start" and "end" instead of "flex-end" and "flex-start". The <strong>Justify-content and align-content</strong> will align the tracks INSIDE THE CONTAINER whereas <strong>justify-items and align-items</strong> will aign items INSIDE THE CELL (both for the container). 
 
-# WEB DESIGN
+## WEB DESIGN
 
 Web designers are designers who create the overall look and feel for the web page, whereas web developers implement the design using HTML, CSS and Javascript. 
 
@@ -369,7 +369,7 @@ Web designers are designers who create the overall look and feel for the web pag
     <li><strong>Playful/Fun:</strong>Colourful and round designs, fueled by creative elements like hand-drawn icons, illustrations and fun languages.</li>
 </ol>
 
-# Components and Layouts (Rule no. 10) 
+## Components and Layouts (Rule no. 10) 
 
 <p>Elements are organised into components, which are then formed into layouts (with patterns) and then made into the web page.</p>
 <p>Have a look at Lecture 86 for inspiration of elements (i.e. text, inputs, images, tags). </p>
@@ -393,7 +393,7 @@ Border-collapse CSS property can help to get rid of borders that are too close t
 
 <strong>Feature rows</strong> usually have an image on one side, text on the other side (heading + description + button) that describes a specific feature. 
 
-# Layout Patterns 
+## Layout Patterns 
 
 <ol>
     <li>Rows of cards/boxes</li>
@@ -417,7 +417,7 @@ When wanting to put space between elements on a page - you can use the margin (w
 
 Setting overflow (CSS property) to scroll will help to create a scroll bar (usually when elements don't fit in the container). 
 
-# 7 steps to a great website
+## 7 steps to a great website
 
 <ol>
     <li><strong>Define and plan the project</strong>
