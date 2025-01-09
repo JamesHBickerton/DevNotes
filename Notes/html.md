@@ -323,6 +323,7 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>You need to account for high resolution screens - make the image dimensions 2 x as big as their displayed size (if it's 300 x 300, the original image should be 600x600). </p>
         <p>You need to compress the image for lower file size and better performance. To do this use "Squoosh" to reduce file sizes.</p>
         <p>When using images side by side, you need to make sure the images are of the same dimensions.</p>
+        <p>Uifaces - you can download people's faces for completely free (for icons etc).</p>
     </li>
     <li><strong>4. Icons:</strong> it's best to use a good icon pack such as "Phosphor icons", "ionicons" and "icons8". Don't mix icons from different icon packs.
     <p>Use SVG icons or icon fonts, don't use jpg or png icon files as these may tend to blur on high resolution screens.</p>
@@ -373,7 +374,7 @@ Web designers are designers who create the overall look and feel for the web pag
 
 <p>Elements are organised into components, which are then formed into layouts (with patterns) and then made into the web page.</p>
 <p>Have a look at Lecture 86 for inspiration of elements (i.e. text, inputs, images, tags). </p>
-<p>Common components can be: breadcrumbs, pagination, alert and status bars, statistics (usually about the service), image galleries, feature boxes, preview and profile cards, accordions (usually for FAQ), TABS (for data that you want to initially hide until clicked), Carousel, Customer Testimonials, Customer Logos, Featured-In Logos, Steps (showing a customer how to get/use the product - best way to show how your product works), Forms, Tables (for specifications etc), Pricing Tables, and Modal Windows (usually a window that pops up for sign ins and sales - marketing pop up windows). </p>
+<p>Common components can be: breadcrumbs, pagination, alert and status bars, statistics (usually about the service), image galleries, feature boxes, preview and profile cards, accordions (usually for FAQ), TABS (for data that you want to initially hide until clicked), Carousel, Customer Testimonials, Customer Logos, Featured-In Logos (usually appears after the HERO section), Steps (showing a customer how to get/use the product - best way to show how your product works), Forms, Tables (for specifications etc), Pricing Tables, and Modal Windows (usually a window that pops up for sign ins and sales - marketing pop up windows). </p>
 
 To hide an accordion box - the easiest thing to do is set the display of the content to none. To set it back - display: block.
 
@@ -389,7 +390,9 @@ Border-collapse CSS property can help to get rid of borders that are too close t
 
 <strong>Hero sections:</strong> Hero sections are sections that you usually see on a website's home page. The most common is where the text is on one side and then an image is on the other. The next most common is where there is background image and then text on the top (this is becoming less popular). You can have a hybrid layout too (which is a mix of the two). 
 
-<strong>Call to action sections</strong> usually come at the end of the page where we want the user to take some 'action'. Usually this will need to stand out using some visual hierarchy. Call to action sections can also be used to get the user to contact the company (just using contact details or forms). 
+<strong>Call to action sections</strong> usually come at the end of the page where we want the user to take some 'action' - usually above the footer. Usually this will need to stand out using some visual hierarchy. Call to action sections can also be used to get the user to contact the company (just using contact details or forms). 
+
+Pricing usually comes just before the call to action section. 
 
 <strong>Feature rows</strong> usually have an image on one side, text on the other side (heading + description + button) that describes a specific feature. 
 
