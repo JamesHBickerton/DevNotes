@@ -425,7 +425,7 @@ Setting overflow (CSS property) to scroll will help to create a scroll bar (usua
     <li><strong>Plan</strong>
     <p>Plan and gather the website content (images, text, videos - usually provided by the client), plan the sitemap for bigger websites (what pages the sites need, and how they are related to eachother), plan what sections each page needs in order to convey the content's message, and finally define the website personality</p></li>
     <li><strong>Sketch</strong>
-    <p>Think about what components you may need and how you can use them in layout patterns (get inspiration from the web design section UDEMY), start sketching on pen and paper or FIGMA (digital design software), you don't need to sketch everything and don't need to make anything perfect</p>
+    <p>Think about what components you may need and how you can use them in layout patterns (get inspiration from the web design section UDEMY), start sketching on pen and paper or FIGMA (digital design software), you don't need to sketch everything and don't need to make anything perfect. An example would be if a client wants a landing page (which is one page for a website).</p>
     </li>
     <li><strong>Design & Build</strong>
     <p>Do the actual design in code, choose and apply actual visual styles for your design (which need to be based on the website personalitie and what you have got from inspiration), use the client's branding for design decisions where possible (colours, typography, icons)</p>
