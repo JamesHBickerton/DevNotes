@@ -413,3 +413,31 @@ In order to create an image in the background - you should apply the CSS propert
 
 <strong><'menu'></'menu'></strong> is an HTML element for web applications. It differs from a NAV element, as nav elements contain links to point to other places in the application. Menu is for menu buttons in a web application. This isn't really used unless you are building a web application.
 
+When wanting to put space between elements on a page - you can use the margin (whether that be margin-left, margin-right) to auto and this would mean that the element would occupy all of the space needed (and then push out through the content). 
+
+Setting overflow (CSS property) to scroll will help to create a scroll bar (usually when elements don't fit in the container). 
+
+# 7 steps to a great website
+
+<ol>
+    <li><strong>Define and plan the project</strong>
+    <p>Who is the project for? What is the website for? (providing information, selling something, or entertaining) and you need to define the business and user goals (lecture on UX), define a specific target audience for the website (usually comes from the client)</p></li>
+    <li><strong>Plan</strong>
+    <p>Plan and gather the website content (images, text, videos - usually provided by the client), plan the sitemap for bigger websites (what pages the sites need, and how they are related to eachother), plan what sections each page needs in order to convey the content's message, and finally define the website personality</p></li>
+    <li><strong>Sketch</strong>
+    <p>Think about what components you may need and how you can use them in layout patterns (get inspiration from the web design section UDEMY), start sketching on pen and paper or FIGMA (digital design software), you don't need to sketch everything and don't need to make anything perfect</p>
+    </li>
+    <li><strong>Design & Build</strong>
+    <p>Do the actual design in code, choose and apply actual visual styles for your design (which need to be based on the website personalitie and what you have got from inspiration), use the client's branding for design decisions where possible (colours, typography, icons)</p>
+    </li>
+    <li><strong>Test & Optimise</strong>
+    <p>Make sure website works in all major browsers (chrome, firefox, safari, edge), test on actual mobile devices, optimise all images (make sure dimensions are right and that they are compressed so users do not have to download big images), fix accessibility problems (e.g. colour contrast), run the Lighthouse performance tool in Chrome DevTools to try and fix reported issues, think about SEO (search engine optimisation)</p>
+    </li>
+    <li><strong>Launch</strong>
+    <p>Upload website to hosting platform (netlify), choose and buy a great domain name for your website (memorable and easy to write), </p>
+    </li>
+    <li><strong>Maintain & Update</strong>
+    <p>If you're with a client, create a monthly maintenance contract with your client and install some analytics software (google analytics, Fathom to give you stats about your website users - to adapt website structure and content), A blog is also a great way to keep users coming back to the website (and good for SEO)</p>
+    </li>
+</ol>
+
