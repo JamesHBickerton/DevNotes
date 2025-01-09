@@ -72,7 +72,7 @@ A <strong><'footer'></strong> element should still be based within the body.
 
 <strong><'div'></strong> are used when we don't want to attach a certain meaning to a certain container. <'nav'> for example will be needing to ensure that the links are under a navigation for example - to give the element meaning.
 
-An <'aside'> element is used for secondary information - related posts about the main part or as a sidebar. 
+An <'aside'> element is used for secondary information - related posts about the main part or as a sidebar. The main element is where you would want to use for your main information.  
 
 # CSS notes
 
@@ -410,4 +410,6 @@ Border-collapse CSS property can help to get rid of borders that are too close t
 In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). 
 
 <strong>How to darken background images:</strong> in order to do this, you need to create a background linear gradient. This would be by using the following: background-image: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6), url(img); - you have to use rgba in order to create opacity. This obviously doesn't have to be the above - you can use any other colours. Using greys can give "a softer touch". 
+
+<strong><'menu'></'menu'></strong> is an HTML element for web applications. It differs from a NAV element, as nav elements contain links to point to other places in the application. Menu is for menu buttons in a web application. This isn't really used unless you are building a web application.
 
