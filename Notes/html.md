@@ -444,3 +444,28 @@ Setting overflow (CSS property) to scroll will help to create a scroll bar (usua
     </li>
 </ol>
 
+## RESPONSIVE WEB DESIGN 
+
+A technique used to make a webpage adjust it's layout to a specific screen size (makes websites usable on all devices). 
+
+<ol>
+    <li><strong>Fluid layouts -</strong> allows the website to adapt to the viewport width/height. Use percentages instead of pixels. Always use the max-width property instead of the width property. 
+    </li>
+    <li><strong>Responsive units -</strong> using the 'rem' unit instead of pixels. This makes it easy for us to scale the entire page up or down automatically. 1rem is set to 10px - this makes it easy for us to calculate the length.</li>
+    <li><strong>Flexible/fluid images -</strong> images behave differently to text content as they do not scale automatically when we change the viewport. We usually do this by using percentages for image dimensions with the max-width property.</li>
+    <li><strong>Media queries -</strong> this brings all of the other ingredients together. This allows us to change CSS styles on certain viewport widths (or break points). This allows us to create different websites for different types of devices.</li>
+</ol>
+
+<strong>Desktop first vs mobile-first development</strong> - it is easier to learn desktop first development (then using media queries to shrink as you go). Designing mobile-first forces us to reduce websites and apps to the absolute essentials (this is the more modern way to design websites). 
+
+<strong>max-width</strong> property will make the element flexible because it will adapt to the viewport width. 
+
+<strong>REM (root element font size)</strong> the root of the document is the html document. If you don't define any font size, 1rem is equal to the browser's default font size (which the default is 16px). 
+
+How to get rid of JANKY borders: the reason why the borders become JANKY is due to the border being added to the outside of the element. To fix this you need to add the border to the INSIDE of the button. To fix this - instead of using the border property, you use the box-shadow property (below): 
+
+Instead of doing - border: 3px solid #fff; 
+You do this - box-shadow: inset 0 0 0 3px #fff; 
+The inset will help with creating the border on the inside of the button. 
+
+For button hover transitions - all 1s; (this would help to change the colour of your link and visited buttons (that have the main styling/original state) over a period of 1s. The transition property helps to change one property from one value to another. 
