@@ -55,7 +55,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 <strong><'input'></strong> elements also do not require closing tags. They have multiple types which can be seen below (but not limited to):
 
 <ul>
-<li><'input type="button"'></li> - in CSS buttons can have hover styles. - A button will always have a border so make sure the style is set to none if you want to style it. 
+<li><'input type="button"'></li> - in CSS buttons can have hover styles. - A button will always have a border so make sure the style is set to none if you want to style it.
 
 <li><'input type="checkbox"'></li>
 
@@ -139,6 +139,8 @@ When using absolute positioning to take a complete element out of the flow of th
 
 #nbsp; - is a non-breaking space to use in your code instead of "empty space". 
 
+In order to create an image in the background - you should apply the HTML property - background-image: url(). 
+
 # BOX MODEL - Will need to brush up on this 
 
 <ul>
@@ -151,6 +153,7 @@ When using absolute positioning to take a complete element out of the flow of th
 
 The final height of an element would be the bottom border, bottom padding, height, top padding, top border (NO COMMAS). 
 The final width of an element would be the left border, left padding, width, right padding, right border (NO COMMAS). 
+When styling a button, it is a good idea to have the second value of the padding shorthand usually double of the first (i.e 16px, 32px). 
 This above is just the default behaviour, you can change this throughout. 
 This means that the margin is not involved in the final width and height. 
 
@@ -184,6 +187,8 @@ Normal flow is the normal/default positioning (position: relative).
 Absolute flow (position: absolute) means that the element will be out of the flow. This would mean it doesn't have impact around the surrounding elements. You can use the top, bottom, left or right properties in order to position the element from it's <em>relatively positioned container</em>. This can be a great way to "fix" an item on the page, so it doesn't move elements around it when shifting the page. 
 When setting top, bottom, left or right - the pixels are in relation to the viewport (which is the visible part of the page in the browser). Usually this is not what we want, we usually want to make sure that it is positioned in relation to a <em>parent element</em>. Meaning we should set the parent element to relative. 
 We only use absolute positioning for buttons really, or small elements. 
+
+Viewport height (vh) i.e. 100vh (means it will take up the space of 100% of the viewport height). Can also be 50vh (which means it would be exactly half of the screen). 
 
 <strong>Pseudo-elements</strong> are written in the CSS with two colons (::). An example would be <em>'h1::first-letter'</em> which would mean that you can style every first leader of the h1 class. 
 
@@ -221,6 +226,8 @@ If having trouble centering text, try to use "'text-align: center'" on the paren
 <strong>Clearing Floats -</strong>: you will need to create a new element (usually a div with the class - clear) and then style it for clear: left, right or both. This is if you have collapsing heights. This is not usually best practice however so you can do the following: create another class for the element you are adjusting and name this clearfix. On CSS you can then create a pseudo property (usually ::after) and then define content (because it has to have some content - even if it is just '') and then display: block, then you can create another property clear: both; and it should do the same thing (rather than making an extra div for each). 
 
 <p>Box-sizing: border box - is a great tool to use in majority of the elements. It takes away from the default box model to make sure that the height and the width are fixed inside the border of an element when designing layouts. If there is extra padding and margins, it will subtract it from the total width to make sure the element does not disappear or go where you don't want it to go. <strong>It is usually applied to the universal selector at the start of the CSS</strong></p>
+
+When styling a container and wanting to center it (i.e. margin: 0 auto) you must provide a specific width. (i.e. width: 1200px). 
 
 # Flex Box 
 
