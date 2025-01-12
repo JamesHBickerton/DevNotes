@@ -20,6 +20,8 @@ A good structure to have at the top of your CSS stylesheet is as follows: <stron
     box-sizing: border-box; 
 }</strong>
 
+It is also common practice to split your css into multiple files! (i.e. using all of your general CSS and creating a folder called general.css to link to) - this way your code is easier to access and easier to go back to/read. 
+
 <strong><'li'></strong> items can form a list within a paragraph which can either be an unordered list <strong><'ul'></strong> or ordered list <strong><'ol'></strong>
 
 <strong><'img'></strong> tag is a self closing tag and usually require a source and alternate comment. For example: 
@@ -192,7 +194,7 @@ Viewport height (vh) i.e. 100vh (means it will take up the space of 100% of the 
 
 <em>Siblings</em> are all elements that are under the parent element. Using the <strong>adjacent-sibling</strong> pesudo-element will style the very next element in the HTML. The adjacent sibling selector would be for example: h3 <strong>+</strong> p::first-line - would mean only the paragraphs immediately after the h3 would be selected (and the first line obviously). 
 
-The most used pseudo-elements are the ::after and ::before pseudo-elements. Within both you need to specify the content. This way you can create elements outside of the "html" and create items in the "CSS". 
+The most used pseudo-elements are the ::after and ::before pseudo-elements. Within both you need to specify the content. This way you can create elements outside of the "html" and create items in the "CSS". These cannot be added to imgs. Specifying the width and content (even if content: "") is important. If you want to make a box, define the width as a percentage and padding-bottom as the height (as you can't use the height). The padding-bottom will act as the height as it will be the percentage of the parent's.
 
 If having trouble centering text, try to use "'text-align: center'" on the parent element - as they could be inline or inline-block elements. 
 
