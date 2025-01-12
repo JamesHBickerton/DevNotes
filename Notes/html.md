@@ -460,7 +460,7 @@ Setting overflow (CSS property) to scroll will help to create a scroll bar (usua
 A technique used to make a webpage adjust it's layout to a specific screen size (makes websites usable on all devices). 
 
 <ol>
-    <li><strong>Fluid layouts -</strong> allows the website to adapt to the viewport width/height. Use percentages instead of pixels. Always use the max-width property instead of the width property. 
+    <li><strong>Fluid layouts -</strong> allows the website to adapt to the viewport width/height. Use percentages instead of pixels. Always use the max-width property instead of the width property. The usual default is 1200px or 120rem. 
     </li>
     <li><strong>Responsive units -</strong> using the 'rem' unit instead of pixels. This makes it easy for us to scale the entire page up or down automatically. 1rem is set to 10px - this makes it easy for us to calculate the length.</li>
     <li><strong>Flexible/fluid images -</strong> images behave differently to text content as they do not scale automatically when we change the viewport. We usually do this by using percentages for image dimensions with the max-width property.</li>
