@@ -7,7 +7,7 @@ Headers can be h1-h6 throughout the document. Usually the header is within the B
 Comments can be made using the <!--task still to do->
 
 a <'section'> element can be used to give the html meaning rather than a <'div'> for web design, as a <'div'> element holds no semantic meaning.
-a <'span'> element can be used for inline text (and is preferred over a div - but this doesn't hold any semantic meaning. 
+a <'span'> element can be used for inline text (and is preferred over a div - but this doesn't hold any semantic meaning. This can be great for things like subheadings. If you were to style a span element, you would want to make this a block element.  
 a <'blockquote'> element is used when you want to quote text. 
 
 <'meta charset="UTF-8/'> - meta stands for meta data (data about the data). Charset is the character set and then UTF-8 encapsulates all the characters we use in the english language.
