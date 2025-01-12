@@ -468,4 +468,8 @@ Instead of doing - border: 3px solid #fff;
 You do this - box-shadow: inset 0 0 0 3px #fff; 
 The inset will help with creating the border on the inside of the button. 
 
-For button hover transitions - all 1s; (this would help to change the colour of your link and visited buttons (that have the main styling/original state) over a period of 1s. The transition property helps to change one property from one value to another. 
+For button hover transitions - all 1s; (this would help to change the colour of your link and visited buttons (that have the main styling/original state) over a period of 1s. The transition property helps to change one property from one value to another. A usual value is 0.3
+
+Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins to a class without having to completely write new code or wrap the component you want to add a small margin to in divs/flex boxes. You can then add this to the elements you would like to move by certain rem to the right. With these you would usually add the !important key word (i.e. margin-right: 1.6rem !important; 
+
+
