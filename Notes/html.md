@@ -399,7 +399,7 @@ To create "zebra stripes" in tables, you would just use the pseudo selector :nth
 
 Border-collapse CSS property can help to get rid of borders that are too close together. You would write border-collapse: collapse. This can also get rid of gaps between columns in tables. 
 
-<strong>Hero sections:</strong> Hero sections are sections that you usually see on a website's home page. The most common is where the text is on one side and then an image is on the other. The next most common is where there is background image and then text on the top (this is becoming less popular). You can have a hybrid layout too (which is a mix of the two). 
+<strong>Hero sections:</strong> Hero sections are sections that you usually see on a website's home page. The most common is where the text is on one side and then an image is on the other. The next most common is where there is background image and then text on the top (this is becoming less popular). You can have a hybrid layout too (which is a mix of the two). <strong>The hero section should always be slightly wider than the rest of the content</strong>. Hero sections should always have a class .hero (not a .container). 
 
 <strong>Call to action sections</strong> usually come at the end of the page where we want the user to take some 'action' - usually above the footer. Usually this will need to stand out using some visual hierarchy. Call to action sections can also be used to get the user to contact the company (just using contact details or forms). 
 
@@ -460,7 +460,7 @@ Setting overflow (CSS property) to scroll will help to create a scroll bar (usua
 A technique used to make a webpage adjust it's layout to a specific screen size (makes websites usable on all devices). 
 
 <ol>
-    <li><strong>Fluid layouts -</strong> allows the website to adapt to the viewport width/height. Use percentages instead of pixels. Always use the max-width property instead of the width property. The usual default is 1200px or 120rem. 
+    <li><strong>Fluid layouts -</strong> allows the website to adapt to the viewport width/height. Use percentages instead of pixels. Always use the max-width property instead of the width property. The usual default is 1200px or 120rem (or sometimes also 1140px). 
     </li>
     <li><strong>Responsive units -</strong> using the 'rem' unit instead of pixels. This makes it easy for us to scale the entire page up or down automatically. 1rem is set to 10px - this makes it easy for us to calculate the length.</li>
     <li><strong>Flexible/fluid images -</strong> images behave differently to text content as they do not scale automatically when we change the viewport. We usually do this by using percentages for image dimensions with the max-width property.</li>
