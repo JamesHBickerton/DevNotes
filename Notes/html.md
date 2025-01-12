@@ -485,4 +485,6 @@ For button hover transitions - all 1s; (this would help to change the colour of 
 
 Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins to a class without having to completely write new code or wrap the component you want to add a small margin to in divs/flex boxes. You can then add this to the elements you would like to move by certain rem to the right. With these you would usually add the !important key word (i.e. margin-right: 1.6rem !important; 
 
+<strong>Z index</strong> helps to position an item in front or behind anothe element (a minus element means that it will go behind, and positive means it will go in front) - as long as it is a higher number it will go in front. 
+
 
