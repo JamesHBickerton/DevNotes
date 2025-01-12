@@ -137,7 +137,7 @@ To find out which css style has priority, hover over the CSS and look at the Sel
 
 <strong>Inheritence</strong> - most properties related to text will get inherited
 
-When using absolute positioning to take a complete element out of the flow of the page, you must make sure to make the parent container's position to relative. Top and left will only use the dimensions of the PARENT element as the reference. 
+When using absolute positioning to take a complete element out of the flow of the page, you must make sure to make the parent container's position to relative. Top and left will only use the dimensions of the PARENT element as the reference. (refer to lecture 113 for a good recap of positioning). 
 
 #nbsp; - is a non-breaking space to use in your code instead of "empty space". 
 
