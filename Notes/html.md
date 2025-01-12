@@ -273,6 +273,17 @@ If you want a one dimensional layout - use flexbox, but if you want a two dimens
 
 <strong>Grid Container</strong> has 3 MAIN properties you can use: 
 
+<strong>Instead of having to repeat many grid CSS properties and filling up your stylesheet, it can be good practice to use basic classes in CSS (such as .grid, .grid--2-cols, .grid--3-cols - to create basic grid structures). Then just adding this on top of the class in html - see below</strong> 
+
+.grid {
+ display: grid; 
+ gap: 1.4rem
+ }
+
+ .grid--2-cols {
+  grid-template-columns: repeat(2, 1fr) 
+  }
+
 <ol>
     <li>grid-template-rows and grid-template-columns which show the track size usually in pixels or fr (fractional). Fr kind of acts as flex:1 on flexbox. To make 4 columns the same width using the fr property, you would write - grid-template-columns: repeat(4, 1fr); </li>
     <li>row-gaps and column-gaps - to create empty space between tracks</li>
