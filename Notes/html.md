@@ -28,7 +28,7 @@ It is also common practice to split your css into multiple files! (i.e. using al
 
 <'img src="link-of-photo" alt="picture-of-dog"'> - src is an example of an attribute which can describe elements. Alt will allow search engines to know what the image is actually about & allows blind people to use our website!
 
-Also always make sure you put your images in a seperate folder on the explorer tag. Images will also always take as much space as they can.
+Also always make sure you put your images in a seperate folder on the explorer tag. Images will also always take as much space as they can. You can also add a filter to images in CSS using the filter CSS property. 
 
 <strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
@@ -487,4 +487,5 @@ Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins
 
 <strong>Z index</strong> helps to position an item in front or behind anothe element (a minus element means that it will go behind, and positive means it will go in front) - as long as it is a higher number it will go in front. 
 
+When using ionicons - you need to copy the script from their website (which is now really hard to find - so copy this (<script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>) and paste it in your html just before the body element ends. 
 
