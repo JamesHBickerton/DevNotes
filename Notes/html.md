@@ -487,5 +487,5 @@ Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins
 
 <strong>Z index</strong> helps to position an item in front or behind anothe element (a minus element means that it will go behind, and positive means it will go in front) - as long as it is a higher number it will go in front. 
 
-When using ionicons - you need to copy the script from their website (which is now really hard to find - so copy this (<script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>) and paste it in your html just before the body element ends. 
+When using ionicons - you need to copy the script from their website (which is now really hard to find - so copy this (<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>) and paste it in your html just before the body element ends. 
 
