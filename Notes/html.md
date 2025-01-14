@@ -506,6 +506,10 @@ For forms, it is important to structure them like this:
 <'label' (which tells the user what to put into the input usually) 'for'='full-name' (the for property can help to link the label to the input's id)>Full Name</'label'>
 <'input' id='full-name' type='text' placeholder='John Smith'/> 
 etc... 
-    
 </'form'>
 
+A <'select'> box can create a select box but requires you to have <'option'> in between them i.e. 
+
+<'label' for="select-where">WHere did you hear from us?<'/label'>
+<'select' id="select-where"><option value="Friends"'>Friends & Family</'option'>
+</'select'>
