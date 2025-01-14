@@ -1,6 +1,6 @@
 # HTML & UDEMY COURSE NOTES (HTML & CSS NOTES) - BASICS
 
-Headers can be h1-h6 throughout the document. Usually the header is within the BODY of the document. 
+Headings can be h1-h6 and can be used throughout the document. They are usually used in new section elements. 
 
 <strong><'em'></strong> is a tag to make things italic and <strong><'strong'></strong> is a tag to make things bold - this is more semantic and better practice when compared to <'i'> and <'e'>.
 
@@ -28,7 +28,7 @@ It is also common practice to split your css into multiple files! (i.e. using al
 
 <'img src="link-of-photo" alt="picture-of-dog"'> - src is an example of an attribute which can describe elements. Alt will allow search engines to know what the image is actually about & allows blind people to use our website!
 
-Also always make sure you put your images in a seperate folder on the explorer tag. Images will also always take as much space as they can. You can also add a filter to images in CSS using the filter CSS property. 
+Also always make sure you put your images in a seperate folder on the explorer tag. Images will also always take as much space as they can. You can also add a filter to images in CSS using the filter CSS property. If you see a space between img's that you don't want there, you have to change it to display: block; 
 
 <strong><'a'></strong> tags are anchor tags that source links from another page and are not self-closing tags.
 
@@ -106,6 +106,7 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 <li>'a:active' - this will style the anchor element when you click the hyperlink</li>
 </ul>
 
+
 To style the above in CSS - you can save some time by doing the following (this is usually best practice): For example: 
 
 .class-name:link, .class-name:visited {
@@ -115,6 +116,7 @@ color: black;
 color: white; 
 }
 
+A common theme for links is having the link and visited state (as inline-block) with a border-bottom (i.e. 1px solid currentColor) and then getting rid of the underline/border-bottom when the link is hovered/active (i.e. 1px solid transparent) - can't just get rid of the border-bottom as it will become janky. 
 
 ## Conflicts between SELECTORS (IMPORTANT PART OF CSS)
 
@@ -352,7 +354,7 @@ Web designers are designers who create the overall look and feel for the web pag
     <p>Position important elements closer to the top of the page (attention will then follow from top to bottom).</p>
         <p>Images draw a lot of attention so you will need to use these mindfully. You will also need to use white space appropriately to highlight important elements.</p>
         <p>For text elements - use font size, font weight, color (both background and text color) and white space to help convey importance. It is important to emphasize title, sub-titles, links, buttons, icons and data points (and then important to de-emphasize less important text like labels or secondary information).</p>
-        <p>To establish visual hierarchy bewteen components - use background color, shadow and borders. It is important to emphasize things like testimonials, call-to-action sections, highlight sections, preview cards, forms, pricing tables, and important rows/columns.</p>
+        <p>To establish visual hierarchy bewteen components - use background color, shadow and borders. It is important to emphasize things like testimonials, call-to-action sections, highlight sections, preview cards (if you have two cards or more with images at the top, they need to have the exact same aspect ratio or same dimensions, forms, pricing tables, and important rows/columns.</p>
     </li>
     <li><strong>9. User Experience/Responsiveness (UI/UX):</strong> UI is the graphical interface and UX is the user experience. 
     <p>Goals for UX design is to ensure that the goals are met for both company/business and the user. 
@@ -431,7 +433,7 @@ In order to create an image in the background - you should apply the CSS propert
 
 When wanting to put space between elements on a page - you can use the margin (whether that be margin-left, margin-right) to auto and this would mean that the element would occupy all of the space needed (and then push out through the content). 
 
-Setting overflow (CSS property) to scroll will help to create a scroll bar (usually when elements don't fit in the container). 
+Setting overflow (CSS property) to scroll will help to create a scroll bar (usually when elements don't fit in the container). Setting overflow: hidden can help if the top part of your card/image is not inheriting the border radius.
 
 ## 7 steps to a great website
 
