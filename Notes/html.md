@@ -426,9 +426,12 @@ Pricing usually comes just before the call to action section.
     <li>Asymmetrical layouts</li>
 </ol>
 
-In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). 
+In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). If you have to go "one level up in the file tree" on VS code you will need to do background-image: url("../ - to find the folder. 
 
 <strong>How to darken background images:</strong> in order to do this, you need to create a background linear gradient. This would be by using the following: background-image: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6), url(img); - you have to use rgba in order to create opacity. This obviously doesn't have to be the above - you can use any other colours. Using greys can give "a softer touch". 
+
+To create a background with a gradient, you will need to use the following: 
+background-image: linear-gradient(). In the parenthesis you would have degrees first (90deg would mean gradient would be left-right and 180deg would be up and down) OR you can have "to right" (without the comma's), "to left", "to right bottom" etc. 
 
 <strong><'menu'></'menu'></strong> is an HTML element for web applications. It differs from a NAV element, as nav elements contain links to point to other places in the application. Menu is for menu buttons in a web application. This isn't really used unless you are building a web application.
 
