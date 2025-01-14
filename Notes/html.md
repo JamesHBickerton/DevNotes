@@ -426,7 +426,11 @@ Pricing usually comes just before the call to action section.
     <li>Asymmetrical layouts</li>
 </ol>
 
-In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). If you have to go "one level up in the file tree" on VS code you will need to do background-image: url("../ - to find the folder. 
+In order to create an image in the background - you should apply the CSS property - background-image: url(). To change the size, you will use background-size: cover (can use contain, but cover is better in some cases). 
+
+If you have to go "one level up in the file tree" on VS code you will need to do background-image: url("../ - to find the folder. The same case would be for two levels up background-image: url("../../ - etc. 
+
+background-position: center etc - can be used to position an image. 
 
 <strong>How to darken background images:</strong> in order to do this, you need to create a background linear gradient. This would be by using the following: background-image: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6), url(img); - you have to use rgba in order to create opacity. This obviously doesn't have to be the above - you can use any other colours. Using greys can give "a softer touch". 
 
@@ -494,4 +498,14 @@ Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins
 <strong>Z index</strong> helps to position an item in front or behind anothe element (a minus element means that it will go behind, and positive means it will go in front) - as long as it is a higher number it will go in front. 
 
 When using ionicons - you need to copy the script from their website (which is now really hard to find - so copy this (<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>) and paste it in your html just before the body element ends. 
+
+role attribute: describes the role of an element in programs that can make use of it, such as screen readers or magnifiers. So role="img" would tell the screen reader that it is an image. This would usually be accompanied with an aria-label which helps to describe the content. aria-label="woman enjoying food". 
+
+For forms, it is important to structure them like this: 
+<'form' 'class'='form' action='#'> - this would usually have a url to send the information to
+<'label' (which tells the user what to put into the input usually) 'for'='full-name' (the for property can help to link the label to the input's id)>Full Name</'label'>
+<'input' id='full-name' type='text' placeholder='John Smith'/> 
+etc... 
+    
+</'form'>
 
