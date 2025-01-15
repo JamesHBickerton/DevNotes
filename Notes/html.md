@@ -508,6 +508,8 @@ For forms, it is important to structure them like this:
 etc... 
 </'form'>
 
+To style a placeholder - you can use the input::placeholder (pseudoelement) to change the colour. 
+
 You usually do not give forms classes due to the many attributes they have. You usually would just style the descendant selector i.e. .cta-form label {}, .cta-form input etc. To put the label and the input on seperate lines, you would need to make the label element display: block; 
 
 A <'select'> box can create a select box but requires you to have <'option'> in between them i.e. 
@@ -518,4 +520,6 @@ A <'select'> box can create a select box but requires you to have <'option'> in 
 
 The required property works on input and select elements. 
 
-On input elements, to make them wider you would usually make the width: 100% to make them as wide as the parent (while also adding some padding). 
+On input elements, to make them wider you would usually make the width: 100% to make them as wide as the parent (while also adding some padding). Input and button elements do not inherit the font from the body - but you can force them to by: font-family: inherit; which will inherit the font from the parent. You can also do this with colours. You want to remove the border of the input too. It is also a good idea to make a box-shadow of input fields: i.e. (0 1px 2px rgba(0, 0, 0, 0.1); and with/without border radius and background color. 
+
+<strong>A focus state</strong> is when you hover over an input and the background goes blue. Or same if you press tab on the page and it goes to the buttons (makes it easy for users that only use a keyboard to get through the page). To style this on the page, you will need to create a general CSS class of: *:focus { outline: none AND it is nice to add a box-shadow to ensure accessibiilty is there - DO NOT LEAVE IT WITH NO OUTLINE. A box-shadow instead of border-radius will ensure it just creates an even shadow around the element. 
