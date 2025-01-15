@@ -346,6 +346,7 @@ Web designers are designers who create the overall look and feel for the web pag
         <p>Use icons to create "feature blocks" which can help to describe the features of a website/service. To keep icons neutral, use the same colour as your text. To draw more attention, use brand or different colours.</p>
         <p>Dont make icons bigger than they are designed for - if anything, encase them in a shape.</p>
         <p>To fill outlined icons with a colour - use the "stroke" CSS property. For filled icons, use the "fill" property in CSS.THIS IS SUPER IMPORTANT FOR STYLING ICONS.</p>
+        <p>Icons usually have a standard dimension of 24px x 24px</p>
     </li>
     <li><strong>5. Shadows:</strong> The more shadow there is, the further away the element is away from the interface. Shadows help to create depth. Use less shadows for more serious websites. Use light shadows to make things look more natural (mainly on items you want to draw attention to. Use medium sized shadows for bigger elements that you want to stand out. Use larger shadows for navigations and items that float above the rest of the website. To use shadows, use the box-shadow CSS property (or text-shadow CSS property for text - the only difference is that text-shadow does not have the fourth value) - example 20px (horizontal shadow - usually 0px) 20px (vertical shadow) 20px (blur) 10px (scales the shadow as a radius - if you don't specify the fourth it will just automatically be 0 - usually do leave it to 0), color (rgba). The value of shadow should be <0.1 (can look good as 0.07). Usually for shadows you want the light to be coming from the top. 
     The darker the colour of the background, the darker the shadow has to be</li>
@@ -522,4 +523,12 @@ The required property works on input and select elements.
 
 On input elements, to make them wider you would usually make the width: 100% to make them as wide as the parent (while also adding some padding). Input and button elements do not inherit the font from the body - but you can force them to by: font-family: inherit; which will inherit the font from the parent. You can also do this with colours. You want to remove the border of the input too. It is also a good idea to make a box-shadow of input fields: i.e. (0 1px 2px rgba(0, 0, 0, 0.1); and with/without border radius and background color. 
 
-<strong>A focus state</strong> is when you hover over an input and the background goes blue. Or same if you press tab on the page and it goes to the buttons (makes it easy for users that only use a keyboard to get through the page). To style this on the page, you will need to create a general CSS class of: *:focus { outline: none AND it is nice to add a box-shadow to ensure accessibiilty is there - DO NOT LEAVE IT WITH NO OUTLINE. A box-shadow instead of border-radius will ensure it just creates an even shadow around the element. 
+<strong>A focus state</strong> is when you hover over an input and the background goes blue. Or same if you press tab on the page and it goes to the buttons (makes it easy for users that only use a keyboard to get through the page). To style this on the page, you will need to create a general CSS class of: *:focus { outline: none AND it is nice to add a box-shadow to ensure accessibiilty is there - DO NOT LEAVE IT WITH NO OUTLINE. A box-shadow instead of border-radius will ensure it just creates an even shadow around the element.
+
+When designing footers, it is important to have the address in an <'address'> element. You can also create specific anchor tags which describe and utilise phone numbers and emails. Examples below: 
+
+Phone: <'a href="tel:0211991223"'>0211991223</a'>
+Email: <'a href="mailto:jamesbickertonaut@gmail.com">jamesbickertonaut@gmail.com</a'>
+
+The address element has default formatting of italic, so you need to change
+
