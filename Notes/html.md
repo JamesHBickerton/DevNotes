@@ -508,8 +508,14 @@ For forms, it is important to structure them like this:
 etc... 
 </'form'>
 
+You usually do not give forms classes due to the many attributes they have. You usually would just style the descendant selector i.e. .cta-form label {}, .cta-form input etc. To put the label and the input on seperate lines, you would need to make the label element display: block; 
+
 A <'select'> box can create a select box but requires you to have <'option'> in between them i.e. 
 
 <'label' for="select-where">WHere did you hear from us?<'/label'>
 <'select' id="select-where"><option value="Friends"'>Friends & Family</'option'>
 </'select'>
+
+The required property works on input and select elements. 
+
+On input elements, to make them wider you would usually make the width: 100% to make them as wide as the parent (while also adding some padding). 
