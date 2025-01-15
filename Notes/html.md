@@ -40,7 +40,7 @@ Usually anchor tags should also have a target which makes sure the link opens in
 
 You can also use the # as a placeholder after the link - <'a' href="#"></'a>. 
 
-A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>. These can sometime also contain your h1/h2 elements for example. It is a good idea to add an "ul" when storing your anchor tags in a nav - this makes it more semantic. 
+A <strong><'nav'></strong> element is a special element to help store links - navigation. These are usually stored within header elements - <strong><'header'></strong>. These can sometime also contain your h1/h2 elements for example. It is a good idea to add an "ul" when storing your anchor tags in a nav - this makes it more semantic. If you are using LOGOs in a header, it is important to wrap the logo in a <'anchor'> tag so that when people click on the logo, it goes back to the top of the page. 
 
 <strong>WHEN STYLING A NAV SECTION, SET THE DISPLAY OF THE NAV TO FLEX AND THEN YOU CAN ORGANISE YOUR CONTENT AS YOU LIKE (I.E. JUSTIFY-CONTENT: SPACE BETWEEN). 
 
@@ -70,7 +70,7 @@ listed items can be ordered <strong><'ol'></strong> or unordered <strong><'ul'><
 
 input elements require <strong><'label'></strong> elements to define the values. Input elements have a lot of default styling - such as borders, backgrounds and outlines. 
 
-A <strong><'footer'></strong> element should still be based within the body.
+A <strong><'footer'></strong> element should still be based within the body (but outside of the main element). 
 
 <strong><'div'></strong> are used when we don't want to attach a certain meaning to a certain container. <'nav'> for example will be needing to ensure that the links are under a navigation for example - to give the element meaning.
 
