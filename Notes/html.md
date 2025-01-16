@@ -106,6 +106,7 @@ When styling hyperlinks or 'a', you should make sure to style the 'a' in all of 
 <li>'a:active' - this will style the anchor element when you click the hyperlink</li>
 </ul>
 
+ID selectors are a great way to use as anchor points on a page for links. So if you click a button it will go to the section of the page. You will just have to use the href # as the #id. 
 
 To style the above in CSS - you can save some time by doing the following (this is usually best practice): For example: 
 
@@ -563,3 +564,13 @@ When display is set to "none" animations will not work. To hide an element (like
     visibility: hidden;
 
 On the open class (i.e. nav-open) you would then need to make the opacity: 1, pointer-events:auto, and visbility: visible (to reverse it). 
+
+#SHORT INTRODUCTION TO JAVASCRIPT 
+
+To make sure the date is always up to date (in terms of the year - for copyright sections in the footer): 
+
+const yearEl = document.querySelector(" .year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+Scroll animations can be done with the scroll-behaviour property in CSS (usually in the html selector) but this only works with google chrome and firefox browsers. This didn't use to work with safari, but apparently does now..
