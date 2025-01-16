@@ -539,7 +539,7 @@ How media queries work with max-width: This max-width will decide whether or not
 
 Breakpoints:
 <ul>
-    <li>Most phones are between 300-500px</li>
+    <li>Most phones are between 300-500px. Usually good to do a final media query at around 600px</li>
     <li>Most tablets are between 600-900px</li>
     <li>Most landscape tablets are between 900-1100px</li>
     <li>Most desktops are 1200px and above - important to do 1200px</li>
