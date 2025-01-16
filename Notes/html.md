@@ -549,7 +549,7 @@ It is important to set breakpoints where the design breaks down. We usually put 
 
 If there are conflicting styles with the media query, it is the style that appears last that overrides. 
 
-<strong>Media queries do not respond to the basic setting of font-size: 62.5% in the html settings. 1rem does not equate to 10px (1rem will always be the default browser font size setting). 
+<strong>Media queries do not respond to the basic setting of font-size: 62.5% in the html settings. 1rem does not equate to 10px (1rem will always be the default browser font size setting). Media queries should have a range between 200px. 
 
 rem and em do NOT depend on html font-size in media queries. Instead we assume 1rem = 1em = 16px. We should not use rem in media queries, we should use em (which are the exact same). Which means if you have a 1200px value where it looks weird, you would divide it by 16 to get the rounded number for your breakpoint. 
 
