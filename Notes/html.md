@@ -492,7 +492,7 @@ Instead of doing - border: 3px solid #fff;
 You do this - box-shadow: inset 0 0 0 3px #fff; 
 The inset will help with creating the border on the inside of the button. 
 
-For button hover transitions - all 1s; (this would help to change the colour of your link and visited buttons (that have the main styling/original state) over a period of 1s. The transition property helps to change one property from one value to another. A usual value is 0.3
+For button hover transitions - all 1s; (this would help to change the colour of your link and visited buttons (that have the main styling/original state) over a period of 1s. The transition property helps to change one property from one value to another. A usual value is 0.3. The third value of a transition is the ease attribute. 
 
 Adding a "helper class" i.e. .margin-right-sm will mean that you can add margins to a class without having to completely write new code or wrap the component you want to add a small margin to in divs/flex boxes. You can then add this to the elements you would like to move by certain rem to the right. With these you would usually add the !important key word (i.e. margin-right: 1.6rem !important; 
 
@@ -553,3 +553,13 @@ If there are conflicting styles with the media query, it is the style that appea
 
 rem and em do NOT depend on html font-size in media queries. Instead we assume 1rem = 1em = 16px. We should not use rem in media queries, we should use em (which are the exact same). Which means if you have a 1200px value where it looks weird, you would divide it by 16 to get the rounded number for your breakpoint. 
 
+When display is set to "none" animations will not work. To hide an element (like a nav when doing media-queries for mobile devices) without using display:none - you can do this: 
+
+1. Hide the element visually
+    opacity: 0;
+2. Make it unaccessible to mouse/keyboard
+    pointer-events: none;
+3 Hide it from screen readers
+    visibility: hidden;
+
+On the open class (i.e. nav-open) you would then need to make the opacity: 1, pointer-events:auto, and visbility: visible (to reverse it). 
