@@ -532,3 +532,24 @@ Email: <'a href="mailto:jamesbickertonaut@gmail.com">jamesbickertonaut@gmail.com
 
 The address element has default formatting of italic, so you need to change
 
+#Media Queries 
+
+<strong>Media queries are tools to override specific parts of our CSS at certain viewport widths</strong>. It's a good idea to create a new CSS file for your media queries. 
+How media queries work with max-width: This max-width will decide whether or not the media query will still apply. So a max-width of 600px (which is the 'breakpoint') for example will mean the styles will apply until AFTER 600px (where the styles will then no longer work).
+
+Breakpoints:
+<ul>
+    <li>Most phones are between 300-500px</li>
+    <li>Most tablets are between 600-900px</li>
+    <li>Most landscape tablets are between 900-1100px</li>
+    <li>Most desktops are 1200px and above - important to do 1200px</li>
+</ul>
+
+It is important to set breakpoints where the design breaks down. We usually put these break points where the design starts to "look weird and out of place". 
+
+If there are conflicting styles with the media query, it is the style that appears last that overrides. 
+
+<strong>Media queries do not respond to the basic setting of font-size: 62.5% in the html settings. 1rem does not equate to 10px (1rem will always be the default browser font size setting). 
+
+rem and em do NOT depend on html font-size in media queries. Instead we assume 1rem = 1em = 16px. We should not use rem in media queries, we should use em (which are the exact same). Which means if you have a 1200px value where it looks weird, you would divide it by 16 to get the rounded number for your breakpoint. 
+
