@@ -576,3 +576,30 @@ yearEl.textContent = currentYear;
 Scroll animations can be done with the scroll-behaviour property in CSS (usually in the html selector) but this only works with google chrome and firefox browsers. This didn't use to work with safari, but apparently does now..
 
 When wanting to make a "sticky" navigation bar, you need to use the position: fixed (and be mindful that this takes it out of the flow, similar to absolute positioning). You will then need to define a height (such as 8rem) and width (100%) and play around with the padding/background colour.  
+
+Meta description - shows a definition of our website. <'meta' name="description" content="which would have the description in it"/>
+
+Fav-icon - replaces the default icon on the tab of the internet page. You would add this img after the meta text. To do this: 
+
+<link 'rel'='icon' href='wherever the image is saved' /> 
+
+It is also important to add icons to iOs and android devices for when users save a website to their favourites. iOS devices need the icon to be 180x180(px), whereas android need 2 (512x512px + 192x192px). To do this for iOs devices: 
+
+<link 'rel'='apple-touch-icon' href='whereever img is saved' /> 
+
+To do this for android devices, you need to create a new file - manifest.webmanifest and then in that file: 
+
+'{
+  "icons": [
+    { "src": "img/fav-icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/fav-icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}'
+
+You will then have to link it in your html - <link 'rel'="manifest" href="manifest.webmanifest'"/>
+
+Optimising images: it's important to do the analysis on the biggest size it will ever be. Start with a really big image if you have it. The intrinsic size (in dev tools should be 2 x bigger than the rendered size). You can round up from like 570px to 600px to then double it (usually just the width, which is the first number). Using mark up on mac is really easy. 
+
+After this, you will need to compress the image. To do this - squoosh website. Use webP compression and play around with quality. You ideally want it to be <200KB per image. Lecture 145 is important if you cannot make sense of this. 
+
+
