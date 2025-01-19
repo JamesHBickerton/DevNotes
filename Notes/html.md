@@ -575,4 +575,4 @@ yearEl.textContent = currentYear;
 
 Scroll animations can be done with the scroll-behaviour property in CSS (usually in the html selector) but this only works with google chrome and firefox browsers. This didn't use to work with safari, but apparently does now..
 
-When wanting to make a "sticky" navigation bar, you need to use the position: fixed (and be mindful that this takes it out of the flow, similar to absolute positioning). You will then need to define a height (such as 8rem) and width (100%) and play around with the padding/background colour. 
+When wanting to make a "sticky" navigation bar, you need to use the position: fixed (and be mindful that this takes it out of the flow, similar to absolute positioning). You will then need to define a height (such as 8rem) and width (100%) and play around with the padding/background colour.  
