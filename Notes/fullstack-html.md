@@ -24,7 +24,10 @@
 ## Frontend Development
 
 ### HTML
-- Notes on structure and semantics
+- Notes on structure and semantics that I haven't included on my initial devnotes.
+- `<hr />` and `<br />` elements are void elements. The hr will make a horizontal line and the br element will make a break in the line. 
+
+
 - Key elements and their uses
 
 ### CSS
