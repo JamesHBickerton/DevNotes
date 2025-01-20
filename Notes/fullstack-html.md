@@ -25,7 +25,8 @@
 
 ### HTML
 - Notes on structure and semantics that I haven't included on my initial devnotes.
-- `<hr />` and `<br />` elements are void elements. The hr will make a horizontal line and the br element will make a break in the line. 
+- `<hr />` and `<br />` elements are void elements. The hr will make a horizontal line and the br element will make a break in the line. But only use these sparingly due to accessibility issues.
+- `../dog.png` will mean that the file directory needs to go further up the "file tree" whereas `./dog.png` means it will stay at the current directory/file path (the folder your png img is in). 
 
 
 - Key elements and their uses
