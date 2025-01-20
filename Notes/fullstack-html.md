@@ -32,4 +32,6 @@
 - Key elements and their uses
 
 ### CSS
-- It is good practice to use the rem (root em) for font-size. This means the font-size will scale up in relation to the root (not the parent - which is the case for the em measurement). 
+- It is good practice to use the rem (root em) for font-size. This means the font-size will scale up in relation to the root (not the parent - which is the case for the em measurement).
+- Borders go outwards, rather than inwards - so this doesn't change the width/height of an element.
+- 
