@@ -34,4 +34,5 @@
 ### CSS
 - It is good practice to use the rem (root em) for font-size. This means the font-size will scale up in relation to the root (not the parent - which is the case for the em measurement).
 - Borders go outwards, rather than inwards - so this doesn't change the width/height of an element.
-- 
+- When adding border (similar to margin and padding - going clockwise around the element) - you need to use border-width, as border: 10px 20px 10px 20px will not work. 
+- Pesticide (I have added to Chrome Extension) is a great way of seeing everything on screen so we can see div's, elements, alignment and sizing. 
