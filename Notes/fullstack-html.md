@@ -37,3 +37,10 @@
 - When adding border (similar to margin and padding - going clockwise around the element) - you need to use border-width, as border: 10px 20px 10px 20px will not work. 
 - Pesticide (I have added to Chrome Extension) is a great way of seeing everything on screen so we can see div's, elements, alignment and sizing.
 - Priority in order (from most to least) - ID, attribute ('li[draggable]'), class, element. 
+- The `>` bracket can be used to select the DIRECT child element. selector > selector for example.
+- The `selector (ancestor) selector (descendant) {` is a descendant selector - meaning that the descendant selector will be styled as the ancestor IF the ancestor is selected. This is many levels deep (so doesn't have to be the direct child) - but has to be within their enclosing brackets.
+- Chaining selectors i.e. `selectorselector {` have no space between the selectors. If you have a bare element (i.e. h1) this will have to go before the class or id selector.
+- <strong>Static positioning</strong> - default positioning - within the normal flow of a website.
+- <strong>Relative positioning</strong> - item is positioned relative to it's default position (or relative from where it 'should' be).
+- <strong>Absolute positioning</strong> - this will be positioned relative to it's nearest positioned ancestor (or the top left hand corner of the webpage). This is why you need to put `position: relative` on the nearest ancestor and `position: absolute` on the descendant so that the descendant is positioned in relation to the nearest ancestor.
+- <strong>Fixed positioning</strong> - positioned to the top left window of the browser (stays in one place no matter how you are scrolling). 
