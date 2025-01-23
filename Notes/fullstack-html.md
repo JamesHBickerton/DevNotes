@@ -45,4 +45,6 @@
 - <strong>Absolute positioning</strong> - this will be positioned relative to it's nearest positioned ancestor (or the top left hand corner of the webpage). This is why you need to put `position: relative` on the nearest ancestor and `position: absolute` on the descendant so that the descendant is positioned in relation to the nearest ancestor.
 - <strong>Fixed positioning</strong> - positioned to the top left window of the browser (stays in one place no matter how you are scrolling). 
 - `inline block` elements are a combination because you can set their height and width, but also can still be inline elements. For more info - https://appbrewery.github.io/css-display/
-- Only use float if you want to wrap text around an image. 
+- Only use float if you want to wrap text around an image.
+
+
