@@ -38,13 +38,22 @@
 - Pesticide (I have added to Chrome Extension) is a great way of seeing everything on screen so we can see div's, elements, alignment and sizing.
 - Priority in order (from most to least) - ID, attribute ('li[draggable]'), class, element. 
 - The `>` bracket can be used to select the DIRECT child element. selector > selector for example.
+
 - The `selector (ancestor) selector (descendant) {` is a descendant selector - meaning that the descendant selector will be styled as the ancestor IF the ancestor is selected. This is many levels deep (so doesn't have to be the direct child) - but has to be within their enclosing brackets.
 - Chaining selectors i.e. `selectorselector {` have no space between the selectors. If you have a bare element (i.e. h1) this will have to go before the class or id selector.
+
+
 - <strong>Static positioning</strong> - default positioning - within the normal flow of a website.
 - <strong>Relative positioning</strong> - item is positioned relative to it's default position (or relative from where it 'should' be).
 - <strong>Absolute positioning</strong> - this will be positioned relative to it's nearest positioned ancestor (or the top left hand corner of the webpage). This is why you need to put `position: relative` on the nearest ancestor and `position: absolute` on the descendant so that the descendant is positioned in relation to the nearest ancestor.
-- <strong>Fixed positioning</strong> - positioned to the top left window of the browser (stays in one place no matter how you are scrolling). 
+- <strong>Fixed positioning</strong> - positioned to the top left window of the browser (stays in one place no matter how you are scrolling).
+
+
 - `inline block` elements are a combination because you can set their height and width, but also can still be inline elements. For more info - https://appbrewery.github.io/css-display/
 - Only use float if you want to wrap text around an image.
 - You can use `display: inline-flex` so that the flex box components do not occupy all of the available space (this means that they will only take up whatever they need or whatever is displayed - i.e. flex-basis: 100px).
-- `align-content` is similar to `align-items` but it only works if the `flex-wrap: wrap` 
+- `align-content` is similar to `align-items` but it only works if the `flex-wrap: wrap`
+- If you set the `flex-basis` to a value, and the flex-item already has a set width, the `flex-basis` will override the `width` due to priority. This means it is a better idea to use `flex-basis`. `max width` and `min-width` would then ovverride the `flex-basis` due to priority too.
+- Remember the shorthand flex: (grow) (shrink) (basis). `flex: 1` means that the grow and shrink are 1, and the basis is 0. 
+
+
