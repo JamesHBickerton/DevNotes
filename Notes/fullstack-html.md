@@ -54,6 +54,7 @@
 - You can use `display: inline-flex` so that the flex box components do not occupy all of the available space (this means that they will only take up whatever they need or whatever is displayed - i.e. flex-basis: 100px).
 - `align-content` is similar to `align-items` but it only works if the `flex-wrap: wrap`
 - If you set the `flex-basis` to a value, and the flex-item already has a set width, the `flex-basis` will override the `width` due to priority. This means it is a better idea to use `flex-basis`. `max width` and `min-width` would then ovverride the `flex-basis` due to priority too.
-- Remember the shorthand flex: (grow) (shrink) (basis). `flex: 1` means that the grow and shrink are 1, and the basis is 0. 
+- Remember the shorthand flex: (grow) (shrink) (basis). `flex: 1` means that the grow and shrink are 1, and the basis is 0.
+- Examples: https://appbrewery.github.io/flexbox-sizing-exercise/
 
 
