@@ -46,5 +46,5 @@
 - <strong>Fixed positioning</strong> - positioned to the top left window of the browser (stays in one place no matter how you are scrolling). 
 - `inline block` elements are a combination because you can set their height and width, but also can still be inline elements. For more info - https://appbrewery.github.io/css-display/
 - Only use float if you want to wrap text around an image.
-- You can use `display: inline-flex` so that the flex box components do not occupy all of the available space (this means that they will only take up whatever they need or whatever is displayed - i.e. flex-basis: 100px). 
-
+- You can use `display: inline-flex` so that the flex box components do not occupy all of the available space (this means that they will only take up whatever they need or whatever is displayed - i.e. flex-basis: 100px).
+- `align-content` is similar to `align-items` but it only works if the `flex-wrap: wrap` 
