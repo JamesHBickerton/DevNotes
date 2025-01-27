@@ -57,6 +57,6 @@
 - Remember the shorthand flex: (grow) (shrink) (basis). `flex: 1` means that the grow and shrink are 1, and the basis is 0.
 - Examples: https://appbrewery.github.io/flexbox-sizing-exercise/
 
-- It is a better idea to use 1fr for CSS grid as this will be more responsive moving forward.
+- It is a better idea to use `1fr` for CSS grid as this will be more responsive moving forward.
 - When you use the value `auto` on a row, it will fit to the content and if you use it on a column it will try to go to 100%. A good play around website would be the following: https://appbrewery.github.io/grid-sizing/
-- Remember: 1fr is a fractional unit. 
+- Remember: `1fr` is a fractional unit. 
