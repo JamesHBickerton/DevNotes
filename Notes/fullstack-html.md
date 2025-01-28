@@ -60,4 +60,7 @@
 - It is a better idea to use `1fr` for CSS grid as this will be more responsive moving forward.
 - When you use the value `auto` on a row, it will fit to the content and if you use it on a column it will try to go to 100%. A good play around website would be the following: https://appbrewery.github.io/grid-sizing/
 - You can also use `minmax(200px, 500px)` as a value for CSS grid-template-columns/rows. 
-- Remember: `1fr` is a fractional unit. 
+- Remember: `1fr` is a fractional unit.
+- `grid-auto-rows` and `grid-auto-columns` you will need to look at how to do these properly.
+- `grid-column` and `grid-row` are actually shorthand properties for `grid-column-start` and `grid-column-end`.
+- 
