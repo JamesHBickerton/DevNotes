@@ -64,4 +64,5 @@
 - `grid-auto-rows` and `grid-auto-columns` you will need to look at how to do these properly.
 - `grid-column` and `grid-row` are actually shorthand properties for `grid-column-start` and `grid-column-end`.
 - `grid-area` is a combination (shows the coordinates for a grid item) for four values seperated by ` / `. The first is `grid-row-start` then `grid-column-start` then `grid-row-end` then `grid-column-end`. To use `grid-area` though, each grid-item will need to use `grid-area` too.
-- `grid-template` is the short-hand for `grid-template-rows` & `grid-template-columns` in one line of code. You cant use the `repeat()` function here. 
+- `grid-template` is the short-hand for `grid-template-rows` & `grid-template-columns` in one line of code. You cant use the `repeat()` function here.
+- In order to change the colours of the grid lines/gaps you need to just set the background colour to black/whatever colour you want. 
