@@ -84,7 +84,8 @@
 - Spacing can be created by the bootstrap flow of: `{property}-(size)-(size)`
 - Example could be `mb-2` which would mean a margin-bottom: 2.
 - To activate dark-mode to your website, you just need to add `data-bs-theme="dark"` after your `<html lang="en">` but within the brackets obviously.
-- Have a look at free bootstrap templates to get some ideas of templates. 
+- Have a look at free bootstrap templates to get some ideas of templates.
+- Have a look at the bootstrap template - saved in snippets on desktop. 
 
 
 
