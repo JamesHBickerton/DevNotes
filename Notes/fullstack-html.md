@@ -4,6 +4,7 @@
 1. [Frontend Development](#frontend-development)
     - [HTML](#html)
     - [CSS](#css)
+    - [Bootstrap Framework](#bootstrap)
     - [JavaScript](#javascript)
     - [Frontend Frameworks](#frontend-frameworks)
 2. [Backend Development](#backend-development)
@@ -65,4 +66,21 @@
 - `grid-column` and `grid-row` are actually shorthand properties for `grid-column-start` and `grid-column-end`.
 - `grid-area` is a combination (shows the coordinates for a grid item) for four values seperated by ` / `. The first is `grid-row-start` then `grid-column-start` then `grid-row-end` then `grid-column-end`. To use `grid-area` though, each grid-item will need to use `grid-area` too.
 - `grid-template` is the short-hand for `grid-template-rows` & `grid-template-columns` in one line of code. You cant use the `repeat()` function here.
-- In order to change the colours of the grid lines/gaps you need to just set the background colour to black/whatever colour you want. 
+- In order to change the colours of the grid lines/gaps you need to just set the background colour to black/whatever colour you want.
+
+### Bootstrap Framework (CSS) 
+
+- Bootstrap is a type of CSS framework for more of a 'mobile first' approach. This has predefined CSS code and styling by using their components (designed by professional designers).
+- This makes it easy and fast to use, with very consistent styling. You also don't really need to use media queries, as it is usually responsive. 
+- The negatives of this is that it can create 'class bloat' meaning that all of the styling would be in the HTML, making it quite busy.
+- It also makes it very hard to customise (making it hard to control).
+- The best way to include this is using a CDN (content delivery network) in the `link` element in the `head` section your html.
+- `getbootstrap.com` will have the CDN file.
+- You need to make sure that the custom external stylesheet is BELOW the CDN link in the header (in order to override the bootstrap styling).
+- This uses a 12 column system. Bootstrap has pre-defined breakpoints based on common screen sizes. XS would be for foldable phones, Small would be for mobile, medium for iPads, large for laptops, XL for desktops and XXL for TV's above.
+- You can also have more than one breakpoint.
+- https://appbrewery.github.io/bootstrap-layout/
+- 
+
+
+
