@@ -75,12 +75,16 @@
 - The negatives of this is that it can create 'class bloat' meaning that all of the styling would be in the HTML, making it quite busy.
 - It also makes it very hard to customise (making it hard to control).
 - The best way to include this is using a CDN (content delivery network) in the `link` element in the `head` section your html.
+- You also need the `script` to give the project functionality. This is pasted just before the closing tag of the body. 
 - `getbootstrap.com` will have the CDN file.
 - You need to make sure that the custom external stylesheet is BELOW the CDN link in the header (in order to override the bootstrap styling).
 - This uses a 12 column system. Bootstrap has pre-defined breakpoints based on common screen sizes. XS would be for foldable phones, Small would be for mobile, medium for iPads, large for laptops, XL for desktops and XXL for TV's above.
 - You can also have more than one breakpoint.
 - https://appbrewery.github.io/bootstrap-layout/
-- 
+- Spacing can be created by the bootstrap flow of: `{property}-(size)-(size)`
+- Example could be `mb-2` which would mean a margin-bottom: 2.
+- To activate dark-mode to your website, you just need to add `data-bs-theme="dark"` after your `<html lang="en">` but within the brackets obviously.
+- Have a look at free bootstrap templates to get some ideas of templates. 
 
 
 
