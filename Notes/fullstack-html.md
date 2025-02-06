@@ -5,6 +5,7 @@
     - [HTML](#html)
     - [CSS](#css)
     - [Bootstrap Framework](#bootstrap)
+    - [Web Design](#webdesign)
     - [JavaScript](#javascript)
     - [Frontend Frameworks](#frontend-frameworks)
 2. [Backend Development](#backend-development)
@@ -85,7 +86,15 @@
 - Example could be `mb-2` which would mean a margin-bottom: 2.
 - To activate dark-mode to your website, you just need to add `data-bs-theme="dark"` after your `<html lang="en">` but within the brackets obviously.
 - Have a look at free bootstrap templates to get some ideas of templates.
-- Have a look at the bootstrap template - saved in snippets on desktop. 
+- Have a look at the bootstrap template - saved in snippets on desktop.
+
+### Web Design (CSS)
+
+- You should always stick to two fonts for one design. These fonts should have similar moods and time era.
+- You want to change the heading and body to be different type faces (i.e. serif vs sans-serif). As well as different weights.
+- For text, should be 40-60 characters per line.
+- Have a look at "F-layout" and "Z-layout" when designing your websites.
+- 
 
 
 
