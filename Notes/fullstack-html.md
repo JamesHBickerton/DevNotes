@@ -103,12 +103,17 @@
 - When opening the JavaScript console, to write a double line of code, hold shift and press enter.
 - Using the snippet editor of JavaScript console is a great way to write and test your code.
 - `alert:("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
-- <strong>Data Types</strong> can include STRINGS (text we want to be displayed - it is a "string" of characters), NUMBERS, & BOOLEAN (true/false).
+- <strong>Data Types</strong> can include STRINGS (text we want to be displayed - it is a "string" of characters - these are immutable, meaning they cannot be changed), NUMBERS, & BOOLEAN (true/false).
 - `typeof` - tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer.
 - <strong>Variables</strong> help to make the system "remember" the input.
 - `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE and the `"James"` is the STRING/VALUE.
 - Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase
 - <strong>Strings</strong> can be combined using concantenation. `alert:("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
-- You can easily find out the number of characters in a string by stating word.length (variablename.length). 
+- You can easily find out the number of characters in a string by stating word.length (variablename.length).
+- The <strong>Slice(x,y)</string> function allows you to slice your strings to seperate them into individual characters. An example:
+`var name = "James";`
+`name.slice(0,1);` - would mean that the J is being selected. Programmers always start from 0, so although 'James' has 5 letters, S would be 4 (as J is 0). In order to grab the last letter though -
+`name.slice(4,5);`
+- `word.toUppercase()` - can turn every single character in a string to uppercase. 
 
 
