@@ -108,6 +108,7 @@
 - <strong>Variables</strong> help to make the system "remember" the input.
 - `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE and the `"James"` is the STRING/VALUE.
 - Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase
-- <strong>Strings</strong> 
+- <strong>Strings</strong> can be combined using concantenation. `alert:("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
+- You can easily find out the number of characters in a string by stating word.length (variablename.length). 
 
 
