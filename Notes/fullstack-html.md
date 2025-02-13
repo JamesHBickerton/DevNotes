@@ -102,8 +102,12 @@
 - Interpreted languages are languages such as Javascript, Python & Ruby - whereas compiled programming languages are like Java, C/C++, and Swift.
 - When opening the JavaScript console, to write a double line of code, hold shift and press enter.
 - Using the snippet editor of JavaScript console is a great way to write and test your code.
-- `alert:("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
-- 
-
+- `alert:("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
+- <strong>Data Types</strong> can include STRINGS (text we want to be displayed - it is a "string" of characters), NUMBERS, & BOOLEAN (true/false).
+- `typeof` - tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer.
+- <strong>Variables</strong> help to make the system "remember" the input.
+- `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE and the `"James"` is the STRING/VALUE.
+- Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase
+- <strong>Strings</strong> 
 
 
