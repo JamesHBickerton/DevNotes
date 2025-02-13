@@ -94,6 +94,15 @@
 - You want to change the heading and body to be different type faces (i.e. serif vs sans-serif). As well as different weights.
 - For text, should be 40-60 characters per line.
 - Have a look at "F-layout" and "Z-layout" when designing your websites.
+
+### Javascript (ES6) 
+
+- ES is shorthand for ECMAScript (which is the european computer manufacturer's script).
+- Java vs. Javascript - no relation whatsoever. Javascript is an interpreted programming language (meaning it kind of translates to the compiled language what to do - starts slowly and you can check how it is going during the process) whereas Java is a compiled programming language (meaning it does the job the interpreter has set out - starts quickly, but you can't really see what is happening throughout).
+- Interpreted languages are languages such as Javascript, Python & Ruby - whereas compiled programming languages are like Java, C/C++, and Swift.
+- When opening the JavaScript console, to write a double line of code, hold shift and press enter.
+- Using the snippet editor of JavaScript console is a great way to write and test your code.
+- `alert:("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
 - 
 
 
