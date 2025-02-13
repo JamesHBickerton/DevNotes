@@ -114,6 +114,6 @@
 `var name = "James";`
 `name.slice(0,1);` - would mean that the J is being selected. Programmers always start from 0, so although 'James' has 5 letters, S would be 4 (as J is 0). In order to grab the last letter though -
 `name.slice(4,5);`
-- `word.toUppercase()` - can turn every single character in a string to uppercase. 
+- `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower
 
 
