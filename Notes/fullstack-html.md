@@ -121,5 +121,7 @@ I am finding this super challenging...
 - another example: `var a = 16 % 4` would be 0, as there is nothing remaining. 
 - It is good programming practice to add a set of parantheses during BEDMAS protocols with numbers (even when you know this will happen by default).
 - The <strong>Increment expression</strong> is another way of using `x = x+1` but you would use `x++` (which is the equivalent). `x = x-1` would be the same as `x--` and this would be the <strong>Decriment expression</strong>. You are only ever changing the value by one. If you need to increase by a specific number or variable, then you would use `x +=` and then by the number/variable, same with `x -=`. You can also do this for *, /, etc. 
-- 
+- <strong>Functions</strong> allow you to create a set of instructions and package it into a block of code `function getMilk() { }`. Function is the keyword (stating that we are about to create a new function), the getMilk is the function (to identify the new function), and then the instructions will go into the curly brackets.
+- There is a difference for when you create the function and USING/CALLING the function. To do this you just would put `getMilk();` into the code. This means the computer will carry out all of the instructions into the curly braces.
+- It is important to indent the lines of code inside of the curly braces (or the function's instructions) so that it is easy to tell they are the instructions in the code. <strong>THE CURLY BRACKETS DO NOT NEED TO BE CLOSED WITH A SEMI-COLON.</strong> 
 
