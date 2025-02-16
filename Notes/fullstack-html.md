@@ -116,9 +116,10 @@
 `name.slice(4,5);`
 - `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower`
 I am finding this super challenging...
-- <strong>Numbers</strong> - you can add by `+`, subtract by `-`, division by `/`, multiply by `*`, but the <strong>modulo</strong> is represented by a `%` sign. The <strong>module</strong> will give you the remainder of the division (see below):
-- `var a = 9 % 6; // 3` as this is the remainder of the 2 values.
+- <strong>Numbers</strong> - you can add by `+`, subtract by `-`, division by `/`, multiply by `*`, but the <strong>modulo</strong> is represented by a `%` sign. The <strong>modulo</strong> will give you the remainder of the division (see below):
+- `var a = 13 % 5; // 3` as this is the remainder of the 2 values when being divided by the number. 5 can go into 13, twice and then whatever is left is the number - i.e. 3. 
+- another example: `var a = 16 % 4` would be 0, as there is nothing remaining. 
 - It is good programming practice to add a set of parantheses during BEDMAS protocols with numbers (even when you know this will happen by default).
-- The <strong>Increment expression</strong> is another way of using `x = x+1` but you would use `x++` (which is the equivalent). `x = x-1` would be the same as `x--` and this would be the <strong>Decriment expression</strong>. You are only ever changing the value by one. If you need to increase by a specific number or variable, then you would use `x +=` and then by the number/variable, same with `x -=`. 
+- The <strong>Increment expression</strong> is another way of using `x = x+1` but you would use `x++` (which is the equivalent). `x = x-1` would be the same as `x--` and this would be the <strong>Decriment expression</strong>. You are only ever changing the value by one. If you need to increase by a specific number or variable, then you would use `x +=` and then by the number/variable, same with `x -=`. You can also do this for *, /, etc. 
 - 
 
