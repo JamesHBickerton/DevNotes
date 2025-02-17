@@ -102,13 +102,23 @@
 - Interpreted languages are languages such as Javascript, Python & Ruby - whereas compiled programming languages are like Java, C/C++, and Swift.
 - When opening the JavaScript console, to write a double line of code, hold shift and press enter.
 - Using the snippet editor of JavaScript console is a great way to write and test your code.
-- `alert:("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
-- <strong>Data Types</strong> can include STRINGS (text we want to be displayed - it is a "string" of characters - these are immutable, meaning they cannot be changed), NUMBERS, & BOOLEAN (true/false).
+- `alert("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other. 
+- <strong>PRIMITIVE Data Types</strong>
+<ol>
+    <li>STRINGS (text we want to be displayed - it is a "string" of characters - these are immutable, meaning they cannot be changed - always put these in double/single quotes)</li>
+    <li>NUMBERS (always have decimals i.e. 23.0)</li> 
+    <li>BOOLEANS (true/false)</li> 
+    <li>UNDEFINED (variable that isn't defined)</li>
+    <li>NULL (empty value)</li>
+    <li>SYMBOL (value is unique and cannot be changed - not very useful)</li>
+    <li>BigInt (for larger integers that the number type can hold)</li>
+</ol>
 - `typeof` - tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer.
 - <strong>Variables</strong> help to make the system "remember" the input.
-- `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE and the `"James"` is the STRING/VALUE.
-- Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase
-- <strong>Strings</strong> can be combined using concantenation. `alert:("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
+- `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE (which you can also imagine as the box) and the `"James"` is the STRING/VALUE.
+- <strong>Values</strong> are either `objects` or `primitive`. 
+- Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase. They can only contain numbers, letters, underscores or dollar signs - you also can't lead with a number. Never call your variables just 'name'. 
+- <strong>Strings</strong> can be combined using concantenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
 - You can easily find out the number of characters in a string by stating word.length (variablename.length).
 - The <strong>Slice(x,y)</string> function allows you to slice your strings to seperate them into individual characters. An example:
 `var name = "James";`
@@ -124,7 +134,7 @@ I am finding this super challenging...
 - <strong>Functions</strong> allow you to create a set of instructions and package it into a block of code `function getMilk() { }`. Function is the keyword (stating that we are about to create a new function), the getMilk is the function (to identify the new function), and then the instructions will go into the curly brackets.
 - There is a difference for when you create the function and USING/CALLING the function. To do this you just would put `getMilk();` into the code. This means the computer will carry out all of the instructions into the curly braces.
 - It is important to indent the lines of code inside of the curly braces (or the function's instructions) so that it is easy to tell they are the instructions in the code. <strong>THE CURLY BRACKETS DO NOT NEED TO BE CLOSED WITH A SEMI-COLON.</strong>
-- <strong>console.log</strong> will log the string inside the console. The important difference between the alert and console.log is that the alert is something the user can see, whereas the console.log is not. 
+- <strong>console.log</strong> will log the string inside the console. The important difference between the alert and console.log is that the alert is something the user can see, whereas the console.log is not. This should be at the bottom. 
 - inputs within functions: `function getMilk(bottles) { }` - this "bottles" is used much like a variable (to contain the input) and you can use this inside of the function to do something with it. I.e. `function getMilk(bottles) { var cost = bottles * 1.5; }`. When calling, `getMilk(2)` then bottles would = 2. Cost of the bottle will then be 3.
 - <strong>Floor Method</strong> is when you can ensure that a value is always rounded down to fit a "whole number" as opposed to 3.33 bottles of milk for example. You would need to do it like this: `var numberOfBottles = Math.floor (money - 1.5);`. The `Math.floor` if the floor function.
 - There are also functions that are able to take an input and are able to use this inside the function to do something (or able to give an output).
