@@ -113,7 +113,7 @@
     <li>SYMBOL (value is unique and cannot be changed - not very useful)</li>
     <li>BigInt (for larger integers that the number type can hold)</li>
 </ol>
-- `typeof` - tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer.
+- `typeof` - is an <strong>operator</strong> that tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer. OR `typeof("Hello")` would result in a STRING answer.
 - <strong>Variables</strong> help to make the system "remember" the input.
 - `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE (which you can also imagine as the box) and the `"James"` is the STRING/VALUE.
 - <strong>Values</strong> are either `objects` or `primitive`. 
