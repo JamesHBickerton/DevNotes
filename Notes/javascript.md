@@ -1,4 +1,4 @@
-# Javascript Notes from Angela Yu Course + Jonas Course
+# JavaScript Notes from Angela Yu Course + Jonas Course
 
 ### Javascript (ES6) 
 
