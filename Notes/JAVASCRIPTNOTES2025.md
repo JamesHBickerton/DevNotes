@@ -23,6 +23,7 @@
 
 - `typeof` - is an <strong>operator</strong> that tells us what the data type is within the round brackets. I.e. `typeof(true)` would result in a BOOLEAN answer. OR `typeof("Hello")` would result in a STRING answer.
 - <strong>Variables</strong> help to make the system "remember" the input.
+- `var` is the old way of using JavaScript. You probably want to use `let` instead. 
 - `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE (which you can also imagine as the box) and the `"James"` is the STRING/VALUE.
 - Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase. They can only contain numbers, letters, underscores or dollar signs - you also can't lead with a number. Never call your variables just 'name'.
 - 
@@ -31,6 +32,7 @@
 - <strong>Strings</strong> can be combined using concantenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
   
 - You can easily find out the number of characters in a string by stating `word.length` `(variablename.length)`
+- `var` is pretty much the same as using `let` - BUT there are many differences. 
   
 - The <strong>Slice(x,y)</strong> function allows you to slice your strings to seperate them into individual characters. An example:
 `var name = "James";`
@@ -73,7 +75,8 @@
 - `.push()` method is the first method associated with arrays and it allows you to "PUSH" or add a value to the end of an array. i.e. `arrays.push("value")` will add "value" at the end of your array. `.push()` will return the new length of the array, after adding the value you give it.
 - `.pop()` method is the second method associated with arrays, and it allows you to remove the last element and returns this element back to you.
   
-- Using the `let` keyword on a variable, allows for the variable to be re-assigned. Using a `const` variable, means that it will not be able to be reassigned in the code.
+- Using the `let` keyword on a variable, allows for the variable to be re-assigned/mutated. Using a `const` variable, means that it will not be able to be reassigned in the code. You can also not have 'empty' `const` variables.
+- <strong>It is best practice to always use `const` as it is the best way to avoid any bugs in the future</strong>.
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
 - `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
