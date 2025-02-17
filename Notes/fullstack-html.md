@@ -137,4 +137,9 @@ I am finding this super challenging...
 - `.pop()` method is the second method associated with arrays, and it allows you to remove the last element and returns this element back to you.
 - Using the `let` keyword on a variable, allows for the variable to be re-assigned. Using a `const` variable, means that it will not be able to be reassigned in the code.
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
-- `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false). 
+- `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
+- `<` is a less than operator which allows you to check if the value on the left is less than the value on the right. Usually an answer of true or false.
+- `iteration` is a statement at the end which will tell the loop what to do after each run.
+- Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
+- A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
+- `\n` is an escape sequence/new line. 
