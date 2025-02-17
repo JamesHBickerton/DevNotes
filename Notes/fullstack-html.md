@@ -120,7 +120,7 @@
 - Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase. They can only contain numbers, letters, underscores or dollar signs - you also can't lead with a number. Never call your variables just 'name'. 
 - <strong>Strings</strong> can be combined using concantenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
 - You can easily find out the number of characters in a string by stating word.length (variablename.length).
-- The <strong>Slice(x,y)</string> function allows you to slice your strings to seperate them into individual characters. An example:
+- The <strong>Slice(x,y)</strong> function allows you to slice your strings to seperate them into individual characters. An example:
 `var name = "James";`
 `name.slice(0,1);` - would mean that the J is being selected. Programmers always start from 0, so although 'James' has 5 letters, S would be 4 (as J is 0). In order to grab the last letter though -
 `name.slice(4,5);`
