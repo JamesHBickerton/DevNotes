@@ -79,9 +79,17 @@
 - Using the `let` keyword on a variable, allows for the variable to be re-assigned/mutated. Using a `const` variable, means that it will not be able to be reassigned in the code. You can also not have 'empty' `const` variables.
 - <strong>It is best practice to always use `const` as it is the best way to avoid any bugs in the future</strong>.
 - `+` `-` `*` `**` `=` `+=` `*=` `/=` etc are all operators.
+- <strong>Operators</strong> can be seen through this resource on a table of precedence - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence
+- Assignment operators go from RIGHT to LEFT. Math operators go from LEFT to RIGHT.
 
-- <strong>Comparison operators</strong> are used to produce boolean values. This can be the `>` operator asking if one variable is greater than the other (will produce either true or false). Can also be `<` `<=` `>=`.
-- 
+- <strong>Comparison operators</strong> are used to produce boolean values. This can be the `>` operator asking if one variable is greater than the other (will produce either true or false). Can also be `<` `<=` `>=`. These are usually a little lower than math operators in precedence.
+
+- <strong>Template literals</strong> use back ticks `` to create a string. This is a way to avoid having to add additional spaces, and having to keep re-doing this over time. 
+- Instead of: const james =
+  "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job;
+console.log(james);
+- It would be: const jamesNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}`;
+
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
 - `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
