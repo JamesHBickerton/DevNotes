@@ -87,8 +87,11 @@
 - <strong>Template literals</strong> use back ticks `` to create a string. This is a way to avoid having to add additional spaces, and having to keep re-doing this over time. 
 - Instead of: const james =
   "I'm " + firstName + ", a " + (year - birthYear) + " year old " + job;
-console.log(james);
 - It would be: const jamesNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}`;
+
+- <strong>if</strong> statements: check snippets in folder.
+- <strong>else</strong> statements: check snippets folder - will usually be executed if the `if` statement is false.
+- These are called if/else control structures. 
 
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
@@ -97,4 +100,4 @@ console.log(james);
 - `iteration` is a statement at the end which will tell the loop what to do after each run.
 - Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
 - A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
-- `\n` is an escape sequence/new line. 
+- `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code. 
