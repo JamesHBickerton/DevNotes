@@ -91,7 +91,9 @@
 
 - <strong>if</strong> statements: check snippets in folder.
 - <strong>else</strong> statements: check snippets folder - will usually be executed if the `if` statement is false.
-- These are called if/else control structures. 
+- These are called if/else control structures.
+
+- Type conversion - when we want to convert from one type to another. For example: if you have a string 'const inputYear = 1995' it isn't a number so you may have to convert it to a number. To do this `console.log(Number(inputYear)); this should convert it to a number. 
 
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
