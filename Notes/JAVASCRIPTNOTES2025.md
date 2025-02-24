@@ -1,13 +1,15 @@
 # JavaScript Notes from Angela Yu Course + Jonas Course
 
-### Javascript (ES6) 
+### Javascript (ES6/ES2015)
 
 - ES is shorthand for ECMAScript (which is the european computer manufacturer's script).
+- When creating JavaScript code, make sure that Chrome is always the latest version. Also use Babel to transfile your code to make sure all browsers can use it.
 - Java vs. Javascript - no relation whatsoever. Javascript is an interpreted programming language (meaning it kind of translates to the compiled language what to do - starts slowly and you can check how it is going during the process) whereas Java is a compiled programming language (meaning it does the job the interpreter has set out - starts quickly, but you can't really see what is happening throughout).
 - Interpreted languages are languages such as Javascript, Python & Ruby - whereas compiled programming languages are like Java, C/C++, and Swift.
 - When opening the JavaScript console, to write a double line of code, hold shift and press enter.
 - Using the snippet editor of JavaScript console is a great way to write and test your code.
 - `alert("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other.
+- - Strict mode: makes it easier for us to write secure javascript mode - `'use strict';` which needs to be at the very top of the code in the script.js file. This will also help to reduce errors in your code. 
 
 
 - <strong>PRIMITIVE Data Types</strong>
