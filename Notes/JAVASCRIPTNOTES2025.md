@@ -67,9 +67,13 @@
 - inputs within functions: `function getMilk(bottles) { }` - this "bottles" is used much like a variable (to contain the input) and you can use this inside of the function to do something with it. I.e. `function getMilk(bottles) { var cost = bottles * 1.5; }`. When calling, `getMilk(2)` then bottles would = 2. Cost of the bottle will then be 3.
   
 - <strong>Floor Method</strong> is when you can ensure that a value is always rounded down to fit a "whole number" as opposed to 3.33 bottles of milk for example. You would need to do it like this: `var numberOfBottles = Math.floor (money - 1.5);`. The `Math.floor` if the floor function.
+
+- Math.random will generate are random number (between 0 and 0.9999). 
   
 - There are also functions that are able to take an input and are able to use this inside the function to do something (or able to give an output).
 - In order to get an OUTPUT out of the function, you need to use the `return` keyword. When we then CALL a function that has an output, we can use the output and assign it to a variable. This is usually added just before the closing brace i.e. `return money % 1.5;` which will give you the remainder of the division.
+- The `return` keyword will actually 'exit' the function, meaning the function is done (meaning it has returned).
+- This means you can't put anything after the return keyword, as it will be ignored (you'd have to put it above the return). 
   
 - <strong>Arrays</strong> are mutable components (meaning you can change the value of them using the index indirectly) `["first", "second", "third"]` that can hold a series of values (it is non-primitive data, meaning they can hold much more complex data - primitive data are numbers and strings which can only hold one value at a time).
 - To access a value in your <strong>Array</strong>, you want to use the index (which means the first value will be `array[0]` which would mean 0 would be `"first"` for example.
