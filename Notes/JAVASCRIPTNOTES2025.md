@@ -73,9 +73,14 @@
 - There are also functions that are able to take an input and are able to use this inside the function to do something (or able to give an output).
 - In order to get an OUTPUT out of the function, you need to use the `return` keyword. When we then CALL a function that has an output, we can use the output and assign it to a variable. This is usually added just before the closing brace i.e. `return money % 1.5;` which will give you the remainder of the division.
 - The `return` keyword will actually 'exit' the function, meaning the function is done (meaning it has returned).
-- This means you can't put anything after the return keyword, as it will be ignored (you'd have to put it above the return). 
+- This means you can't put anything after the return keyword, as it will be ignored (you'd have to put it above the return).
+
+- <strong>Data Structures</strong> - the most important are Arrays and Objects. 
   
-- <strong>Arrays</strong> are mutable components (meaning you can change the value of them using the index indirectly) `["first", "second", "third"]` that can hold a series of values (it is non-primitive data, meaning they can hold much more complex data - primitive data are numbers and strings which can only hold one value at a time).
+- <strong>Arrays</strong> are mutable components (meaning you can change the value of them using the index indirectly) `["first", "second", "third"]` that can hold a series of values (like a container) (it is non-primitive data, meaning they can hold much more complex data - primitive data are numbers and strings which can only hold one value at a time).
+- There are different ways to write arrays. Example 1:
+-     `const friends = ["Michael", "Steven", "Peter"];`
+-     `const friends = new Array(Michael, Steven, Peter);`
 - To access a value in your <strong>Array</strong>, you want to use the index (which means the first value will be `array[0]` which would mean 0 would be `"first"` for example.
 - To get the last element in an array (as sometimes we do not know how many values are in an array), you can use the <strong>.length</strong> property via `array[array.length - 1] = 10 (or whatever value you want to change to)`.
   
