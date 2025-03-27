@@ -31,7 +31,7 @@
 - 
 - <strong>Values</strong> are either `objects` or `primitive`. 
 
-- <strong>Strings</strong> can be combined using concantenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
+- <strong>Strings</strong> can be combined using concactenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
   
 - You can easily find out the number of characters in a string by stating `word.length` `(variablename.length)`
 - `var` is pretty much the same as using `let` - BUT there are many differences. 
@@ -85,7 +85,7 @@
 - To access a value in your <strong>Array</strong>, you want to use the index (which means the first value will be `array[0]` which would mean 0 would be `"first"` for example. These start at 0 so first would be 0. 
 - To get the last element in an array (as sometimes we do not know how many values are in an array), you can use the <strong>.length</strong> property via `array[array.length - 1] = 10 (or whatever value you want to change to)`.
   
-- <strong>Methods</strong> are functions associated with certain values/objects (e.g. `.log()` is a method for the `console` object). Arrays have their own methods.
+- <strong>Methods</strong> are functions associated with certain values/objects (e.g. `.log()` is a method for the `console` object). Arrays have their own methods. They will require paranthesis. 
 - `.push()` method is the first method associated with arrays and it allows you to "PUSH" or add a value to the end of an array. i.e. `arrays.push("value")` will add "value" at the end of your array. `.push()` will return the new length of the array, after adding the value you give it.
 - The `unshift` method allows you to add a value to the start of the array. I.e. `arrays.unshift`. The `shift` method allows you to remove a value at the start of the array and return it back to you. 
 - `.pop()` method allows you to remove the last element and returns this element back to you. You don't need parameters into this
