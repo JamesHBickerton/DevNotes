@@ -146,10 +146,25 @@
 - To call a function with the brackets, you would do the following: `console.log(james["calcAge"](1995));`
 - 
   
-- `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
+- `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator/counter</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). This is usually `i`. 
+- `for` loops will keep running while the condition is TRUE.
+- `for (let rep = 1; rep <= 10; rep++) {
+  console.log(BACKSLASHLifting weights repetition ${rep}BACKSLASH);`
+- One of the most common uses of loops is to loop arrays.
+- When looping arrays, as they are zero-based, it is important to class it as 0 - `for(let i = 0)`. 
+- It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
 - `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
 - `<` is a less than operator which allows you to check if the value on the left is less than the value on the right. Usually an answer of true or false.
 - `iteration` is a statement at the end which will tell the loop what to do after each run.
+- `continue` is a keyword meaning it can exit the current iteration of the loop. 
+- `if (typeof james[i] !== "string") continue;` - this means if the type of the element IS NOT a STRING, then continue.
+- `break` is a keyword that will completely terminate the whole loop.
+- Check important screenshots file for examples of this (+ for loops inside of a loop).
+- `while` loops - you only need the CONDITION. This will run WHILE the condition is true. These are more versatile than the `for` loops as they don't need a counter/iteration. Please check screenshots for examples. 
+
 - Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
 - A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
-- `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code. 
+- `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code.
+
+
+
