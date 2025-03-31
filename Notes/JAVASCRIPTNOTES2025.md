@@ -134,7 +134,15 @@
 
 - Expressions produce values, whereas statements are bigger pieces of code which do not produce a value (such as an operator). Examples of statements are 'if else statements' and 'switch statements'. Statements end in semi-colons.
 
-- 3 weeks off - a little worried to get back into it just in case I forgot everything (: 
+- 3 weeks off - a little worried to get back into it just in case I forgot everything (:
+
+- <strong>OBJECTS</strong> - can define <strong>key (variable name)</strong> value pairs. Instead of Arrays using the square brackets, you would use the curly brackets to define the object.
+- The object name is called the key, whereas the amount of items in the object are called properties.
+- These are the most fundamental concepets in the javascript language.
+- We use objects to group together different variables that belong together.
+- The difference between arrays is that in arrays, the order where we specify elements matters a lot (using order numbers) - usually more ordered data, whereas objects it doesn't matter about the order.
+- <strong>Dot vs. Bracket notations</strong> are ways to retrieve properties from an object. i.e. `console.log(james.lastName)` - if you wanted to receive the lastName from an object for example (this would be the dot notation) or `console.log(james['lastName'])` would be the bracket notation. In the square brackets, you can put any notation in there - i.e. strings - this would only work for bracket notations. Dot notations are usually cleaner. 
+- 
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
 - `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
