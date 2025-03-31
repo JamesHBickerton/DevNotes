@@ -150,6 +150,7 @@
 - `for` loops will keep running while the condition is TRUE.
 - `for (let rep = 1; rep <= 10; rep++) {
   console.log(BACKSLASHLifting weights repetition ${rep}BACKSLASH);`
+- `let rep = 1;` would be the start, `rep <= 10;` would be the end, and `rep++` would be whether it is going up or down. 
 - One of the most common uses of loops is to loop arrays.
 - When looping arrays, as they are zero-based, it is important to class it as 0 - `for(let i = 0)`. 
 - It is common to use `i` as your iterator variable. `for ("iterator"; "condition"; "iteration") {}`.
@@ -161,6 +162,7 @@
 - `break` is a keyword that will completely terminate the whole loop.
 - Check important screenshots file for examples of this (+ for loops inside of a loop).
 - `while` loops - you only need the CONDITION. This will run WHILE the condition is true. These are more versatile than the `for` loops as they don't need a counter/iteration. Please check screenshots for examples. 
+- i.e. `while (something is true) {do something}`. 
 
 - Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
 - A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
