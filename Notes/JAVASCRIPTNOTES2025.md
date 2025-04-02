@@ -147,7 +147,7 @@
 - 
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator/counter</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). This is usually `i`. 
-- `for` loops will keep running while the condition is TRUE.
+- `for` loops will keep running while the condition is TRUE. This can create a loop for an infinite amount of times (whereas `while` loops are used when it is needed for an infinite amount of times). 
 - `for (let rep = 1; rep <= 10; rep++) {
   console.log(BACKSLASHLifting weights repetition ${rep}BACKSLASH);`
 - `let rep = 1;` would be the start, `rep <= 10;` would be the end, and `rep++` would be whether it is going up or down. 
