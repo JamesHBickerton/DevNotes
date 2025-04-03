@@ -157,7 +157,7 @@
 - `condition` tells the loop how many times it should iterate. When the condition becomes false, it will stop (BOOLEAN value = true/false).
 - `<` is a less than operator which allows you to check if the value on the left is less than the value on the right. Usually an answer of true or false.
 - `iteration` is a statement at the end which will tell the loop what to do after each run.
-- `continue` is a keyword meaning it can exit the current iteration of the loop. 
+- `continue` is a keyword meaning it can exit the current iteration of the loop (OR SKIP AN INTERATION). 
 - `if (typeof james[i] !== "string") continue;` - this means if the type of the element IS NOT a STRING, then continue.
 - `break` is a keyword that will completely terminate the whole loop.
 - Check important screenshots file for examples of this (+ for loops inside of a loop).
