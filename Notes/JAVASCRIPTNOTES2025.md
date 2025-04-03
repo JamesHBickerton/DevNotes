@@ -120,6 +120,7 @@
   
 - There are 5 falsy values - 0, undefined, NaN, '', and null.
 - `console.log(Boolean(0));` would be 'false' - the opposite will be 'truthy'.
+- A 'truthy' value is considered true when evaluated as a boolean. Most values are truthy. 
 
 - <strong>Equality operators</strong> include `===` and `==`. The `===` is a strict equality operator, and does not perform type coercion (whereas `==` does as it a loose equality operator - meaning it can convert string to number).
 - As a general rule, always use `===` as it helps to avoid bugs in the future as a default.
