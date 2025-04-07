@@ -173,4 +173,11 @@
 JavaScript interacts with HTML via DOM (Document Object Model). This is a tree of objects that represents the HTML. To do this you can use the `document` object and to find specific elements you would use the `querySelector()` which takes a CSS selector as an argument, and returns the first element that matches the selector. 
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - The above should be encased in a string i.e. for an ID: "#h1".
-- 
+- You can use the `.onclick` property to determine what something does on the click of a mouse.
+- Example: `button.onclick = myFunction;`
+- The `innerText` property controls the text that appears in the HTML. I.e. if the ID was #info -
+  `const info = document.querySelector("#info"); 
+    info.innerText = "Hello World"; ` - whatever the #info text previously was, the innerText would change it to "Hello World".
+  - dot notations and bracket notations are ways you can access properties of an object. A dot notation is when you know the name you are trying to access ahead of time - i.e. To read the `name` property of a `developer` object: `console.log(developer.name)`.
+  - The bracket notation is when you are trying to access a property that has spaces in it - i.e. `"Space name"` would be `console.log["Space name"];`
+  - Compound assignment: 
