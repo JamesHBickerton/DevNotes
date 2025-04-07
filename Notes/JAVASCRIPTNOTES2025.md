@@ -69,6 +69,8 @@
 - inputs within functions: `function getMilk(bottles) { }` - this "bottles" is used much like a variable (to contain the input) and you can use this inside of the function to do something with it. I.e. `function getMilk(bottles) { var cost = bottles * 1.5; }`. When calling, `getMilk(2)` then bottles would = 2. Cost of the bottle will then be 3.
   
 - <strong>Floor Method</strong> is when you can ensure that a value is always rounded down to fit a "whole number" as opposed to 3.33 bottles of milk for example. You would need to do it like this: `var numberOfBottles = Math.floor (money - 1.5);`. The `Math.floor` if the floor function.
+- the Math.floor function rounds a number down to the nearest integer, whereas the Math.random function generates numbers from 0 to 1.
+- `Math.floor(Math.random() * 5) + 1;.` - would give a random number between 1 and 5. 
 
 - Math.random will generate are random number (between 0 and 0.9999). 
   
@@ -180,4 +182,10 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
     info.innerText = "Hello World"; ` - whatever the #info text previously was, the innerText would change it to "Hello World".
   - dot notations and bracket notations are ways you can access properties of an object. A dot notation is when you know the name you are trying to access ahead of time - i.e. To read the `name` property of a `developer` object: `console.log(developer.name)`.
   - The bracket notation is when you are trying to access a property that has spaces in it - i.e. `"Space name"` would be `console.log["Space name"];`
-  - Compound assignment: 
+  - To add on top of an already existing string (i.e. in a function) use the += operator.
+  - The `style` property is used to change the inline style of an element.
+  - The `display` property is used to set the visibility of an element.
+  - Example: `const monsterStats = document.querySelector("#monsterStats");
+              monsterStats.style.display = "block";`
+  - The `innerHTML` property allows you to access or modify the content inside an HTML element using JavaScript.
+  - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually. 
