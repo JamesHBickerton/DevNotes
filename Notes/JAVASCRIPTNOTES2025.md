@@ -1,5 +1,12 @@
 # JavaScript Notes from Angela Yu Course + Jonas Course
 
+### Problem Solving
+
+- Make sure you 100% understand the problem - ask the right questions.
+- Divide and Conquer - Break a big problem, take it apart into smaller problems
+- Don't be afraid to do research - stack overflow, MDN docs 
+- Write pseudo-code before writing actual code - so that you understand the problem yourself
+
 ### Javascript (ES6/ES2015)
 
 - ES is shorthand for ECMAScript (which is the european computer manufacturer's script).
