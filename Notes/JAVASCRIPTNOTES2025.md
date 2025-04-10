@@ -66,6 +66,8 @@
 - Function declarations vs function expressions: you can CALL declarations before they are listed in the code, but can't do this with the expression (remember expressions create values). It is good to know how to use both.
   
 - <strong>Arrow functions</strong> are another type of function that you can use `=>`. With arrow functions, you drop the "function" keyword and place a `=>` between the `()` and `{}`. If you have a function that is only returning things, you can drop the curly brackets all together.
+- If you don't return anything in the curly brackets, the function should automatically return a result. That is the benefit of arrow functions. 
+  
 - We don't usually console.log the function, we usually use the return. 
   
 - There is a difference for when you create the function and USING/CALLING/RUNNING/INVOKING the function. To do this you just would put `getMilk();` into the code. This means the computer will carry out all of the instructions into the curly braces.
