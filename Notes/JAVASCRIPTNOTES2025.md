@@ -192,8 +192,10 @@ The start of the splice is the first number of the array you want, and the last 
 - `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code.
 
 JavaScript interacts with HTML via DOM (Document Object Model). This is a tree of objects that represents the HTML. To do this you can use the `document` object and to find specific elements you would use the `querySelector()` which takes a CSS selector as an argument, and returns the first element that matches the selector. 
+
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - The above should be encased in a string i.e. for an ID: "#h1".
+- The `.textContent` property sets the text content of an element and all of its descendants. The `.innerText` property only sets the text content of visible elements of all of the element's descendants. `.textContent` is usually faster. 
 - You can use the `.onclick` property to determine what something does on the click of a mouse.
 - Example: `button.onclick = myFunction;`
 - The `innerText` property controls the text that appears in the HTML. I.e. if the ID was #info -
@@ -207,4 +209,5 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - Example: `const monsterStats = document.querySelector("#monsterStats");
               monsterStats.style.display = "block";`
   - The `innerHTML` property allows you to access or modify the content inside an HTML element using JavaScript.
-  - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually. 
+  - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
+
