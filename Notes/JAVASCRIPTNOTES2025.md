@@ -113,7 +113,8 @@ The start of the splice is the first number of the array you want, and the last 
 -     array.forEach(function(item) {
   // code to execute for each item
   });
-- With the `forEach` method, you don't define a new function, you just use the function keyword. 
+- With the `forEach` method, you don't define a new function, you just use the function keyword.
+- The `reduce()` method can help you to reduce an array to a single value by applying a function to each element in the array.
   
 - Using the `let` keyword on a variable, allows for the variable to be re-assigned/mutated. Using a `const` variable, means that it will not be able to be reassigned in the code. You can also not have 'empty' `const` variables.
 - <strong>It is best practice to always use `const` as it is the best way to avoid any bugs in the future</strong>.
