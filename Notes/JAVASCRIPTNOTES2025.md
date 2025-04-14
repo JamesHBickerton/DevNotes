@@ -65,7 +65,7 @@ The start of the splice is the first number of the array you want, and the last 
   
 - <strong>Functions</strong> allow you to create a set of instructions and package it into a block of code `function getMilk() { }`. Function is the keyword (stating that we are about to create a new function), the getMilk is the function (to identify the new function), the `()` is the parameter/variables that are only specific to the function, and then the instructions will go into the curly brackets (or the function body). 
 - Think of functions as machines (like a food processor - put food into the processor which does something to the food, which then returns juice). 
-- Function declarations vs function expressions: you can CALL declarations before they are listed in the code, but can't do this with the expression (remember expressions create values). It is good to know how to use both.
+- Function declarations vs function expressions: you can CALL declarations before they are listed in the code, but can't do this with the expression (remember expressions create values). It is good to know how to use both. Function expressions is when the function is assigned to a variable - i.e. `const functionName = function() {}`
   
 - <strong>Arrow functions</strong> are another type of function that you can use `=>`. With arrow functions, you drop the "function" keyword and place a `=>` between the `()` and `{}`. If you have a function that is only returning things, you can drop the curly brackets all together.
 - If you don't return anything in the curly brackets, the function should automatically return a result. That is the benefit of arrow functions. 
@@ -191,11 +191,22 @@ The start of the splice is the first number of the array you want, and the last 
 - A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
 - `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code.
 
+### DOM Manipulation
 JavaScript interacts with HTML via DOM (Document Object Model). This is a tree of objects that represents the HTML. To do this you can use the `document` object and to find specific elements you would use the `querySelector()` which takes a CSS selector as an argument, and returns the first element that matches the selector. 
+- The DOM is not a part of JavaScript, it's actually a part of Web API's (application programming interface - which are libraries that occur behind the scenes). 
 
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - The above should be encased in a string i.e. for an ID: "#h1".
-- The `.textContent` property sets the text content of an element and all of its descendants. The `.innerText` property only sets the text content of visible elements of all of the element's descendants. `.textContent` is usually faster. 
+- The `.textContent` property sets the text content of an element and all of its descendants. The `.innerText` property only sets the text content of visible elements of all of the element's descendants. `.textContent` is usually faster.
+
+- The `.value` property can be useful for getting the value for inputs for example.
+
+- The `.addEventListener()` method will need to pass in the type of the event i.e. `click`. It would then need a function as an argument after the type of the event.
+- i.e. `document.querySelector('.check').addEventListener('click', function () {
+  console.log(document.querySelector('.guess').value);
+});` - we also do not call the function. The Javascript engine will call the function as soon as the event happens.
+- The first scenario is to always assume that there will be no input, so this will need to be actioned to ensure that your application runs smoothly. 
+
 - You can use the `.onclick` property to determine what something does on the click of a mouse.
 - Example: `button.onclick = myFunction;`
 - The `innerText` property controls the text that appears in the HTML. I.e. if the ID was #info -
