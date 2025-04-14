@@ -47,6 +47,8 @@
 `var name = "James";`
 `name.slice(0,1);` - would mean that the J is being selected. Programmers always start from 0, so although 'James' has 5 letters, S would be 4 (as J is 0). In order to grab the last letter though -
 `name.slice(4,5);`
+The start of the splice is the first number of the array you want, and the last number of the splice is the end represents where the index stops.
+- The `concat()` method can help to combine 2 different types of arrays (and returns a new array). 
 
 - `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower`
   
@@ -106,7 +108,12 @@
 - To find out if an element is in the array or it isn't, you can use the `.includes()` method. I.e. `console.log(friends.includes("Steven"));` this will come out in 'true' if it is in there, 'false' if not.
 - Common example of `.includes()` is in if/else statements. I.e. `if (friends.includes("Steven")) {console.log("You have a friend called Steven");` would be true.
 - The `shift` method allows you to remove the first element of an array.
-- The `concat` method can add two arrays together to create a new array. 
+- The `concat` method can add two arrays together to create a new array.
+- The `forEach` method is used to execute a function for each item in an array.
+-     array.forEach(function(item) {
+  // code to execute for each item
+  });
+- With the `forEach` method, you don't define a new function, you just use the function keyword. 
   
 - Using the `let` keyword on a variable, allows for the variable to be re-assigned/mutated. Using a `const` variable, means that it will not be able to be reassigned in the code. You can also not have 'empty' `const` variables.
 - <strong>It is best practice to always use `const` as it is the best way to avoid any bugs in the future</strong>.
@@ -176,7 +183,8 @@
 - `break` is a keyword that will completely terminate the whole loop.
 - Check important screenshots file for examples of this (+ for loops inside of a loop).
 - `while` loops - you only need the CONDITION. This will run WHILE the condition is true. These are more versatile than the `for` loops as they don't need a counter/iteration. Please check screenshots for examples. 
-- i.e. `while (something is true) {do something}`. 
+- i.e. `while (something is true) {do something}`.
+- A big difference between `for` loops and `while` loops is that in `while` loops you will have to directly specify the `i++`. 
 
 - Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
 - A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
