@@ -198,6 +198,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - In order to use the query Selector for all elements (i.e. if multiple elements have the same class, then you would use `.querySelectorAll`. 
 - The above should be encased in a string i.e. for an ID: "#h1".
+- The `getElementId` is a lot faster than using query selector and '#h1' for selecting ID's. 
 - The `.textContent` property sets the text content of an element and all of its descendants. The `.innerText` property only sets the text content of visible elements of all of the element's descendants. `.textContent` is usually faster.
 
 - The `.value` property can be useful for getting the value for inputs for example.
@@ -222,4 +223,5 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
               monsterStats.style.display = "block";`
   - The `innerHTML` property allows you to access or modify the content inside an HTML element using JavaScript.
   - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
+  - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`. 
 
