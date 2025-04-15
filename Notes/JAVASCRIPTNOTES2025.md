@@ -16,7 +16,8 @@
 - When opening the JavaScript console, to write a double line of code, hold shift and press enter.
 - Using the snippet editor of JavaScript console is a great way to write and test your code.
 - `alert("Hello");` - the `alert` is the FUNCTION (gets the browser to do something), `"Hello"` is the MESSAGE that you want displayed (AKA the STRING) and the `;` is the END of the instruction so that the browser doesn't get confused between one line and the other.
-- - Strict mode: makes it easier for us to write secure javascript mode - `'use strict';` which needs to be at the very top of the code in the script.js file. This will also help to reduce errors in your code. 
+- - Strict mode: makes it easier for us to write secure javascript mode - `'use strict';` which needs to be at the very top of the code in the script.js file. This will also help to reduce errors in your code.
+  - Scopes. Let and const variables are block-scoped, meaning that they can only be accessed inside of the block they are in. var variables can be accessed as part of the global scope, meaning you can grab the var from above and below if needed. The scope chain only works upwards (similar to parents in CSS). 
 
 
 - <strong>PRIMITIVE Data Types</strong>
