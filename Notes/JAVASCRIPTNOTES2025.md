@@ -6,6 +6,7 @@
 - Divide and Conquer - Break a big problem, take it apart into smaller problems
 - Don't be afraid to do research - stack overflow, MDN docs 
 - Write pseudo-code before writing actual code - so that you understand the problem yourself
+- To keep clean code, always make sure to define all of your variables at the top of your code.
 
 ### Javascript (ES6/ES2015)
 
@@ -227,3 +228,21 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
   - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`. 
 
+- <strong>Hoisting</strong> - Makes some type of variables accessible in the code before they are actually declared.
+- Function declarations will be hoisted meaning that you can use them before they have actually been declared (remember that function declarations are block scoped in 'strict mode').
+- Var variables will be hoisted, we will get 'undefined' though. This is a common source of bugs in JavaScript, this is why we barely use var.
+- Let and const variables, will not be hoisted (these will be placed in a temporal dead zone/TDZ). So if we use a let or const variable before we declare it, it will come up with an error.
+- Function expressions and arrow functions will depend on whether using var, const or let. This is why we can't use function expressions before we declare them in the code.
+- The temporal dead zone makes it easier for us to find bugs and to make const variables like we are supposed to (as const should never be re-assigned).
+
+- <strong>This</strong> keyword is an extremely important concept to get. It is a special variable made for every execution context and therefore every function. It will always take the value of the owner of the function (points to the owner function).
+- It is basically asking 'who is invoking me?' - it will always point to the object calling the method. 
+- The value of the <strong>this</strong> keyword is not static (very dynamic), and is only defined when it is called.
+- The 'this' keyword can refer to the object in the code via a <strong>Method</strong. 
+- <strong>Arrow functions do not get their own 'this' keyword</strong>
+- If you're ever unsure of the 'this' is inside of a function, you can console.log it to check.
+- The 'this' keyword in the global scope will likely be the window object.
+- <strong>Never use an arrow function as a method</strong> as it can help to avoid bugs - always use a function expression/declaration (same with not using 'var'). 
+- A regular function call has the 'this' keyword set as 'undefined'.
+- An arrow function inherits the 'this' keyword from the parent scope, and this can be used as a solution sometimes. 
+- Think of 'this' like a name-tag. When you call a function with object.method(), you're handing the function a name tag saying, "Hi, I'm object.". But if you say just method() — there’s no name tag. So JavaScript either puts on a generic one (window) or nothing at all (undefined in strict mode).
