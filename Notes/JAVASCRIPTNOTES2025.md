@@ -221,6 +221,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - The bracket notation is when you are trying to access a property that has spaces in it - i.e. `"Space name"` would be `console.log["Space name"];`
   - To add on top of an already existing string (i.e. in a function) use the += operator.
   - The `style` property is used to change the inline style of an element.
+  - You can add or remove classes to an element using JavaScript by using `classList.add` or `classList.remove` and even toggle using `classList.toggle` to toggle on and off the style/action. Whenn adding/removing a class, you don't need to use the "." before the new class. 
   - The `display` property is used to set the visibility of an element.
   - Example: `const monsterStats = document.querySelector("#monsterStats");
               monsterStats.style.display = "block";`
