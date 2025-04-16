@@ -238,7 +238,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - <strong>This</strong> keyword is an extremely important concept to get. It is a special variable made for every execution context and therefore every function. It will always take the value of the owner of the function (points to the owner function).
 - It is basically asking 'who is invoking me?' - it will always point to the object calling the method. 
 - The value of the <strong>this</strong> keyword is not static (very dynamic), and is only defined when it is called.
-- The 'this' keyword can refer to the object in the code via a <strong>Method</strong. 
+- The 'this' keyword can refer to the object in the code via a <strong>Method</strong>. 
 - <strong>Arrow functions do not get their own 'this' keyword.</strong>
 - If you're ever unsure of the 'this' is inside of a function, you can console.log it to check.
 - The 'this' keyword in the global scope will likely be the window object.
@@ -246,3 +246,4 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - A regular function call has the 'this' keyword set as 'undefined'.
 - An arrow function inherits the 'this' keyword from the parent scope, and this can be used as a solution sometimes. 
 - Think of 'this' like a name-tag. When you call a function with object.method(), you're handing the function a name tag saying, "Hi, I'm object.". But if you say just method() — there’s no name tag. So JavaScript either puts on a generic one (window) or nothing at all (undefined in strict mode).
+- 
