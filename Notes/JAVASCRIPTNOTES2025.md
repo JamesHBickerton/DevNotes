@@ -239,7 +239,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - It is basically asking 'who is invoking me?' - it will always point to the object calling the method. 
 - The value of the <strong>this</strong> keyword is not static (very dynamic), and is only defined when it is called.
 - The 'this' keyword can refer to the object in the code via a <strong>Method</strong. 
-- <strong>Arrow functions do not get their own 'this' keyword</strong>
+- <strong>Arrow functions do not get their own 'this' keyword.</strong>
 - If you're ever unsure of the 'this' is inside of a function, you can console.log it to check.
 - The 'this' keyword in the global scope will likely be the window object.
 - <strong>Never use an arrow function as a method</strong> as it can help to avoid bugs - always use a function expression/declaration (same with not using 'var'). 
