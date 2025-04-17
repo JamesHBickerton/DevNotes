@@ -245,6 +245,28 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - The 'this' keyword in the global scope will likely be the window object.
 - <strong>Never use an arrow function as a method</strong> as it can help to avoid bugs - always use a function expression/declaration (same with not using 'var'). 
 - A regular function call has the 'this' keyword set as 'undefined'.
-- An arrow function inherits the 'this' keyword from the parent scope, and this can be used as a solution sometimes. 
+- An arrow function inherits the 'this' keyword from the parent scope, and this can be used as a solution sometimes.
 - Think of 'this' like a name-tag. When you call a function with object.method(), you're handing the function a name tag saying, "Hi, I'm object.". But if you say just method() — there’s no name tag. So JavaScript either puts on a generic one (window) or nothing at all (undefined in strict mode).
-- 
+
+- <strong>Array destructuring</strong> - to receive variables from an array by declaring a new variable.
+  
+- Basic destructuring:
+
+`const arr = [1, 2, 3];
+const [a, b, c] = arr;`
+
+`console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3`
+
+ - To skip elements you would add `[first, , third]` for example.
+ - To get elements from nested arrays:
+
+`const ratings = [['rating', 4.19], ['ratingsCount', 144584]];
+const [[, rating], [, ratingsCount]] = ratings;`
+
+- <strong>Object destructuring</strong> - we always use the curly braces and provide the variable names that contain the exact property names. I.e.
+  `const { name, categories, openingHours } = restaurant`
+- You can also include arrays into this `[]` and if you want to rename an object you can do the following:
+  `const {name: restaurantName} = restaurant`.
+- In order to reassign/mutate variables in an object i.e. const obj = { a: 32, b: 7); - you would need to do `({a, b} = obj})` - so wrapping it in paranthesis. 
