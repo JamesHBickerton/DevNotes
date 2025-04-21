@@ -269,4 +269,8 @@ const [[, rating], [, ratingsCount]] = ratings;`
   `const { name, categories, openingHours } = restaurant`
 - You can also include arrays into this `[]` and if you want to rename an object you can do the following:
   `const {name: restaurantName} = restaurant`.
-- In order to reassign/mutate variables in an object i.e. const obj = { a: 32, b: 7); - you would need to do `({a, b} = obj})` - so wrapping it in paranthesis. 
+- In order to reassign/mutate variables in an object i.e. const obj = { a: 32, b: 7); - you would need to do `({a, b} = obj})` - so wrapping it in paranthesis.
+
+- <strong>The spread operator '...' </strong> allows an iterable (arrays, strings, maps, sets) to be expanded into individual elements or properties. It's commonly used to copy, combine or pass values without mutating the data. 
+- This is similar to destructuring, however the spread operator spreads elements into individual parts (can copy/merge data, and pass multiple values into functions). Destructuring pulls out values from arrays, or properties from objects and assigns them to new variables. You also cannot destructure a function, whereas you can use the spread operator on functions.
+- Just a note - the spread operator can work on OBJECTS TOO (which isn't a iterable). 
