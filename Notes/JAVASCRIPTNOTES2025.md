@@ -273,4 +273,13 @@ const [[, rating], [, ratingsCount]] = ratings;`
 
 - <strong>The spread operator '...' </strong> allows an iterable (arrays, strings, maps, sets) to be expanded into individual elements or properties. It's commonly used to copy, combine or pass values without mutating the data. 
 - This is similar to destructuring, however the spread operator spreads elements into individual parts (can copy/merge data, and pass multiple values into functions). Destructuring pulls out values from arrays, or properties from objects and assigns them to new variables. You also cannot destructure a function, whereas you can use the spread operator on functions.
-- Just a note - the spread operator can work on OBJECTS TOO (which isn't a iterable). 
+- Just a note - the spread operator can work on OBJECTS TOO (which isn't a iterable).
+
+- The <strong> rest operator </strong> goes on the LEFT side of the `=` operator. The rest operator is used to gather multiple elements into a single array or object (collecting function arguments or destructuring). It basically collects the unused (or the rest) elements in the destructuring assignment. It does not include any "skipped" elements i.e. `[first, , third]` - it wouldn't include the `, `. It must always be the last in the destructuring assignment. I.e. const `[pizza, , risotto, ...otherFood] = []`.
+- The <strong> rest argument </strong> is used within a function to compress elements. I.e. `const add = function(...numbers) {}` - so it is put through as an argument.
+
+- The difference between rest operators and spread operators is that the spread operator is used where we would use values seperated by comma's, the rest operator is used where we would use variables seperated by comma's.
+
+- Short circuiting in the OR operation (||) - if the first value/operant is a 'truthy', the other variable won't even be evaluated. If there are many parameters, it will return the FIRST truthy value. The AND operator (&&) will do the exact opposite and will return the first value/operant is a 'falsy' value.
+- The nullish coalescing operator `??` - works with the concept of nullish values instead of falsy values (null and undefined - not 0 or ' '). Only nullish values would short circuit the values.
+- 
