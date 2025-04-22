@@ -282,4 +282,8 @@ const [[, rating], [, ratingsCount]] = ratings;`
 
 - Short circuiting in the OR operation (||) - if the first value/operant is a 'truthy', the other variable won't even be evaluated. If there are many parameters, it will return the FIRST truthy value. The AND operator (&&) will do the exact opposite and will return the first value/operant is a 'falsy' value.
 - The nullish coalescing operator `??` - works with the concept of nullish values instead of falsy values (null and undefined - not 0 or ' '). Only nullish values would short circuit the values.
-- 
+
+- <strong>Logical assignment operators</strong>
+- The `||=` LOGICAL OR - assigns a value to a variable only if the variable is a 'falsy' value. I.e. `a ||= b;` - "this would mean, if a is falsy, then assign b to a".
+- We also have the `??=` LOGICAL NULLISH ASSIGNMENT OPERATOR - this will assign a value to the variable if the variable is 'nullish' - i.e. null or undefined.
+- We also have the `&&=` LOGICAL AND OPERATOR - this will assign a value to a variable if the variable is truthy. 
