@@ -275,15 +275,21 @@ const [[, rating], [, ratingsCount]] = ratings;`
 - This is similar to destructuring, however the spread operator spreads elements into individual parts (can copy/merge data, and pass multiple values into functions). Destructuring pulls out values from arrays, or properties from objects and assigns them to new variables. You also cannot destructure a function, whereas you can use the spread operator on functions.
 - Just a note - the spread operator can work on OBJECTS TOO (which isn't a iterable).
 
-- The <strong> rest operator </strong> goes on the LEFT side of the `=` operator. The rest operator is used to gather multiple elements into a single array or object (collecting function arguments or destructuring). It basically collects the unused (or the rest) elements in the destructuring assignment. It does not include any "skipped" elements i.e. `[first, , third]` - it wouldn't include the `, `. It must always be the last in the destructuring assignment. I.e. const `[pizza, , risotto, ...otherFood] = []`.
+- The <strong> rest operator </strong> goes on the LEFT side of the `=` operator. The rest operator is used to gather multiple elements into a single array or object (collecting function arguments or destructuring). It basically collects the unused (or the rest) elements in the destructuring assignment. It does not include any "skipped" elements i.e. `[first, , third]` - it wouldn't include the `, `. It must always be the last in the destructuring assignment. I.e. `const [pizza, , risotto, ...otherFood] = []`.
 - The <strong> rest argument </strong> is used within a function to compress elements. I.e. `const add = function(...numbers) {}` - so it is put through as an argument.
 
 - The difference between rest operators and spread operators is that the spread operator is used where we would use values seperated by comma's, the rest operator is used where we would use variables seperated by comma's.
 
-- Short circuiting in the OR operation (||) - if the first value/operant is a 'truthy', the other variable won't even be evaluated. If there are many parameters, it will return the FIRST truthy value. The AND operator (&&) will do the exact opposite and will return the first value/operant is a 'falsy' value.
+- <strong> Short circuiting </strong>
+- The OR operation (||) - if the first value/operant is a 'truthy', the other variable won't even be evaluated. If there are many parameters, it will return the FIRST truthy value.
+- The AND operator (&&) will do the exact opposite and will return the first value/operant is a 'falsy' value.
 - The nullish coalescing operator `??` - works with the concept of nullish values instead of falsy values (null and undefined - not 0 or ' '). Only nullish values would short circuit the values.
+- The `??` operator checks whether the value on the left side is null or undefined. If it is not, then the left hand value is returned. If it is, then the value of the right is returned. 
+- Just to note - `&&` has a higher precendence than `||`
 
 - <strong>Logical assignment operators</strong>
 - The `||=` LOGICAL OR - assigns a value to a variable only if the variable is a 'falsy' value. I.e. `a ||= b;` - "this would mean, if a is falsy, then assign b to a".
 - We also have the `??=` LOGICAL NULLISH ASSIGNMENT OPERATOR - this will assign a value to the variable if the variable is 'nullish' - i.e. null or undefined.
-- We also have the `&&=` LOGICAL AND OPERATOR - this will assign a value to a variable if the variable is truthy. 
+- We also have the `&&=` LOGICAL AND OPERATOR - this will assign a value to a variable if the variable is truthy.
+
+- <strong>For of</strong> loops can loop over entire arrays, and can give us access to the current array element that you can specify before the 'or' statement. You don't need to create a code block unless you have multiple lines. 
