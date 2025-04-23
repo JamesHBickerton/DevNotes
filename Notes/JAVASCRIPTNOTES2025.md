@@ -38,7 +38,6 @@
 - `var` is the old way of using JavaScript. You probably want to use `const` and `let` instead. 
 - `var myName = "James";` - `var` is a KEY WORD (similar to alert and prompt) to tell us that we are creating a new data container. The `myName` is the NAME OF VARIABLE (which you can also imagine as the box) and the `"James"` is the STRING/VALUE.
 - Variable names cannot start with numbers and cannot contain spaces or dashes. It is better to camelCase. They can only contain numbers, letters, underscores or dollar signs - you also can't lead with a number. Never call your variables just 'name'.
-- 
 - <strong>Values</strong> are either `objects` or `primitive`. 
 
 - <strong>Strings</strong> can be combined using concactenation. `alert("Hello" + " " + "Name");` would mean that it would equate to "Hello Name" on the pop up section.
@@ -169,7 +168,7 @@ The start of the splice is the first number of the array you want, and the last 
 - <strong>Dot vs. Bracket notations</strong> are ways to retrieve properties from an object. i.e. `console.log(james.lastName)` - if you wanted to receive the lastName from an object for example (this would be the dot notation) or `console.log(james['lastName'])` would be the bracket notation. In the square brackets, you can put any notation in there - i.e. strings - this would only work for bracket notations. Dot notations are usually cleaner. 
 - We can also add function expressions to objects as a METHOD. To do this, you wouldn't add `const calcAge = function()` you would just do `calcAge: function ()`.
 - To call a function with the brackets, you would do the following: `console.log(james["calcAge"](1995));`
-- 
+  
   
 - `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator/counter</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). This is usually `i`. 
 - `for` loops will keep running while the condition is TRUE. This can create a loop for an infinite amount of times (whereas `while` loops are used when it is needed for an infinite amount of times). 
@@ -190,8 +189,6 @@ The start of the splice is the first number of the array you want, and the last 
 - i.e. `while (something is true) {do something}`.
 - A big difference between `for` loops and `while` loops is that in `while` loops you will have to directly specify the `i++`. 
 
-- Inside the body or curly brackets of the loop, should be the console.log(i) usually - take this with a grain of salt though until later in my learning.
-- A `for...of` statement executes a loop that operates on a sequences of values from an iterable object (arrays and strings) and temporarily assigns it to a variable. `for (const value of iterable) {}`
 - `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code.
 
 ### DOM Manipulation
@@ -292,4 +289,24 @@ const [[, rating], [, ratingsCount]] = ratings;`
 - We also have the `??=` LOGICAL NULLISH ASSIGNMENT OPERATOR - this will assign a value to the variable if the variable is 'nullish' - i.e. null or undefined.
 - We also have the `&&=` LOGICAL AND OPERATOR - this will assign a value to a variable if the variable is truthy.
 
-- <strong>For of</strong> loops can loop over entire arrays, and can give us access to the current array element that you can specify before the 'or' statement. You don't need to create a code block unless you have multiple lines. 
+- <strong>For...of</strong> loops can loop over entire arrays, and can give us access to the current array element that you can specify before the 'or' statement. You don't need to create a code block unless you have multiple lines.
+  
+  `for (const element of iterable) {
+  // Code to run for each element
+  }`
+
+- the element represents the current value in the loop, while the iterable is the data structure you are looping over (i.e. string or array).
+  
+- The `entries()` method returns an iterator that gives you `[index, value]` pairs for each element in the array.
+
+`const fruits = ["apple", "banana", "cherry"];
+for (const [index, value] of fruits.entries()) {
+  console.log(index, value);
+}`
+
+- Optional chaining - if a way of using `?.` to check if a variable or method exists. For example, if you use:
+-  `const city = user.profile?.location?.city;` - this would check if first user.profile exists, and then if the location exists - then it will return the city value. If anything is missing it just returns undefined instead of throwing an error.
+-  These can also be used for methods - i.e.
+-  These are frequently used with the `??` to ensure that there is another option/operant. - IMPORTANT
+-  These can also be used on arrays - i.e. `const users = [{name: 'James', email: 'hello@james.com'}]
+    console.log(users[0]?.name ?? 'User array empty'):` - this will assess whether the value on the left `users[0]` exists, this would help to avoid having to use if/else statements all the time. 
