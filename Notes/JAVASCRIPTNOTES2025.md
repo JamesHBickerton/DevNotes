@@ -309,4 +309,8 @@ for (const [index, value] of fruits.entries()) {
 -  These can also be used for methods - i.e.
 -  These are frequently used with the `??` to ensure that there is another option/operant. - IMPORTANT
 -  These can also be used on arrays - i.e. `const users = [{name: 'James', email: 'hello@james.com'}]
-    console.log(users[0]?.name ?? 'User array empty'):` - this will assess whether the value on the left `users[0]` exists, this would help to avoid having to use if/else statements all the time. 
+    console.log(users[0]?.name ?? 'User array empty'):` - this will assess whether the value on the left `users[0]` exists, this would help to avoid having to use if/else statements all the time.
+
+- In objects, We can loop over property names (keys) and property values. You can use this with the `Object.keys` for properties, and `Object.values` for values.
+- To loop over both the property names (keys) and values in objects, you would need the entries().
+- It is not going to be a method on the object, we do it differently - `Object.entries()`. 
