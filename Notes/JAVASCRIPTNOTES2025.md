@@ -313,4 +313,9 @@ for (const [index, value] of fruits.entries()) {
 
 - In objects, We can loop over property names (keys) and property values. You can use this with the `Object.keys` for properties, and `Object.values` for values.
 - To loop over both the property names (keys) and values in objects, you would need the entries().
-- 
+
+- <strong>Sets</strong> - to create a new set you type in `= new Set([])` after declaring a variable. A set is a set of unique elements without duplicates.
+- The length of sets are found using `Set.size` and the includes is `.has` method.
+- The .push of sets are `.add` and to remove elements are `.delete` and to delete all of the elements from the set `.clear`.
+- Because sets are iterables, we can loop over them. 
+- There are no ways of getting data out of a set, and they do not have an index.  
