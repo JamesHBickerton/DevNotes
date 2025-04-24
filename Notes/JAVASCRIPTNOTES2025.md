@@ -313,4 +313,4 @@ for (const [index, value] of fruits.entries()) {
 
 - In objects, We can loop over property names (keys) and property values. You can use this with the `Object.keys` for properties, and `Object.values` for values.
 - To loop over both the property names (keys) and values in objects, you would need the entries().
-- It is not going to be a method on the object, we do it differently - `Object.entries()`. 
+- 
