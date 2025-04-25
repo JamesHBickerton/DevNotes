@@ -325,4 +325,10 @@ for (const [index, value] of fruits.entries()) {
 - The `.union()` method will combine all of the elements (apart from duplicates) into one set. This is different from the ...spread operator as it will get rid of all of the duplicates.
 - The `.difference()` method will give us all of the elements that are unique in the first set (so order matters). 
 - The `.symmetricDifference` which is the opposite of the .intersection method - will give us all of the unique elements.
-- There are also other methods that you can use - i.e. `.isDisjointFrom`. 
+- There are also other methods that you can use - i.e. `.isDisjointFrom`.
+
+- <strong>Maps</strong> - data structures we can use to map values to keys (just like in objects). The difference between objects and maps, is that the maps can have any types of keys.
+- `const variableName = new Map();` - to fill out the map, we can then use the set method. `variableName.set('name', 'James)` - doesn't have to be a string.
+- It also returns the map - by getting `variableName.get()`.
+- To check if a map has a certain key you would use `variableName.has()` and to delete `variableName.delete()`.
+- Maps also have the size property `variableName.size`. 
