@@ -331,4 +331,8 @@ for (const [index, value] of fruits.entries()) {
 - `const variableName = new Map();` - to fill out the map, we can then use the set method. `variableName.set('name', 'James)` - doesn't have to be a string.
 - It also returns the map - by getting `variableName.get()`.
 - To check if a map has a certain key you would use `variableName.has()` and to delete `variableName.delete()`.
-- Maps also have the size property `variableName.size`. 
+- Maps also have the size property `variableName.size`.
+- To convert objects to maps, you can use the Object.entries().
+- Iteration is also common on Maps as they are iterables, and can use the loops.
+- To convert maps into arrays, you would want to use the spread operator. 
+- 
