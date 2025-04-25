@@ -334,5 +334,5 @@ for (const [index, value] of fruits.entries()) {
 - Maps also have the size property `variableName.size`.
 - To convert objects to maps, you can use the Object.entries().
 - Iteration is also common on Maps as they are iterables, and can use the loops.
-- To convert maps into arrays, you would want to use the spread operator. 
+- To convert maps into arrays, you would want to use the spread operator `console.log([...variableName]);`
 - 
