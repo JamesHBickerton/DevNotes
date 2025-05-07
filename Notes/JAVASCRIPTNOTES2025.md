@@ -336,4 +336,9 @@ for (const [index, value] of fruits.entries()) {
 - To convert objects to maps, you can use the Object.entries().
 - Iteration is also common on Maps as they are iterables, and can use the loops.
 - To convert maps into arrays, you would want to use the spread operator `console.log([...variableName]);`
-- 
+
+- <strong> Choosing Data Structures </strong>
+- If you need a simple list of values use an array or set (when we don't need to describe the values).
+- Always use arrays whenever you need to store values in order and when they may contain duplicates. Sets should only be used if high performance is really important or when there are no duplicates (sets can be 10 x faster than arrays). Sets are usually needed to compliment arrays.
+- If you need key value pairs, you would use an object or map. 
+- Maps are better suited for key value stores as they allow for better performance (they can also have many data types and easy to iterate, when you need keys that are not strings). The biggest advantage of objects is due to them being more simple to write and if you need methods and using the 'this' keyword.
