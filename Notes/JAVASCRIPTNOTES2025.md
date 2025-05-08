@@ -52,7 +52,7 @@
 The start of the splice is the first number of the array you want, and the last number of the splice is the end represents where the index stops.
 - The `concat()` method can help to combine 2 different types of arrays (and returns a new array). 
 
-- `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower`
+- `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower` - HAVE A LOOK AT USEFUL SCREENSHOTS FOLDER.
   
 <strong>I am finding this super challenging...</strong>
 
@@ -349,4 +349,5 @@ for (const [index, value] of fruits.entries()) {
 - The `airline.slice(4)` would have the first value as the `begin parameter` - you can also provide an end parameter i.e. `airline.slice(4, 7)`. It stops extrating before reaching index number 7. The length of the extracted substring will always be `7 - 4 = 3 (in this example)`. 
 - To use the slice on an object that you potentially don't know the index of, use the indexOf and lastIndexOf to find this (CHECK USEFUL SCREENSHOTS FOLDER). 
 - You can also use minus numbers to get numbers from the beginning parameter and/or ending parameters.
-- Whenever we call a method on a string (which technically isn't possible), javascript will turn this string into an object (called boxing - as it takes our string which creates an object. When it is completed, it returns it back to a string). 
+- Whenever we call a method on a string (which technically isn't possible), javascript will turn this string into an object (called boxing - as it takes our string which creates an object. When it is completed, it returns it back to a string).
+- You can use `.trim()` - 
