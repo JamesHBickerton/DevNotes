@@ -321,6 +321,7 @@ for (const [index, value] of fruits.entries()) {
 - The .push of sets are `.add` and to remove elements are `.delete` and to delete all of the elements from the set `.clear`.
 - Because sets are iterables, we can loop over them. 
 - There are no ways of getting data out of a set, and they do not have an index.
+- CHECK USEFUL SCREENSHOTS ON HOW TO REMOVE DUPLICATES. 
 - The spread operator can also use on sets to unpack sets into a new array.
 - The `.intersection()` method can find out what two elements that are common in different groups/arrays - this is extremely useful when converting sets to arrays.
 - The `.union()` method will combine all of the elements (apart from duplicates) into one set. This is different from the ...spread operator as it will get rid of all of the duplicates.
