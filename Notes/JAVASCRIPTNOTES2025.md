@@ -344,7 +344,7 @@ for (const [index, value] of fruits.entries()) {
 - If you need key value pairs, you would use an object or map. 
 - Maps are better suited for key value stores as they allow for better performance (they can also have many data types and easy to iterate, when you need keys that are not strings). The biggest advantage of objects is due to them being more simple to write and if you need methods and using the 'this' keyword.
 
-- <strong>Strings ADVANCED </strong> are also zero based. In the string, if there are spaces, the spaces will count for the position - if using indexOf for example.
+- <strong>Strings METHODS ADVANCED </strong> are also zero based. In the string, if there are spaces, the spaces will count for the position - if using indexOf for example.
 - The <strong>Slice</strong> method - needs indexes as arguments. The slice works a little differently. For example: `const airline = 'Air New Zealand` if using `airline.slice(4)` it would result in the console as `New Zealand` as it would start at 0 (A) and finish at 4 (N), only logging a 'substring'. This will not change the underlying string as it is IMPOSSIBLE to mutate strings, you would need to store it into a seperate value, as they are primitive values.
 - The `airline.slice(4)` would have the first value as the `begin parameter` - you can also provide an end parameter i.e. `airline.slice(4, 7)`. It stops extrating before reaching index number 7. The length of the extracted substring will always be `7 - 4 = 3 (in this example)`. 
 - To use the slice on an object that you potentially don't know the index of, use the indexOf and lastIndexOf to find this (CHECK USEFUL SCREENSHOTS FOLDER). 
