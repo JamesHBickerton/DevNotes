@@ -350,4 +350,10 @@ for (const [index, value] of fruits.entries()) {
 - To use the slice on an object that you potentially don't know the index of, use the indexOf and lastIndexOf to find this (CHECK USEFUL SCREENSHOTS FOLDER). 
 - You can also use minus numbers to get numbers from the beginning parameter and/or ending parameters.
 - Whenever we call a method on a string (which technically isn't possible), javascript will turn this string into an object (called boxing - as it takes our string which creates an object. When it is completed, it returns it back to a string).
-- You can use `.trim()` - 
+- You can use `.trim()` - to remove white space from both ends of a word (you can also use the variant `.trimStart()` and `.trimEnd()`.
+- The `.replace` can be used on strings to remove one key and replace with the other.
+- I.e. `const priceUS = priceGB.replace('£', '$')` - would mean that the £ would be replaced by the dollar sign.
+- These can be entire words or single characters, and can be chained. It will only replicate the very first occurence of the word. There is a `.replaceAll()` method that will replicate all of the occurences of the word. 
+- Some useful methods for strings are the `.includes()`, `.startsWith()`, and `.endsWith()` - which will return boolean values. These are especially helpful in conditionals (if/else etc).
+- It is important to translate all words into lower case when getting inputs to make it easier to match up with your code.
+- Also have a look at `.join()`, `.split()`, `.padStart()`, `.padEnd()`, and `.repeat()`. 
