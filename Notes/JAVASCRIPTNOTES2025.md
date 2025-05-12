@@ -357,3 +357,12 @@ for (const [index, value] of fruits.entries()) {
 - Some useful methods for strings are the `.includes()`, `.startsWith()`, and `.endsWith()` - which will return boolean values. These are especially helpful in conditionals (if/else etc).
 - It is important to translate all words into lower case when getting inputs to make it easier to match up with your code.
 - Also have a look at `.join()`, `.split()`, `.padStart()`, `.padEnd()`, and `.repeat()`. 
+
+<strong>Advanced Functions</strong>
+- Javascript does not have 'passing by reference', only 'passing by value' - unlike C++.
+- A higher order function is a function that receives another function as an argument, that returns a new function, or both.
+- There are no first class functions in practice, it's just a concept - there are higher order functions because the langauge supports first class functions..
+- For higher order functions, one of the parameters would have the `fn` parameter.
+- A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+- JS uses call back functions all the time - this is because it makes it easy to split up our code into more reusable code.
+- Abstraction is an important notion to consider - it involves simplifying complex systems by hiding unnecessary implementation details and exposing only essential information to the user.
