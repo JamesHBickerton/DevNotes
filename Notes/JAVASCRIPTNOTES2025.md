@@ -224,7 +224,8 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
               monsterStats.style.display = "block";`
   - The `innerHTML` property allows you to access or modify the content inside an HTML element using JavaScript.
   - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
-  - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`. 
+  - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`.
+  - In an event handler function, the 'this' keyword always points to the element it is attached to. I.e. the 'this' keyword will point to a button etc. 
 
 - <strong>Hoisting</strong> - Makes some type of variables accessible in the code before they are actually declared.
 - Function declarations will be hoisted meaning that you can use them before they have actually been declared (remember that function declarations are block scoped in 'strict mode').
@@ -366,6 +367,6 @@ for (const [index, value] of fruits.entries()) {
 - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 - JS uses call back functions all the time - this is because it makes it easy to split up our code into more reusable code.
 - Abstraction is an important notion to consider - it involves simplifying complex systems by hiding unnecessary implementation details and exposing only essential information to the user.
-- 
+- `.bind()` method can explicitly define the 'this' keyword for any function call. It returns a new function where the 'this' keyword is bound. I believe that this would be assigned to a variable (different to .call and .apply). I.e. `const bookJS = book.bind(jetstar);`. In the bind method you can also pass many arguments. THIS IS EXTREMELY IMPORTANT. 
 - `.call()` method the first argument is what we want the 'this' keyword to point to, and then the rest of the arguments. This allows us to explicitly define the this keyword in any function that we want.
 - The `.apply()` method does pretty much the same thing as the .call method, but it doesn't have any arguments after. It takes an array of arguments instead to pass it into the function. <strong>It's not really used as much anymore!!</strong> - this is because you can just use the `spread` on the `.call()` method. 
