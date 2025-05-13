@@ -366,3 +366,6 @@ for (const [index, value] of fruits.entries()) {
 - A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 - JS uses call back functions all the time - this is because it makes it easy to split up our code into more reusable code.
 - Abstraction is an important notion to consider - it involves simplifying complex systems by hiding unnecessary implementation details and exposing only essential information to the user.
+- 
+- `.call()` method the first argument is what we want the 'this' keyword to point to, and then the rest of the arguments. This allows us to explicitly define the this keyword in any function that we want.
+- The `.apply()` method does pretty much the same thing as the .call method, but it doesn't have any arguments after. It takes an array of arguments instead to pass it into the function. <strong>It's not really used as much anymore!!</strong> - this is because you can just use the `spread` on the `.call()` method. 
