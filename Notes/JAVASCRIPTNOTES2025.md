@@ -373,9 +373,11 @@ for (const [index, value] of fruits.entries()) {
 - In partial application, many times we are not that interested in the 'this' keyword. This means that we can preset parameters. I.e. using null for objects.
 - <strong>Immediately invoked function expressions</strong> are functions that you only want to run once, and then they disappear. To do this (check important screenshots). These aren't really used much anymore.
 
-- <strong>CLOSURES</strong> - closures happen automatically, we just need to recognise these situations (as you can't do them manually).
-- A closure makes a function rememeber all the variables that existed at the function's "birth place". This means that the function always has access to the variable environment of the execution context in which it was created.
-- The closure is the variable environment that is attached to the function (exactly as it was at the time at place when the function was created).
+- <strong>Execution contexts</strong> - The global execution context is created for top level code. An execution context is the environment in which a piece of javascript is executed (like a pizza inside of the box - the box is the execution context and the pizza is the javascsript is the pizza). There is one execution context for each function, and for each function call a new execution context is created. All of these execution contexts will make up the call stack!! Inside of each execution context will contain of a variable environment. Each execution context will also store the scope chain and the 'this' keyword (obviously apart from the arrow functions - that being the this keyword and arguments). 
+- </strong>Call stack</strong> - are stacks of execution contexts on top of each other to let us know where we are in the execution (the one on top of the stack, is the one that is currently running). When it is finished running, it will be removed from the stack and go back to the previous execution context. 
+
+- <strong>CLOSURES</strong> - closures happen automatically, we just need to recognise these situations.
+- A pure function (that only depends on it's own arguments will already be a closed expression). If a function represents data outside of its own scope (global environment or outer function), 
 - A closure gives a function access to all of the variables of it's parent function, even after that parent function has been returned. This preserves the scope chain throughout time.
 - <strong> CLOSURE ANALOGY </strong> - A closure is like a back pack, that a function carries around whereever it goes. This backpack contains all of the variables that were present in the environment where the function was created (think of it as like the function is leaving home - the home is where the function was created, and it is taking all of the variables that were present at its birth place).
 - The closure sees the latest value of the variable, not the value at the time of creation. 
