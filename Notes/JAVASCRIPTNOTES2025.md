@@ -374,10 +374,26 @@ for (const [index, value] of fruits.entries()) {
 - <strong>Immediately invoked function expressions</strong> are functions that you only want to run once, and then they disappear. To do this (check important screenshots). These aren't really used much anymore.
 
 - <strong>Execution contexts</strong> - The global execution context is created for top level code. An execution context is the environment in which a piece of javascript is executed (like a pizza inside of the box - the box is the execution context and the pizza is the javascsript is the pizza). There is one execution context for each function, and for each function call a new execution context is created. All of these execution contexts will make up the call stack!! Inside of each execution context will contain of a variable environment. Each execution context will also store the scope chain and the 'this' keyword (obviously apart from the arrow functions - that being the this keyword and arguments). 
-- </strong>Call stack</strong> - are stacks of execution contexts on top of each other to let us know where we are in the execution (the one on top of the stack, is the one that is currently running). When it is finished running, it will be removed from the stack and go back to the previous execution context. 
+- </strong>Call stack</strong> - are stacks of execution contexts on top of each other to let us know where we are in the execution (the one on top of the stack, is the one that is currently running). When it is finished running, it will be removed from the stack and go back to the previous execution context.
+- <strong>Scopes</strong> - 3 types of scopes. Each variable will always have access to all of the variables from all parent scopes. "sibling scopes" can not have access to each other's variables, only of parent scopes - this is due to lexical scoping. 
+  <ol>
+    <li>Global scope - if the code is outside any function or block (and are available everywhere in the code).</li>
+    <li>Function/local scope - variables are only accessible inside of the function - these are quite weird.</li>
+    <li>Block scope - (anything in curly braces i.e. loops etc - these only apply to variables with LET or CONST). If you declare a variable via VAR, then this will still be accessible outside of the block - to the current function or global scope. Var is function/local scoped. Functions are always block scoped (when using strict mode). </li>
+  </ol>
 
 - <strong>CLOSURES</strong> - closures happen automatically, we just need to recognise these situations.
-- A pure function (that only depends on it's own arguments will already be a closed expression). If a function represents data outside of its own scope (global environment or outer function), 
+- Closures allow asynchronous functions (like event listeners, timers, promises) to “remember” the context they were created in.
 - A closure gives a function access to all of the variables of it's parent function, even after that parent function has been returned. This preserves the scope chain throughout time.
 - <strong> CLOSURE ANALOGY </strong> - A closure is like a back pack, that a function carries around whereever it goes. This backpack contains all of the variables that were present in the environment where the function was created (think of it as like the function is leaving home - the home is where the function was created, and it is taking all of the variables that were present at its birth place).
 - The closure sees the latest value of the variable, not the value at the time of creation. 
+
+- Here's a quick mental checklist when you're debugging closures:
+✅ Where is the function defined?
+→ That determines what it closes over.
+
+✅ What variables are in scope at that time?
+→ That's what gets "remembered."
+
+✅ Is the variable redefined later somewhere else?
+→ If it's not in the same scope, it doesn't affect the closure.
