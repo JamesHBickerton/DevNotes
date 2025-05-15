@@ -397,3 +397,18 @@ for (const [index, value] of fruits.entries()) {
 
 ✅ Is the variable redefined later somewhere else?
 → If it's not in the same scope, it doesn't affect the closure.
+
+- <strong>More advanced Arrays</strong>
+- We can use the slice method similar to the strings. Using slice on arrays does not mutate the array but creates a new array (copy of the array with the extracted parts).
+- Obviously using the minus in the slice method `arr.slice(-1)` would return the last letter/input.
+- You can use the `splice` method which is similar to the slice method, but it actually mutates the array, rather than creating a new array. This would delete the elements that you return into splice, and the original array loses their values. The second value is different from the slice method, in that the last number is 'deleteCount' meaning that it is the number of elements you want to delete.
+- The `reverse()` method can be used to reverse the elements of an array, and same as splice it will mutate the original array.
+- The `concat()` method can be used to concatinate to arrays. i.e. if you have `arr1` and `arr2` and you wanted to joint arr1+arr2, then you would write `arr1.concat(arr2)` and define that to a new variable. The concat doesn't mutate arrays.
+- The `join()` method will work the same as for strings.
+- The `at()` method can be used instead of the brackets notation to access one element from an array. If you want to get the last element of the array, you should probably use the at() method. The at method also works on strings. 
+- <strong>Ways to get the last element of an array:</strong>
+-   `arr[arr.length - 1]` OR `arr.slice(-1)[0]` OR `arr.at(-1)` - the `at()` one being quite easy.
+- Just a note: a good way to remove the '-' from values is the `Math.abs`.
+- The `forEach()` method is a higher order function that has a callback function. It is the forEach method that will call the callback function. The forEach method will loop over the array, and in each iteration it will execute the callback function. It will pass in the current element of the array as an argument.
+- For examples in the parameters for the `forEach()` function, the first one always has to be the `current element`, the second `current index`, and the third `the entire array you are looping over` - obviously can have any name you want in the parameters though.
+- 
