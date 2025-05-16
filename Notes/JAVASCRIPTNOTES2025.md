@@ -225,7 +225,9 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - The `innerHTML` property allows you to access or modify the content inside an HTML element using JavaScript.
   - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
   - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`.
-  - In an event handler function, the 'this' keyword always points to the element it is attached to. I.e. the 'this' keyword will point to a button etc. 
+  - In an event handler function, the 'this' keyword always points to the element it is attached to. I.e. the 'this' keyword will point to a button etc.
+ 
+- insertHTMLAdjacent - have a look - easy solution. 
 
 - <strong>Hoisting</strong> - Makes some type of variables accessible in the code before they are actually declared.
 - Function declarations will be hoisted meaning that you can use them before they have actually been declared (remember that function declarations are block scoped in 'strict mode').
