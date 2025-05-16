@@ -413,3 +413,5 @@ for (const [index, value] of fruits.entries()) {
 - For examples in the parameters for the `forEach()` function, the first one always has to be the `current element`, the second `current index`, and the third `the entire array you are looping over` - obviously can have any name you want in the parameters though.
 - The difference between forEach and for of loops is that you cannot break or continue using the forEach loop.
 - <strong>I am finding forEach loops much easier to understand than all other types of loops tbh. Will definitely be using these more going forward!!</strong>
+- You can also use forEach loops on maps and sets. The first parameter is the current `value`, the second value is the `key`, and the third is the entire `map` that is being looped over.
+- REMEMBER sets do not have keys or indexes. So the parameters in order will go `value`, `value` again (which you can actually just put an underscore `_`, and then the `map`.  
