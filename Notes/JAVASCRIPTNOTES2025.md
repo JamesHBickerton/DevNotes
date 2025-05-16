@@ -411,4 +411,5 @@ for (const [index, value] of fruits.entries()) {
 - Just a note: a good way to remove the '-' from values is the `Math.abs`.
 - The `forEach()` method is a higher order function that has a callback function. It is the forEach method that will call the callback function. The forEach method will loop over the array, and in each iteration it will execute the callback function. It will pass in the current element of the array as an argument.
 - For examples in the parameters for the `forEach()` function, the first one always has to be the `current element`, the second `current index`, and the third `the entire array you are looping over` - obviously can have any name you want in the parameters though.
-- 
+- The difference between forEach and for of loops is that you cannot break or continue using the forEach loop.
+- <strong>I am finding forEach loops much easier to understand than all other types of loops tbh. Will definitely be using these more going forward!!</strong>
