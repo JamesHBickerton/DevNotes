@@ -416,4 +416,7 @@ for (const [index, value] of fruits.entries()) {
 - The difference between forEach and for of loops is that you cannot break or continue using the forEach loop.
 - <strong>I am finding forEach loops much easier to understand than all other types of loops tbh. Will definitely be using these more going forward!!</strong>
 - You can also use forEach loops on maps and sets. The first parameter is the current `value`, the second value is the `key`, and the third is the entire `map` that is being looped over.
-- REMEMBER sets do not have keys or indexes. So the parameters in order will go `value`, `value` again (which you can actually just put an underscore `_`, and then the `map`.  
+- REMEMBER sets do not have keys or indexes. So the parameters in order will go `value`, `value` again (which you can actually just put an underscore `_`, and then the `map`.
+- The `map()` method is similar to the forEach method, but map method will take an array, loop over it and applies a callback function to the current array element. It will then 'map' these values into a new array - usually way more useful than the forEach method. The callback function will get the current element in the arguments (similar to forEach method). 
+- The `filter()` method is used to filter elements in an array that fits a certain condition. It will return a new array that pass this specified test coneition.
+- The `reduce()` method boils/reduces down all array elements to one single value (i.e. adding all elements together). 
