@@ -401,9 +401,11 @@ for (const [index, value] of fruits.entries()) {
 → If it's not in the same scope, it doesn't affect the closure.
 
 - <strong>More advanced Arrays</strong>
+
 - We can use the slice method similar to the strings. Using slice on arrays does not mutate the array but creates a new array (copy of the array with the extracted parts).
 - Obviously using the minus in the slice method `arr.slice(-1)` would return the last letter/input.
-- You can use the `splice` method which is similar to the slice method, but it actually mutates the array, rather than creating a new array. This would delete the elements that you return into splice, and the original array loses their values. The second value is different from the slice method, in that the last number is 'deleteCount' meaning that it is the number of elements you want to delete.
+- You can use the `splice` method which is similar to the slice method, but it actually mutates the array, rather than creating a new array. This would delete the elements that you return into splice, and the original array loses their values. The second value is different from the slice method, in that the last number is 'deleteCount' meaning that it is the number of elements you want to delete. 
+  
 - The `reverse()` method can be used to reverse the elements of an array, and same as splice it will mutate the original array.
 - The `concat()` method can be used to concatinate to arrays. i.e. if you have `arr1` and `arr2` and you wanted to joint arr1+arr2, then you would write `arr1.concat(arr2)` and define that to a new variable. The concat doesn't mutate arrays.
 - The `join()` method will work the same as for strings.
@@ -411,18 +413,25 @@ for (const [index, value] of fruits.entries()) {
 - <strong>Ways to get the last element of an array:</strong>
 -   `arr[arr.length - 1]` OR `arr.slice(-1)[0]` OR `arr.at(-1)` - the `at()` one being quite easy.
 - Just a note: a good way to remove the '-' from values is the `Math.abs`.
+
 - The `forEach()` method is a higher order function that has a callback function. It is the forEach method that will call the callback function. The forEach method will loop over the array, and in each iteration it will execute the callback function. It will pass in the current element of the array as an argument.
 - For examples in the parameters for the `forEach()` function, the first one always has to be the `current element`, the second `current index`, and the third `the entire array you are looping over` - obviously can have any name you want in the parameters though.
 - The difference between forEach and for of loops is that you cannot break or continue using the forEach loop.
 - <strong>I am finding forEach loops much easier to understand than all other types of loops tbh. Will definitely be using these more going forward!!</strong>
 - You can also use forEach loops on maps and sets. The first parameter is the current `value`, the second value is the `key`, and the third is the entire `map` that is being looped over.
 - REMEMBER sets do not have keys or indexes. So the parameters in order will go `value`, `value` again (which you can actually just put an underscore `_`, and then the `map`.
+  
 - The `map()` method is similar to the forEach method, but map method will take an array, loop over it and applies a callback function to the current array element. It will then 'map' these values into a new array - usually way more useful than the forEach method (no side-effects). The callback function will get the current element in the arguments (similar to forEach method). 
 - The `filter()` method is used to filter elements in an array that fits a certain condition. It will return a new array that pass this specified test condition. These also get access to the element, current index and array. 
 - The `reduce()` method boils/reduces down all array elements to one single value (i.e. adding all elements together). The reduce element also gets a call back function. THe first parameter is always the accumulator (acc - it's like a snowball, followed by the current element, then the index, then the entire array. It also has another SECOND parameter (which is the initial value of the accumulator in the first loop iteration - i.e. like saying let i = 0). CHECK USEFUL SCREENSHOTS IF UNSURE. Always know what the accumulator should be - this is quite challenging but very beneficial to use.
+  
 - It's usually good practice not to mutate arrays.
 - The `find()` method retrieves an element of an array. It does not return a new array, but only returns the first element that satisfies a specific condition (if it is true or false). It is similar to the `filter()` method, apart from TWO BIG differences: filter will return all of the elements that match the condition, but find will only return the first one. The find method does not return a new array, it only returns the element/object itself (not the array). This is usally combined with the `===` operator.
 - The `findIndex()` method is similar to the `find()` method, where you need to pass in through a condition (true or false). It will then return the first INDEX in the array that returns true (similar to the indexOf method - but with findIndex() we can create a complex condition - anything that returns true or false).
-- The `findLast()` and `findLastIndex()` can be also be used similarly to get the last element or index, which can be good for using for 'latest transactions' or viewing the most recent activity. 
+- The `findLast()` and `findLastIndex()` can be also be used similarly to get the last element or index, which can be good for using for 'latest transactions' or viewing the most recent activity.
+  
 - The `some()` method can be used (similar to the `.includes()` method) if you want to check if any item/element fits a particular condition. The difference is that the `includes()` method checks for equality, whereas the `.includes()` method checks for conditions. Whenever you see the word 'any' included in questions or challenges, it's usually a good idea to use the `some()` method. 
-- The `every()` method
+- The `every()` method only returns true if ALL of the elements in the array 'pass the test' will be true.
+  
+- The `flat()` method creates a new array with all sub-array elements concactenated together. Useful for nested arrays and combining them into one to "flatten" the array. This only goes one level deep though. This also doesn't need a callback function. If it is one level deep of nesting, you would just use the `flat()`, but if it is 2 for example then you would just use `flat(2)`.
+- The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method. 
