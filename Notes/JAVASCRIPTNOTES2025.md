@@ -407,7 +407,7 @@ for (const [index, value] of fruits.entries()) {
 - You can use the `splice` method which is similar to the slice method, but it actually mutates the array, rather than creating a new array. This would delete the elements that you return into splice, and the original array loses their values. The second value is different from the slice method, in that the last number is 'deleteCount' meaning that it is the number of elements you want to delete. 
   
 - The `reverse()` method can be used to reverse the elements of an array, and same as splice it will mutate the original array.
-- The `concat()` method can be used to concatinate to arrays. i.e. if you have `arr1` and `arr2` and you wanted to joint arr1+arr2, then you would write `arr1.concat(arr2)` and define that to a new variable. The concat doesn't mutate arrays.
+- The `concat()` method can be used to concatinate two arrays. i.e. if you have `arr1` and `arr2` and you wanted to joint arr1+arr2, then you would write `arr1.concat(arr2)` and define that to a new variable. The concat doesn't mutate arrays.
 - The `join()` method will work the same as for strings.
 - The `at()` method can be used instead of the brackets notation to access one element from an array. If you want to get the last element of the array, you should probably use the at() method. The at method also works on strings. 
 - <strong>Ways to get the last element of an array:</strong>
@@ -430,7 +430,7 @@ for (const [index, value] of fruits.entries()) {
 - The `findIndex()` method is similar to the `find()` method, where you need to pass in through a condition (true or false). It will then return the first INDEX in the array that returns true (similar to the indexOf method - but with findIndex() we can create a complex condition - anything that returns true or false).
 - The `findLast()` and `findLastIndex()` can be also be used similarly to get the last element or index, which can be good for using for 'latest transactions' or viewing the most recent activity.
   
-- The `some()` method can be used (similar to the `.includes()` method) if you want to check if any item/element fits a particular condition. The difference is that the `includes()` method checks for equality, whereas the `.includes()` method checks for conditions. Whenever you see the word 'any' included in questions or challenges, it's usually a good idea to use the `some()` method. 
+- The `some()` method can be used (similar to the `.includes()` method) if you want to check if any item/element fits a particular condition. The difference is that the `includes()` method checks for equality, whereas the `.some()` method checks for conditions. Whenever you see the word 'any' included in questions or challenges, it's usually a good idea to use the `some()` method. 
 - The `every()` method only returns true if ALL of the elements in the array 'pass the test' will be true.
   
 - The `flat()` method creates a new array with all sub-array elements concactenated together. Useful for nested arrays and combining them into one to "flatten" the array. This only goes one level deep though. This also doesn't need a callback function. If it is one level deep of nesting, you would just use the `flat()`, but if it is 2 for example then you would just use `flat(2)`.
