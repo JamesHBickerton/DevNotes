@@ -441,7 +441,7 @@ for (const [index, value] of fruits.entries()) {
 
 - To create an empty array, you can use the empty array method - `const x = new Array(7)` to create 7 blank arrays. 
 - The `fill()` method will fill an entire array (and mutate the array). It is similar to the slice()method as we can tell it where we want to start it (begin parameter) and finish it (end parameter).
-- The `Array.from()` method will create a new array from an array like object or an iterable (set/map/strings/querySelectors). This syntax would be - Array.from(arrayLike, mapFunction, Argument) - the callBack function is optional.
+- The `Array.from()` tool will create a new array from an array like object or an iterable (set/map/strings/querySelectors). This syntax would be - Array.from(arrayLike, mapFunction, Argument) - the callBack function is optional.
 
 - REMEMBER: The `reverse()`, `sort()` and `splice` method, - will mutate arrays (which usually isn't good practice). These are <strong>DESTRUCTIVE</strong> methods. These can be replaced by `toReversed()`, `toSorted()`, and `toSpliced()`. 
 
