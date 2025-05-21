@@ -424,6 +424,7 @@ for (const [index, value] of fruits.entries()) {
 - The `map()` method is similar to the forEach method, but map method will take an array, loop over it and applies a callback function to the current array element. It will then 'map' these values into a new array - usually way more useful than the forEach method (no side-effects). The callback function will get the current element in the arguments (similar to forEach method). 
 - The `filter()` method is used to filter elements in an array that fits a certain condition. It will return a new array that pass this specified test condition. These also get access to the element, current index and array. 
 - The `reduce()` method boils/reduces down all array elements to one single value (i.e. adding all elements together). The reduce element also gets a call back function. THe first parameter is always the accumulator (acc - it's like a snowball, followed by the current element, then the index, then the entire array. It also has another SECOND parameter (which is the initial value of the accumulator in the first loop iteration - i.e. like saying let i = 0). CHECK USEFUL SCREENSHOTS IF UNSURE. Always know what the accumulator should be - this is quite challenging but very beneficial to use.
+- You can also make the accumulator an object!! 
   
 - It's usually good practice not to mutate arrays.
 - The `find()` method retrieves an element of an array. It does not return a new array, but only returns the first element that satisfies a specific condition (if it is true or false). It is similar to the `filter()` method, apart from TWO BIG differences: filter will return all of the elements that match the condition, but find will only return the first one. The find method does not return a new array, it only returns the element/object itself (not the array). This is usally combined with the `===` operator.
@@ -465,3 +466,4 @@ for (const [index, value] of fruits.entries()) {
   <li>.fill()</li>
 </ol>
 
+- The prefix `++y` operator will increment the variable before using, whereas the `y++` operator will increment that variable after using it. 
