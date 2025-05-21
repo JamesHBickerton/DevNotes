@@ -85,7 +85,7 @@ The start of the splice is the first number of the array you want, and the last 
 - the Math.floor function rounds a number down to the nearest integer, whereas the Math.random function generates numbers from 0 to 1.
 - `Math.floor(Math.random() * 5) + 1;.` - would give a random number between 1 and 5. 
 
-- Math.random will generate are random number (between 0 and 0.9999). 
+- Math.random will generate are random number (between 0 and 0.9999). Rememember that Math.random() does not take in arguments!!
   
 - There are also functions that are able to take an input and are able to use this inside the function to do something (or able to give an output).
 - In order to get an OUTPUT out of the function, you need to use the `return` keyword. When we then CALL a function that has an output, we can use the output and assign it to a variable. This is usually added just before the closing brace i.e. `return money % 1.5;` which will give you the remainder of the division.
@@ -400,9 +400,9 @@ for (const [index, value] of fruits.entries()) {
 ✅ Is the variable redefined later somewhere else?
 → If it's not in the same scope, it doesn't affect the closure.
 
-- <strong>More advanced Arrays</strong>
+### Advanced ARRAYS
 
-- We can use the slice method similar to the strings. Using slice on arrays does not mutate the array but creates a new array (copy of the array with the extracted parts).
+- We can use the slice method similar to the strings. Using slice on arrays does not mutate the array but creates a new array (shallow copy of the array with the extracted parts).
 - Obviously using the minus in the slice method `arr.slice(-1)` would return the last letter/input.
 - You can use the `splice` method which is similar to the slice method, but it actually mutates the array, rather than creating a new array. This would delete the elements that you return into splice, and the original array loses their values. The second value is different from the slice method, in that the last number is 'deleteCount' meaning that it is the number of elements you want to delete. 
   
@@ -434,4 +434,15 @@ for (const [index, value] of fruits.entries()) {
 - The `every()` method only returns true if ALL of the elements in the array 'pass the test' will be true.
   
 - The `flat()` method creates a new array with all sub-array elements concactenated together. Useful for nested arrays and combining them into one to "flatten" the array. This only goes one level deep though. This also doesn't need a callback function. If it is one level deep of nesting, you would just use the `flat()`, but if it is 2 for example then you would just use `flat(2)`.
-- The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method. 
+- The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method.
+
+- To <strong>sort</strong> array's from A-Z (by default), you can use the `.sort()` method, bearing in mind that this will mutate the array. The sort method only does this on strings(by default). Numbers will be converted into strings first. To fix this, you can use a callback function in the sort() using the compare function (parameters of a, b). Have a look at useful screenshots, quite difficult to understand here. If you have a mix with numbers/strings in an array, DON'T use the sort method.
+- <strong>Array grouping</strong> - occurs by `const elementName = Object.groupBy(array callback function(condition inside))`. This will loop over the array, and again can use the shorthand arrow callback function.
+
+- To create an empty array, you can use the empty array method - `const x = new Array(7)` to create 7 blank arrays. 
+- The `fill()` method will fill an entire array (and mutate the array). It is similar to the slice()method as we can tell it where we want to start it (begin parameter) and finish it (end parameter).
+- The `Array.from()` method will create a new array from an array like object or an iterable (set/map/strings/querySelectors). This syntax would be - Array.from(arrayLike, mapFunction, Argument) - the callBack function is optional.
+
+- REMEMBER: The `reverse()`, `sort()` and `splice` method, - will mutate arrays (which usually isn't good practice). These are <strong>DESTRUCTIVE</strong> methods. These can be replaced by `toReversed()`, `toSorted()`, and `toSpliced()`. 
+
+- The `with()` method receives two arguments (the index, and new value). I.e. `const newMovements = movements.with(1, 2000);` would mean that the `1` is the index, and the `2000` is the new value. This can help to update a number of a new array, with the original array staying the same. 
