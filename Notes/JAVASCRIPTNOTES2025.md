@@ -445,4 +445,23 @@ for (const [index, value] of fruits.entries()) {
 
 - REMEMBER: The `reverse()`, `sort()` and `splice` method, - will mutate arrays (which usually isn't good practice). These are <strong>DESTRUCTIVE</strong> methods. These can be replaced by `toReversed()`, `toSorted()`, and `toSpliced()`. 
 
-- The `with()` method receives two arguments (the index, and new value). I.e. `const newMovements = movements.with(1, 2000);` would mean that the `1` is the index, and the `2000` is the new value. This can help to update a number of a new array, with the original array staying the same. 
+- The `with()` method receives two arguments (the index, and new value). I.e. `const newMovements = movements.with(1, 2000);` would mean that the `1` is the index, and the `2000` is the new value. This can help to update a number of a new array, with the original array staying the same.
+
+- <strong> CHOOSING WHICH ARRAY METHOD TO USE: </strong>
+- Check useful screenshots for big list of when to use what! 
+- The most straight forward method is the `.map()` method if it has the exact same length as the old one.
+- If we want to filter for a condition - `.filter()`
+- If we want a portion of the original - `.slice()`
+- If we want to replace an item - `width`
+- The methods 'that should be avoided these days' are the following, as they all mutate the original array:
+<ol>
+  <li>.push()</li>
+  <li>.unshift()</li>
+  <li>.pop()</li>
+  <li>.shift()</li>
+  <li>.splice() - we would use `.toSpliced` </li>
+  <li>.reverse() - we would use `.toReversed` </li>
+  <li>.sort() - would use `.toSorted` </li>
+  <li>.fill()</li>
+</ol>
+
