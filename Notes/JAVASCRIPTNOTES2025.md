@@ -84,8 +84,6 @@ The start of the splice is the first number of the array you want, and the last 
 - <strong>Floor Method</strong> is when you can ensure that a value is always rounded down to fit a "whole number" as opposed to 3.33 bottles of milk for example. You would need to do it like this: `var numberOfBottles = Math.floor (money - 1.5);`. The `Math.floor` if the floor function.
 - the Math.floor function rounds a number down to the nearest integer, whereas the Math.random function generates numbers from 0 to 1.
 - `Math.floor(Math.random() * 5) + 1;.` - would give a random number between 1 and 5. 
-
-- Math.random will generate are random number (between 0 and 0.9999). Rememember that Math.random() does not take in arguments!!
   
 - There are also functions that are able to take an input and are able to use this inside the function to do something (or able to give an output).
 - In order to get an OUTPUT out of the function, you need to use the `return` keyword. When we then CALL a function that has an output, we can use the output and assign it to a variable. This is usually added just before the closing brace i.e. `return money % 1.5;` which will give you the remainder of the division.
@@ -473,6 +471,17 @@ for (const [index, value] of fruits.entries()) {
 - Numbers are always displayed in JS as decimals. Numbers are also only composed in a binary format (0 and 1's).
 - You shouldn't do really precise scientific or precise financial programs in JS due to the errors.
 - <strong>Parsing</strong> - can change a number to a string - i.e.
-- parseInt - will display the integer - it's important, for the second value to always put 10 to avoid bugs as JS works with 'base 10 - which are numbers 0-91'. 
+- `Number.parseInt` - will display the integer - it's important, for the second value to always put 10 to avoid bugs as JS works with 'base 10 - which are numbers 0-91'. 
   `console.log(Number.parseInt('30px', 10)) ---> 30` - this would equal 30 in the console. But in order to use this you have to ensure that the value starts with a number.
-  
+- You also have `Number.parseFloat` which can be ideal for decimals and should be a go to when you want to read a value out of a string (mainly from CSS). 
+- You don't have to call these on the Number object, but it is actually better practice, as it provides a namespace for the function.
+- The `Number.isNaN` - can help to check if most values are a number (in a boolean). It checks if it is NOT a number. It is not the best way to check if things are not a number. We rarely use this. A better method is -
+- `Number.isFinite`, as it checks if it IS a number or not - this is way more understandable for me.
+
+<strong>Mathematical Equations - the math name space</strong>
+- The `Math.sqrt()` can give us the square root of a number.
+- The `Math.max()` can return the maximum value to us - this will do type coercion. It does not do parsing though, it will return NaN. The `Math.min()` is the same, but the opposite.
+- Math.random will generate are random number (between 0 and 0.9999).
+- Rememember that Math.random() does not take in arguments!!
+- Have a look at useful screenshots for random number generator example.
+- 
