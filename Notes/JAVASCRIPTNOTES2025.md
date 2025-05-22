@@ -55,13 +55,6 @@ The start of the splice is the first number of the array you want, and the last 
 - `word.toUppercase()` - can turn every single character in a string to uppercase. Same with `word.toLower` - HAVE A LOOK AT USEFUL SCREENSHOTS FOLDER.
   
 <strong>I am finding this super challenging...</strong>
-
-- <strong>Numbers</strong> - you can add by `+`, subtract by `-`, division by `/`, multiply by `*`, but the <strong>modulo</strong> is represented by a `%` sign. The <strong>modulo</strong> will give you the remainder of the division (see below):
-- You can do 'to the power of' by `**` i.e. `2 ** 3`. 
-- `var a = 13 % 5; // 3` as this is the remainder of the 2 values when being divided by the number. 5 can go into 13, twice and then whatever is left is the number - i.e. 3. 
-- another example: `var a = 16 % 4` would be 0, as there is nothing remaining.
-  
-- It is good programming practice to add a set of parantheses during BEDMAS protocols with numbers (even when you know this will happen by default).
   
 - The <strong>Increment expression</strong> is another way of using `x = x+1` but you would use `x++` (which is the equivalent). `x = x-1` would be the same as `x--` and this would be the <strong>Decriment expression</strong>. You are only ever changing the value by one. If you need to increase by a specific number or variable, then you would use `x +=` and then by the number/variable, same with `x -=`. You can also do this for *, /, etc.
   
@@ -479,9 +472,33 @@ for (const [index, value] of fruits.entries()) {
 - `Number.isFinite`, as it checks if it IS a number or not - this is way more understandable for me.
 
 <strong>Mathematical Equations - the math name space</strong>
+
 - The `Math.sqrt()` can give us the square root of a number.
+- The `Math.trunc()` can remove decimals. Math.floor is better as it can work better with positive and negative numbers/strings.
+- The `Math.round()` can also round to the nearest integer.
+- The `Math.ceil()` will round UP and `Math.floor()` rounds down. `Math.floor` is better as it can work better with positive and negative numbers/strings.
 - The `Math.max()` can return the maximum value to us - this will do type coercion. It does not do parsing though, it will return NaN. The `Math.min()` is the same, but the opposite.
 - Math.random will generate are random number (between 0 and 0.9999).
 - Rememember that Math.random() does not take in arguments!!
-- Have a look at useful screenshots for random number generator example.
+- `const randomInt = (min, max) => Math.random() * (max - min + 1) + min;` - this is your random number generator!! 
+- When rounding decimals, you will need to use the `().toFixed()` method. toFixed will always return a string however. The end bracket on the `().toFixed(2)` will add two decimal places. To convert it to a number, you then just use the `+` in front.
+
+- <strong>The remainder/modulo operator `%` </strong> - is the remainder of a number after being divided (way easier to remember than how it was explained in my last course).
+- Example 1: `8 % 3` - you would think, how many times does 3 go into 8 `3 x 2 = 6` the remainder of this is `2`.
+- Example 2: `10 % 3` - 3 goes into 10 3 times = `9`, remainder of `1`.
+- In order to check if a number is even/odd - check below:
+- <strong> EVEN NUMBER </strong> - `const isEven = n => n % 2 === 0;`
+
+- In order to make numbers easier to read in code, place the underscore in it, as JS doesn't pick it up - i.e. `36_000` would be `36000` in the console (`this is a numeric seperator`). Just can't be at the beginning or end of a number, and can't place 2 in a row. This also doesn't work for strings.
+- The `Number.MAX_SAFE_INTEGER` was the biggest number that JS could handle (check console.loog) until `bigInt` came along.
+- If you have a number that is very large, but an `n` on the end of it, which will transform it into a bigInt. This changes the colour in the console to grey also.
+- You can also use the `bigInt()` function without the `n` which will do the same thing, but for smaller numbers.
+- It is not possible to mix bigInt() numbers with regular numbers in mathematical equations and name spaces (like Math). But you can do `<` and `>` and `==`.
+
+- <strong>Dates</strong> - to create the data currently, you would use the `new Data();` which would give you the current day/year/time.
+- Months in JS are zero based, so starting at 0 - meaning June would be 7, December would be 13 etc.
+- Dates have their own methods, as they are objects.
+- Parameters - `new Date(year, month, day, hours, minutes, seconds)`
+- Look at useful screenshots folder for all of the relevant information for dates.
+
 - 
