@@ -462,7 +462,7 @@ for (const [index, value] of fruits.entries()) {
   <li>.shift()</li>
   <li>.splice() - we would use `.toSpliced` </li>
   <li>.reverse() - we would use `.toReversed` </li>
-  <li>.sort() - would use `.toSorted` </li>
+  <li>.sort() - would use `.toSorted` </li> - for toSorted - have a look at the useful screenshots folder! especially for the compared function.
   <li>.fill()</li>
 </ol>
 
