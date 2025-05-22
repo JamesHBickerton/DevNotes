@@ -1,4 +1,4 @@
-ff# JavaScript Notes from Angela Yu Course + Jonas Course
+# JavaScript Notes from Angela Yu Course + Jonas Course
 
 ### Problem Solving
 
@@ -136,6 +136,7 @@ The start of the splice is the first number of the array you want, and the last 
 - These are called if/else control structures.
 
 - <strong>Type conversion</strong> - when we want to convert from one type to another. For example: if you have a string 'const inputYear = 1995' it isn't a number so you may have to convert it to a number. To do this `console.log(Number(inputYear)); this should convert it to a number.
+- <strong>UPDATE: you can actually use the + instead of Number() now as it is a strategy to tell Javascript to do type conversion. 
 - You can also do the above with a String function (just replace the Number). 
 - NaN - "not a number".
 - <strong>Type coercion</strong> - happens whenever an operater is dealing with a value of two different types. JavaScript will do this in the background. I.e. It usually converts numbers into strings if you concatenate numbers and strings.
@@ -466,4 +467,12 @@ for (const [index, value] of fruits.entries()) {
   <li>.fill()</li>
 </ol>
 
-- The prefix `++y` operator will increment the variable before using, whereas the `y++` operator will increment that variable after using it. 
+- The prefix `++y` operator will increment the variable before using, whereas the `y++` operator will increment that variable after using it.
+
+### Numbers Advanced
+- Numbers are always displayed in JS as decimals. Numbers are also only composed in a binary format (0 and 1's).
+- You shouldn't do really precise scientific or precise financial programs in JS due to the errors.
+- <strong>Parsing</strong> - can change a number to a string - i.e.
+- parseInt - will display the integer - it's important, for the second value to always put 10 to avoid bugs as JS works with 'base 10 - which are numbers 0-91'. 
+  `console.log(Number.parseInt('30px', 10)) ---> 30` - this would equal 30 in the console. But in order to use this you have to ensure that the value starts with a number.
+  
