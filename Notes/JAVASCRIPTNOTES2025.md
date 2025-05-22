@@ -1,4 +1,4 @@
-# JavaScript Notes from Angela Yu Course + Jonas Course
+ff# JavaScript Notes from Angela Yu Course + Jonas Course
 
 ### Problem Solving
 
@@ -435,7 +435,7 @@ for (const [index, value] of fruits.entries()) {
 - The `every()` method only returns true if ALL of the elements in the array 'pass the test' will be true.
   
 - The `flat()` method creates a new array with all sub-array elements concactenated together. Useful for nested arrays and combining them into one to "flatten" the array. This only goes one level deep though. This also doesn't need a callback function. If it is one level deep of nesting, you would just use the `flat()`, but if it is 2 for example then you would just use `flat(2)`.
-- The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method.
+- The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method. This requires a call back function.
 
 - To <strong>sort</strong> array's from A-Z (by default), you can use the `.sort()` method, bearing in mind that this will mutate the array. The sort method only does this on strings(by default). Numbers will be converted into strings first. To fix this, you can use a callback function in the sort() using the compare function (parameters of a, b). Have a look at useful screenshots, quite difficult to understand here. If you have a mix with numbers/strings in an array, DON'T use the sort method.
 - <strong>Array grouping</strong> - occurs by `const elementName = Object.groupBy(array callback function(condition inside))`. This will loop over the array, and again can use the shorthand arrow callback function.
