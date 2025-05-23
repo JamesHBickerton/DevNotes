@@ -500,5 +500,13 @@ for (const [index, value] of fruits.entries()) {
 - Dates have their own methods, as they are objects.
 - Parameters - `new Date(year, month, day, hours, minutes, seconds)`
 - Look at useful screenshots folder for all of the relevant information for dates.
+- Have a look at the `Intl.DateTimeFormat` and `Intl.NumberFormat`
 
+- <strong>TIMERS</strong>
+- `setTimeout()` receives a callback function. The first argument is the callback function, and the second argument is the amount of ms that will pass until the function is called i.e. 3s would be 3000.
+- As soon as JS hits the setTimeout() function line of code, it will keep counting the time in the background, and register the callback function after the time has elapsed. JS will then move onto the next line. This is called <strong>Asynchronus JavaScript</strong>.
+- All the arguments that you pass after the delay, will be arguments after the function.
+- The `clearTimeout` function can be used with a condition - check useful screenshots.
+- The `setInterval` can be a great way of displaying the current day and time/seconds on your website. See an example below:
+- `setInterval(function () {const now = new Date(); console.log(now);}, 1000);` which would set up an interval every second, like changing the time every second on the web page.
 - 
