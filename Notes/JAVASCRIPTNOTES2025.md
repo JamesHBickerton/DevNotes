@@ -184,8 +184,12 @@ The start of the splice is the first number of the array you want, and the last 
 - `\n` is an escape sequence/new line. THis is the old way of creating a new line, however you can now create a new line with back ticks, just by starting a new line in the code.
 
 ### DOM Manipulation
-JavaScript interacts with HTML via DOM (Document Object Model). This is a tree of objects that represents the HTML. To do this you can use the `document` object and to find specific elements you would use the `querySelector()` which takes a CSS selector as an argument, and returns the first element that matches the selector. 
-- The DOM is not a part of JavaScript, it's actually a part of Web API's (application programming interface - which are libraries that occur behind the scenes). 
+JavaScript interacts with HTML via DOM (Document Object Model). This is a tree of objects (kind of like the interface) that represents the HTML (and allows us to make JS to interact with the browser). To do this you can use the `document` object and to find specific elements you would use the `querySelector()` which takes a CSS selector as an argument, and returns the first element that matches the selector. 
+- The DOM is not a part of JavaScript, it's actually a part of Web API's (application programming interface - which are libraries that occur behind the scenes).
+
+- How the DOM API is organised - every single Node is of the type, Node. Each Node is represented by an object.
+- There are different types of Nodes - Elements, text, comment and document.
+- The document node type is another type of node that contains important methods like querySelector (this is available both on document and element types of nodes). 
 
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - In order to use the query Selector for all elements (i.e. if multiple elements have the same class, then you would use `.querySelectorAll`. 
@@ -351,7 +355,12 @@ for (const [index, value] of fruits.entries()) {
 - These can be entire words or single characters, and can be chained. It will only replicate the very first occurence of the word. There is a `.replaceAll()` method that will replicate all of the occurences of the word. 
 - Some useful methods for strings are the `.includes()`, `.startsWith()`, and `.endsWith()` - which will return boolean values. These are especially helpful in conditionals (if/else etc).
 - It is important to translate all words into lower case when getting inputs to make it easier to match up with your code.
-- Also have a look at `.join()`, `.split()`, `.padStart()`, `.padEnd()`, and `.repeat()`. 
+- Also have a look at `.join()`, `.split()`, `.padStart()`, `.padEnd()`, and `.repeat()`.
+- The `.padStart()` can be quite beneficial for strings -
+`const str1 = "5";
+console.log(str1.padStart(2, "0"));
+// Expected output: "05"`
+- You can do this on numbers too, but obviously would have to use the String() to convert it. 
 
 <strong>Advanced Functions</strong>
 - Javascript does not have 'passing by reference', only 'passing by value' - unlike C++.
@@ -509,4 +518,9 @@ for (const [index, value] of fruits.entries()) {
 - The `clearTimeout` function can be used with a condition - check useful screenshots.
 - The `setInterval` can be a great way of displaying the current day and time/seconds on your website. See an example below:
 - `setInterval(function () {const now = new Date(); console.log(now);}, 1000);` which would set up an interval every second, like changing the time every second on the web page.
-- 
+- The `clearInterval` can be done to do the same as clearTimeout, but with the setInterval function.
+- It can be quite important to put a timer in the global scope, so it is able to be accessed from everywhere - just for ease.
+
+- ### WEB DEVELOPMENT FOR JS!!
+
+- When there is an href, the page will automatically jump to the top when it's clicked (default behaviour - which doesn't look very nice). To revert the default you can use the `e.preventDefault()` in the function. 
