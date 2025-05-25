@@ -222,8 +222,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - When adding in new lines `\n` you would need to concactenate it and put it in brackets usually.
   - Responding to keyboard events - still need to use `addEventListener`. You would need to add a global event which would be `document.addEventListener`. You would either use `keydown`, `keypress`, or `keyup`. You would usually use `keydown`.
   - In an event handler function, the 'this' keyword always points to the element it is attached to. I.e. the 'this' keyword will point to a button etc.
- 
-- insertHTMLAdjacent - have a look - easy solution. 
+
 
 - <strong>Hoisting</strong> - Makes some type of variables accessible in the code before they are actually declared.
 - Function declarations will be hoisted meaning that you can use them before they have actually been declared (remember that function declarations are block scoped in 'strict mode').
@@ -521,6 +520,18 @@ console.log(str1.padStart(2, "0"));
 - The `clearInterval` can be done to do the same as clearTimeout, but with the setInterval function.
 - It can be quite important to put a timer in the global scope, so it is able to be accessed from everywhere - just for ease.
 
-- ### WEB DEVELOPMENT FOR JS!!
+- ### WEB DEVELOPMENT FOR JS!! - ADVANCED DOM
 
-- When there is an href, the page will automatically jump to the top when it's clicked (default behaviour - which doesn't look very nice). To revert the default you can use the `e.preventDefault()` in the function. 
+- When there is an href, the page will automatically jump to the top when it's clicked (default behaviour - which doesn't look very nice). To revert the default you can use the `e.preventDefault()` in the function.
+
+- <strong>Selecting, deleting and creating elements</strong>
+
+- <strong> Selecting </strong> 
+- To select the entire html, use `document.documentElement`, for the head would be `document.head` and body `doucment.body`. We dont need to write the `selector` here.
+- You can have `document.getElementByID()`, `document.getElementByTagName()` - the getElementByTagName won't return a node list, instead it returns an html collection (live collection - meaning if the DOM changes, the html collection will update automatically). The same doesn't happen for a node list. You can also have `document.getElementByClassName()`. You don't need a dot here, cause you are already specifying the class, and this will also bring back an html collection. 
+- `document.querySelector` and `document.querySelectorAll` are the most common.
+
+- <strong>Creating and inserting</strong>
+- The `.insertAdjacentHTML()` is probably the most common use for creating.
+- The `const = variableName = document.createElement('div')` for example, will create an element, and store it in the message (it is just a DOM object that we can use). If we want it on the page we need to insert it. You can then use this variableName and do things with it - i.e. `variableName.classList.add()`. 
+- To insert it for example, `header.prepend(variableName);`
