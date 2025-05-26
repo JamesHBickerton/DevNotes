@@ -526,12 +526,47 @@ console.log(str1.padStart(2, "0"));
 
 - <strong>Selecting, deleting and creating elements</strong>
 
-- <strong> Selecting </strong> 
+- <strong> Selecting elements</strong> 
 - To select the entire html, use `document.documentElement`, for the head would be `document.head` and body `doucment.body`. We dont need to write the `selector` here.
 - You can have `document.getElementByID()`, `document.getElementByTagName()` - the getElementByTagName won't return a node list, instead it returns an html collection (live collection - meaning if the DOM changes, the html collection will update automatically). The same doesn't happen for a node list. You can also have `document.getElementByClassName()`. You don't need a dot here, cause you are already specifying the class, and this will also bring back an html collection. 
 - `document.querySelector` and `document.querySelectorAll` are the most common.
 
-- <strong>Creating and inserting</strong>
+- <strong>Creating and inserting elements</strong>
 - The `.insertAdjacentHTML()` is probably the most common use for creating.
 - The `const = variableName = document.createElement('div')` for example, will create an element, and store it in the message (it is just a DOM object that we can use). If we want it on the page we need to insert it. You can then use this variableName and do things with it - i.e. `variableName.classList.add()`. 
-- To insert it for example, `header.prepend(variableName);`
+- To insert it for example, `header.prepend(variableName);` - the prepend() inserts the element into the HTML/DOM - it adds it as the first child of the header element for example. The `header.append(variableName)` will do the same, but it will be the last child of the header for example. It can't be put in both places (can't be at the same place at the same time).
+- You can also insert it before `header.before` - this will be a sibling element, before the header, and after (same concept).
+
+- <strong>Delete elements</strong>
+- All you have to do is add `variableName.remove()` in the callback function of the eventListener (after querySelector).
+
+- <strong>STYLES</strong>
+- I.e. `variableName.style.backgroundColor = '#37383d'`.
+- When styling in JS, most of the styles will become inline styles.
+- In order to see the styles (that aren't inline styles), you can use the `console.log(getComputedStyle(variableName).color)` for example.
+- In order to change styles for example, you can use the `document.documentElement.style.setProperty('--primary-color', 'orangered')`. This would change the primary color to orangered. You can do this with any property. 
+
+-  <strong>ATTRIBUTES</strong>
+- For example - `const logo = document.querySelector('.nav__logo')` and then you can `console.log(logo.src)` or `console.log(logo.alt)'` or `console.log(logo.className)` to find out what these values are.
+- You can also set these e.g. - `logo.alt = 'cool alt'` which should change the text of the logo alt.
+- The `variableName.setAttribute('', '')` and `variableName.getAttribute('')` can also be used.
+- To see the current viewport - `console.log(document.documentElement.clientHeight, document.documentElement.clientWidth)`. 
+- <strong>CLASSES</strong>
+- Just really need to know the following - `classList.add()`, `classList.remove()`, `classList.toggle()`, and `classList.contains()`.
+
+- <strong>SMOOTH SCROLLING</strong>
+- The `const s1coords.getBoundingClientRect()` returns an object rectangle (the s1coords is are the coordinatesproviding information about the size of an element and its position relative to the viewport.
+- The `console.log(e.target.getBoundingClientRect());` - `e` is the event object automatically passed into the function when an event (like a click) happens.
+`e.target` refers to the actual DOM element that was clicked. `.getBoundingClientRect()` is a method that returns the position and size of that element relative to the viewport (not the entire document).
+-  `console.log('Current scroll (X/Y)', window.scrollX, window.scrollY);` - doing this you can see where the coordinates from where you have scrolled in the viewport, from the original point. Obviously x is from left-right, y is from top-bottom.
+- You use window.scrollTo(param1, param2) which is a global function. The first parameter is the left position (which is usually 0 but find it out from the `getBoundingClientRect()` information - we want it to be 0 because we don't want any horizontal scroll. The second parameter is the top position, from the top of the viewport.
+- Example - `window.scrollTo(s1coords.left, s1coords.top);`.
+- It is quite challenging to get it perfectly right with the top numbers, so you can add values to the numbers depending on how the smooth scrolling looks.
+- In order to find the absolute positioning of an element, relative the document do the following:
+- `window.scrollTo(variableName.left + window.scrollX, variableName.top + window.scrollY)`.
+- In order to make the scroll 'smooth' - do the following:
+- `window.scrollTo({
+    left: s1coords.left + window.scrollX,
+    top: s1coords.top + window.scrollY,
+    behavior: 'smooth',)`
+- 
