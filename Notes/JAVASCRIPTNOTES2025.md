@@ -554,7 +554,7 @@ console.log(str1.padStart(2, "0"));
 - <strong>CLASSES</strong>
 - Just really need to know the following - `classList.add()`, `classList.remove()`, `classList.toggle()`, and `classList.contains()`.
 
-- <strong>SMOOTH SCROLLING</strong>
+- <strong>SMOOTH SCROLLING OLD SCHOOL</strong>
 - The `const s1coords.getBoundingClientRect()` returns an object rectangle (the s1coords is are the coordinatesproviding information about the size of an element and its position relative to the viewport.
 - The `console.log(e.target.getBoundingClientRect());` - `e` is the event object automatically passed into the function when an event (like a click) happens.
 `e.target` refers to the actual DOM element that was clicked. `.getBoundingClientRect()` is a method that returns the position and size of that element relative to the viewport (not the entire document).
@@ -569,4 +569,12 @@ console.log(str1.padStart(2, "0"));
     left: s1coords.left + window.scrollX,
     top: s1coords.top + window.scrollY,
     behavior: 'smooth',)`
+
+- <strong>SMOOTH SCROLLING NEW SCHOOL</strong>
+- Only works for new browsers, but should be okay for most things
+- Instead of the code above - you would use - `section1.scrollIntoView({behavior: 'smooth'});` - so much easier.
+- Still important to know the one above though.
+
+- <strong>MORE EVENT LISTENERS</strong>
+- The 'mouseenter' event can be used where the 'click' event is usually. It fires whever the mouse enters a certain element. This is similar to the hover for CSS. 
 - 
