@@ -576,5 +576,9 @@ console.log(str1.padStart(2, "0"));
 - Still important to know the one above though.
 
 - <strong>MORE EVENT LISTENERS</strong>
-- The 'mouseenter' event can be used where the 'click' event is usually. It fires whever the mouse enters a certain element. This is similar to the hover for CSS. 
-- 
+- The `mouseenter` event can be used on the addEventListener where the 'click' event is usually. It fires whever the mouse enters a certain element. This is similar to the hover for CSS. This is better as we can add chains on top, and we can remove an eventhandler, in case we do not need it anymore.
+- In order to be able to only listen to an event once, a good idea is to use the `removeEventListener()` function i.e. `removeEventListener(mouseenter, variableName)`
+- The `onmouseenter` property can be used directly on the element, rather than the eventlistener. We mainly use
+- <strong>Capturing Phase</strong> - The capturing phase does not actually occur where the event is clicked (for example), it actually starts at the top/root of the document, and makes its way down to the target element (down the tree), passing through every single PARENT (not sibling) element. As soon as it reaches the target, the target phase begins.
+- <strong>Target Phase</strong> - occurs where the callback function starts to occur, which will start the event.
+- <strong>Bubbling phase</strong> - this event then travels/bubbles its way back up to the root of the document. It's as if the event is occuring in each parent element. 
