@@ -582,3 +582,14 @@ console.log(str1.padStart(2, "0"));
 - <strong>Capturing Phase</strong> - The capturing phase does not actually occur where the event is clicked (for example), it actually starts at the top/root of the document, and makes its way down to the target element (down the tree), passing through every single PARENT (not sibling) element. As soon as it reaches the target, the target phase begins.
 - <strong>Target Phase</strong> - occurs where the callback function starts to occur, which will start the event.
 - <strong>Bubbling phase</strong> - this event then travels/bubbles its way back up to the root of the document. It's as if the event is occuring in each parent element. 
+- In any event handler, the `this` keyword and the `e.currentTarget` will always be the same.
+- In order to stop propogation into the parent elements, you can use `e.stopPropagation()` function. BUT THIS IS NOT RECOMMENDED - only if you are coming up with a few bugs.
+- The `addEventListeners` are only listening for events in the bubbling phase, not the capturing phase. This is due to the capturing phase not really being that important to us.
+
+- <strong>Event delegation</strong> - requires 2 steps:
+<ol>
+  <li>Add the event listener to a common parent element.</li> 
+  <li>Determine what element orignated the event `(console.log(e.target))`.</li>
+</ol>
+- You can then use the matching strategy, to ensure that any elements that are not needed in the event handler are not included in the event. See below and in useful screenshot folder.
+- `if (e.target.classList.contains('variableName') console.log('link')}`
