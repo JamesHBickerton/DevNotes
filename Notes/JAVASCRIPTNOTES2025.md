@@ -577,6 +577,7 @@ console.log(str1.padStart(2, "0"));
 
 - <strong>MORE EVENT LISTENERS</strong>
 - The `mouseenter` event can be used on the addEventListener where the 'click' event is usually. It fires whever the mouse enters a certain element. This is similar to the hover for CSS. This is better as we can add chains on top, and we can remove an eventhandler, in case we do not need it anymore.
+- Just important to know that `mouseenter` does not bubble. 
 - In order to be able to only listen to an event once, a good idea is to use the `removeEventListener()` function i.e. `removeEventListener(mouseenter, variableName)`
 - The `onmouseenter` property can be used directly on the element, rather than the eventlistener. We mainly use
 - <strong>Capturing Phase</strong> - The capturing phase does not actually occur where the event is clicked (for example), it actually starts at the top/root of the document, and makes its way down to the target element (down the tree), passing through every single PARENT (not sibling) element. As soon as it reaches the target, the target phase begins.
@@ -585,11 +586,24 @@ console.log(str1.padStart(2, "0"));
 - In any event handler, the `this` keyword and the `e.currentTarget` will always be the same.
 - In order to stop propogation into the parent elements, you can use `e.stopPropagation()` function. BUT THIS IS NOT RECOMMENDED - only if you are coming up with a few bugs.
 - The `addEventListeners` are only listening for events in the bubbling phase, not the capturing phase. This is due to the capturing phase not really being that important to us.
+- The `e.target` is the reference onto the object on which the event was dispatched. It is different to `e.currentTarget` when the event handler is called during the bubbling or capturing phase of the event.
 
-- <strong>Event delegation</strong> - requires 2 steps:
+- <strong>Event delegation</strong> - We need to attach the event handler on the common parent element of all the elements we are interested in. It requires 2 steps:
 <ol>
   <li>Add the event listener to a common parent element.</li> 
   <li>Determine what element orignated the event `(console.log(e.target))`.</li>
 </ol>
 - You can then use the matching strategy, to ensure that any elements that are not needed in the event handler are not included in the event. See below and in useful screenshot folder.
 - `if (e.target.classList.contains('variableName') console.log('link')}`
+
+- <strong>DOM traversing</strong>
+- <strong>Going downwards - child elements</strong> - `element.querySelector`, `element.querySelectorAll`, `element.children` - to see the direct child element, `element.firstElementChild`, `element.lastElementChild`.
+- <strong>Going upwards - parent elements</strong> - You can use the `element.parentElement`. The `closest()` method can tell us which is the closest parent of a particular element (i.e. `h1.closest(.header)` - so which is the closest parent class of `.header` to the `h1`. It will receive a query string, just like the query selector method. Inside the paranthesis you will put a class or ID - and it is the closest parent to that particular class/ID. You can think of the closest() method being the opposite of the querySelector - querySelector finds children (no matter how far down in the DOM tree), and closest will find parents (no matter how far up).
+- <strong>Going sideways - siblings</strong> - You can use the `element.previousElementSlibling` and `element.nextElementSibling`. You can also do `element.parentElement.children` to get all of the element's siblings, including itself. 
+- You can also do the above to check all of the nodes, but not really necessary.
+
+- A guard clause - is an if statement that will return early, if a condition is matched (good use for when you want to immediately finish a function).
+
+- Intersection Observer API - allows us to observe changes to the way a certain target element intersects another element or the viewport.
+- All sections of the DOM will be observed when the page is loaded.
+- Have a look at useful screenshots for this. 
