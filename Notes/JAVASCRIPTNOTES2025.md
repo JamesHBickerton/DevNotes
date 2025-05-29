@@ -606,4 +606,5 @@ console.log(str1.padStart(2, "0"));
 
 - Intersection Observer API - allows us to observe changes to the way a certain target element intersects another element or the viewport.
 - All sections of the DOM will be observed when the page is loaded.
-- Have a look at useful screenshots for this. 
+- Have a look at useful screenshots for this.
+- You can use the `.length` property on Nodelists too. 
