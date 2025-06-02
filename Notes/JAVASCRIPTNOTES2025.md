@@ -629,10 +629,15 @@ console.log(str1.padStart(2, "0"));
 - There are 3 ways of implementing prototypal inheritance in javascript - these are constructor functions, ES6 classes (more modern way - not the classes I mentioned above) and Object.create() - which is the easiest and staright forward way, but not used as much.
 
 - A constructor function is a normal function (only difference is that we call the constructor function with the `new` operator. Constructor functions always start with a capital letter. Arrow functions do not classify as a constructor function (as it doesn't have its own this keyword).
-- Never create a method inside of a constructor function
+- Never create a method inside of a constructor function.
+
+- <strong>Prototypal inheritance/delegation</strong>
+  
 // 1. New {} is created
-// 2. function is called - 'this' keyword is the new empty object.
-// 3. {} object linked to the prototype
-// 4. Function automatically returns the object {}
-- Think of the .prototype the prototype of linked objects.
-- 
+// 2. function is called - and an empty object is created. The 'this' keyword is set to the eenew empty object.
+// 3. The new {} object is linked to the constructor function's prototype property (__proto__property). This happens internally and the `__proto` always points to the object's prototype. 
+// 4. Function automatically returns the new object {} from the construction function call. 
+These 4 steps work for the ES6 classes and constructor functions, but not `Object.create()`. If a property or a method cannot be found in a certain object, JS will look at it's prototype. 
+
+- `Variablename.prototype` - prototype is not the prototype of person, but it is the prototype of all of the objects created by the variable name. 
+- All objects in JS will have their own prototype. At the top of the prototype chain is usually `Object.prototype` which usually has a property of `null`. The prototype is very similar to the scope chain. 
