@@ -640,4 +640,33 @@ console.log(str1.padStart(2, "0"));
 These 4 steps work for the ES6 classes and constructor functions, but not `Object.create()`. If a property or a method cannot be found in a certain object, JS will look at it's prototype. 
 
 - `Variablename.prototype` - prototype is not the prototype of person, but it is the prototype of all of the objects created by the variable name. 
-- All objects in JS will have their own prototype. At the top of the prototype chain is usually `Object.prototype` which usually has a property of `null`. The prototype is very similar to the scope chain. 
+- All objects in JS will have their own prototype. At the top of the prototype chain is usually `Object.prototype` which usually has a property of `null`. The prototype is very similar to the scope chain.
+
+### ES6 CLASSES 
+
+- classes are a special type of function (you can have class expressions and class declarations).
+  
+- Class expression - `const variableNameCl = class {}`.
+- Class declaration - `class variableNameCl {constructor(paramaters)}`.
+
+- Remember that classes are not hoisted. Classes are first class citizens (as they are special kind of functions). Classes are always executed in strict mode
+- You can write methods inside of the class (outside of the constructor), but these will be on the prototype of the objects, and not on the objects themselves. This is like prototypal inheritance (- The methods will be added to the .prototype property)
+
+- Only use classes if you understand prototypes and prototypal inheritence. But if you want to be confident, you need to understand all of this.
+
+- <strong>Getters & Setters</strong> - functions that get and set a value.
+- Any setter has to have one parameter in the parenthesis.
+- Getters and setters behave like properties, not functions - so you don't need to call these like a function call.
+- These can be very useful for data validation. 
+- Check useful screenshots for a good way of looking at it.
+
+- <strong>Static methods</strong> - these methods will not be inherited. These are not available on instances. You would use the static method here.
+
+### Object.create()
+
+- There is still the idea of prototypal inheritence. However, there are no prototype properties, no constructor functions and no `new` operator. 
+- We can use Object.create() to manually set the prototype to any other object that we want. This is different from constructor functions, as this is done automatically. 
+- The big difference is that we didn't need any prototype properties or constructors. The prototype chain still will look the same - this is usually quite straight forward compared to the other ways. This is the least used way however - still important to know.
+- The big takeaway is that `object.create()` creates a new object, and the prototype of that object will be the object that we pass in. 
+
+- 
