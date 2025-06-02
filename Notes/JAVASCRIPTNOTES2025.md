@@ -607,4 +607,8 @@ console.log(str1.padStart(2, "0"));
 - Intersection Observer API - allows us to observe changes to the way a certain target element intersects another element or the viewport.
 - All sections of the DOM will be observed when the page is loaded.
 - Have a look at useful screenshots for this.
-- You can use the `.length` property on Nodelists too. 
+- You can use the `.length` property on Nodelists too.
+
+- <strong>Efficient script loading</strong> - 
+- Using `defer` in the head, is overall the best solution to ensure that the scripts are executed in order. I.e. `<script defer src="script.js"></script>` in the head section. 
+- 
