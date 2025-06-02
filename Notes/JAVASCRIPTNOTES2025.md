@@ -555,7 +555,7 @@ console.log(str1.padStart(2, "0"));
 - Just really need to know the following - `classList.add()`, `classList.remove()`, `classList.toggle()`, and `classList.contains()`.
 
 - <strong>SMOOTH SCROLLING OLD SCHOOL</strong>
-- The `const s1coords.getBoundingClientRect()` returns an object rectangle (the s1coords is are the coordinatesproviding information about the size of an element and its position relative to the viewport.
+- The `const s1coords.getBoundingClientRect()` returns an object rectangle (the s1coords is are the coordinates providing information about the size of an element and its position relative to the viewport.
 - The `console.log(e.target.getBoundingClientRect());` - `e` is the event object automatically passed into the function when an event (like a click) happens.
 `e.target` refers to the actual DOM element that was clicked. `.getBoundingClientRect()` is a method that returns the position and size of that element relative to the viewport (not the entire document).
 -  `console.log('Current scroll (X/Y)', window.scrollX, window.scrollY);` - doing this you can see where the coordinates from where you have scrolled in the viewport, from the original point. Obviously x is from left-right, y is from top-bottom.
@@ -611,4 +611,28 @@ console.log(str1.padStart(2, "0"));
 
 - <strong>Efficient script loading</strong> - 
 - Using `defer` in the head, is overall the best solution to ensure that the scripts are executed in order. I.e. `<script defer src="script.js"></script>` in the head section. 
+
+### Object Oriented Programming 
+
+- Classes are used in objects to act as a blueprint. From this class, you can have multiple `instances/objects` which is the data inside of the class.
+- There are 4 fundamental principles of OOP -
+
+<ol>
+  <li>Abstraction - To ignore/hide details that don't matter, allowing us to get an overview perspective of the thing we are implementing. We are pretty much just removing the low-level details.</li>
+  <li>Encapsulation - Keeping some properties and methods private inside of the class (not accessible from outside of the class). Some methods can be exposed as a public interface (API).This prevents external code from accidentally manipulating internal properties/state (to avoid bugs).</li>
+  <li>Inheritance - Makes all properties and methods of a certain class available to a child class. This allows us to use common logic.</li>
+  <li>Polymorphism - A child class can overwrite a method it inherited from a pernt class.</li>
+</ol>
+
+- Each object will have a `prototype`. Protytpal inheritance means that all objects that are linked to a certain prototype object can inherit methods/properties. A prototype contains methods and an object can access methods.
+- Array.prototype is the prototype of all array objects we create in JavaScript. Therefore all arrays have access to the map method.
+- There are 3 ways of implementing prototypal inheritance in javascript - these are constructor functions, ES6 classes (more modern way - not the classes I mentioned above) and Object.create() - which is the easiest and staright forward way, but not used as much.
+
+- A constructor function is a normal function (only difference is that we call the constructor function with the `new` operator. Constructor functions always start with a capital letter. Arrow functions do not classify as a constructor function (as it doesn't have its own this keyword).
+- Never create a method inside of a constructor function
+// 1. New {} is created
+// 2. function is called - 'this' keyword is the new empty object.
+// 3. {} object linked to the prototype
+// 4. Function automatically returns the object {}
+- Think of the .prototype the prototype of linked objects.
 - 
