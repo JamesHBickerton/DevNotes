@@ -651,6 +651,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - Remember that classes are not hoisted. Classes are first class citizens (as they are special kind of functions). Classes are always executed in strict mode
 - You can write methods inside of the class (outside of the constructor), but these will be on the prototype of the objects, and not on the objects themselves. This is like prototypal inheritance (- The methods will be added to the .prototype property)
+- In constructor functions, you can have as many `this.variableNames` as you want, they don't even need to be included in the inputs. 
 
 - Only use classes if you understand prototypes and prototypal inheritence. But if you want to be confident, you need to understand all of this.
 
@@ -683,4 +684,21 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - If you don't need any new properties, you will not need a constructor method in the child class! 
 
 - <strong>Inheritance Between Classes: Object.create()</strong>
-- 
+- Check useful screenshots - not really used as much - mainly use ES6 classes (which is unfortunate as I find this easier to understand).
+
+### Encapsulation (Privacy) 
+
+- This is an important feature of object oriented programming. Encapsulation is to keep some properties/methods inside the class private (so they are not accessible outside of the class). We can then expose these methods to the public interface (API). We call this whole idea <strong>DATA PRIVACY</strong>.
+- This is to prevent code from outside of a certain class to manipulate data inside.
+- Properties in OOP are called fields. With class fields, classes now start to have abilities that we didn't have previously. A field is a property that will be on all of the class instances (we also call this a public instance field). These fields will not get inherited.
+
+<ol>
+  <li>Public Fields - to declare a field, you do need semi-colons and no this keyword + no const/let. Just the name of the field and a value i.e. `locale = navigator language;`. This will then be on every single instance, but not in the prototype chain.</li>
+  <li>Private Fields - Same as the public fields in terms of layout, but you would start with `#variableName = something`. Private means that the data cannot be accessed/mutated outside of the class.</li>
+  <li>Public methods</li>
+  <li>Private methods - to convert public method to private method just do the `#` infront of the methodd name.</li>
+  <li>Then a static version of all of these! - these are usually a lot less important. Static fields are not inherited on the prototype, they are only accessible on the class themselves (not on the object).</li>
+</ol>
+
+- We can chain methods in classes. This is common in OOP in JS. In order to do this, you just need to return `this` for each of the methods you are wanting to chain.
+- Check print out for summary + extra notes. 
