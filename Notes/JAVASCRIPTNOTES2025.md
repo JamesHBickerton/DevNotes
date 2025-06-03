@@ -621,7 +621,7 @@ console.log(str1.padStart(2, "0"));
   <li>Abstraction - To ignore/hide details that don't matter, allowing us to get an overview perspective of the thing we are implementing. We are pretty much just removing the low-level details.</li>
   <li>Encapsulation - Keeping some properties and methods private inside of the class (not accessible from outside of the class). Some methods can be exposed as a public interface (API).This prevents external code from accidentally manipulating internal properties/state (to avoid bugs).</li>
   <li>Inheritance - Makes all properties and methods of a certain class available to a child class. This allows us to use common logic.</li>
-  <li>Polymorphism - A child class can overwrite a method it inherited from a pernt class.</li>
+  <li>Polymorphism - A child class can overwrite a method it inherited from a parent class.</li>
 </ol>
 
 - Each object will have a `prototype`. Protytpal inheritance means that all objects that are linked to a certain prototype object can inherit methods/properties. A prototype contains methods and an object can access methods.
@@ -642,7 +642,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - `Variablename.prototype` - prototype is not the prototype of person, but it is the prototype of all of the objects created by the variable name. 
 - All objects in JS will have their own prototype. At the top of the prototype chain is usually `Object.prototype` which usually has a property of `null`. The prototype is very similar to the scope chain.
 
-### ES6 CLASSES 
+### ES6 CLASSES - check useful screenshots for some examples
 
 - classes are a special type of function (you can have class expressions and class declarations).
   
@@ -657,6 +657,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - <strong>Getters & Setters</strong> - functions that get and set a value.
 - Any setter has to have one parameter in the parenthesis.
 - Getters and setters behave like properties, not functions - so you don't need to call these like a function call.
+- In a setter, you are trying to update the property on the obejct. The setter’s job is to take the input, transform it, and update the object’s internal state.
 - These can be very useful for data validation. 
 - Check useful screenshots for a good way of looking at it.
 
@@ -669,4 +670,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The big difference is that we didn't need any prototype properties or constructors. The prototype chain still will look the same - this is usually quite straight forward compared to the other ways. This is the least used way however - still important to know.
 - The big takeaway is that `object.create()` creates a new object, and the prototype of that object will be the object that we pass in. 
 
-- 
+- <strong>Inheritance Between Classes</strong>
+
+- Usually we want a child class to have the same functionality as the parent class with some additional functionality (usually we pass in the same parameters + some additional ones).
+- Check useful screenshots for inheritance between classes (as has some notes too). 
