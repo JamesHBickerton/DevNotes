@@ -670,7 +670,17 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The big difference is that we didn't need any prototype properties or constructors. The prototype chain still will look the same - this is usually quite straight forward compared to the other ways. This is the least used way however - still important to know.
 - The big takeaway is that `object.create()` creates a new object, and the prototype of that object will be the object that we pass in. 
 
-- <strong>Inheritance Between Classes</strong>
+- <strong>Inheritance Between Classes: Constructor Function</strong>
 
 - Usually we want a child class to have the same functionality as the parent class with some additional functionality (usually we pass in the same parameters + some additional ones).
-- Check useful screenshots for inheritance between classes (as has some notes too). 
+- Check useful screenshots for inheritance between classes (as has some notes too).
+
+- <strong>Inheritance Between Classes: ES6 Classes </strong>
+
+- For this we only need two ingredients, the `extend` keyword and the `super function`.
+- The `extend` keyword will link the prototypes behind the scenes.
+- Again check useful screenshots.
+- If you don't need any new properties, you will not need a constructor method in the child class! 
+
+- <strong>Inheritance Between Classes: Object.create()</strong>
+- 
