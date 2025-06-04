@@ -713,4 +713,5 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - Geolocation Navigator (API) - `navigator.geolocation.getCurrentPosition()` - takes 2 call back functions. The first function is the callback that works on 'success' - whenever the browsers get the coordinates of the user. The second function is the callback that works on an 'error' while getting the coordinates.
 - On forms, the default behaviour once things are submitted is to refresh the page, so just set the `e.preventDefault()` if using JS for forms.
-- An event handler function will always have the 'this' keyword of the DOM element of for which it is attached - i.e. `form.addEventListener('submit', this._newWorkout)` - would be `form`. To fix this you always use `bind()` as you want to point the this keyword to the object. 
+- An event handler function will always have the 'this' keyword of the DOM element of for which it is attached - i.e. `form.addEventListener('submit', this._newWorkout)` - would be `form`. To fix this you always use `bind()` as you want to point the this keyword to the object.
+- Any object should have some kind of unique identifier, so that later we can identify it through its ID - we would have to use an ID library usually. 
