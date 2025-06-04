@@ -5,7 +5,7 @@
 1. <strong>User Stories</strong> - will clearly describe the functionality of the application from the user's perspective. A common format could be `As a [type of user], I want [an action] so that [a benefit]`. I.e. "As a user, I want to log my workouts with location, distance, time, pace and steps/minute, so I can keep a log of all of my running". 
 2. <strong>Features</strong> - User stories will allow us to think of the features. I.e. "Map where user clicks to add new workout". 
 3. <strong>Flow chart</strong> - what we're going to build - should contain the features, how the different parts of the app react with each other and how the data will flow across the application. It's always a good idea to start with events - i.e. the page loading - "get current location coordinates --> render map on current location". This is only what the program should do, not how it does it.
-4. <strong>Architecture</strong> - how we are going to build it. 
+4. <strong>Architecture</strong> - how we are going to build it. Can have a look at section 15: 248 - project architecture is a good idea. 
 5. <strong>Development</strong> - implementing the code. 
 
 ### Problem Solving
@@ -636,7 +636,7 @@ console.log(str1.padStart(2, "0"));
 - Array.prototype is the prototype of all array objects we create in JavaScript. Therefore all arrays have access to the map method.
 - There are 3 ways of implementing prototypal inheritance in javascript - these are constructor functions, ES6 classes (more modern way - not the classes I mentioned above) and Object.create() - which is the easiest and staright forward way, but not used as much.
 
-- A constructor function is a normal function (only difference is that we call the constructor function with the `new` operator. Constructor functions always start with a capital letter. Arrow functions do not classify as a constructor function (as it doesn't have its own this keyword).
+- A constructor function is a normal function (only difference is that we call the constructor function with the `new` operator. Constructor functions always start with a capital letter. Arrow functions do not classify as a constructor function (as it doesn't have its own this keyword). In a regular function call, the 'this' keyword is undefined. 
 - Never create a method inside of a constructor function.
 
 - <strong>Prototypal inheritance/delegation</strong>
@@ -712,4 +712,5 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - Check print out for summary + extra notes.
 
 - Geolocation Navigator (API) - `navigator.geolocation.getCurrentPosition()` - takes 2 call back functions. The first function is the callback that works on 'success' - whenever the browsers get the coordinates of the user. The second function is the callback that works on an 'error' while getting the coordinates.
-- On forms, the default behaviour once things are submitted is to refresh the page, so just set the `e.preventDefault()` if using JS for forms. 
+- On forms, the default behaviour once things are submitted is to refresh the page, so just set the `e.preventDefault()` if using JS for forms.
+- An event handler function will always have the 'this' keyword of the DOM element of for which it is attached - i.e. `form.addEventListener('submit', this._newWorkout)` - would be `form`. To fix this you always use `bind()` as you want to point the this keyword to the object. 
