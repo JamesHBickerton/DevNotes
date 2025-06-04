@@ -132,7 +132,7 @@ The start of the splice is the first number of the array you want, and the last 
 
 - <strong>if</strong> statements: check snippets in folder.
 - <strong>else</strong> statements: check snippets folder - will usually be executed if the `if` statement is false.
-- These are called if/else control structures.
+- These are called if/else control structures/statements - if/else statements aren't actually used as much anymore. Usually just (in modern JS) would be multiple if statements. 
 
 - <strong>Type conversion</strong> - when we want to convert from one type to another. For example: if you have a string 'const inputYear = 1995' it isn't a number so you may have to convert it to a number. To do this `console.log(Number(inputYear)); this should convert it to a number.
 - <strong>UPDATE: you can actually use the + instead of Number() now as it is a strategy to tell Javascript to do type conversion. 
