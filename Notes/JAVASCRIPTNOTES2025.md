@@ -610,7 +610,8 @@ console.log(str1.padStart(2, "0"));
 - <strong>Going sideways - siblings</strong> - You can use the `element.previousElementSlibling` and `element.nextElementSibling`. You can also do `element.parentElement.children` to get all of the element's siblings, including itself. 
 - You can also do the above to check all of the nodes, but not really necessary.
 
-- A guard clause - is an if statement that will return early, if a condition is matched (good use for when you want to immediately finish a function).
+- A guard clause - is an if statement that will return early, if a condition is matched (good use for when you want to immediately finish a function). It usually checks for the opposite of what we are interested in - and if it returns back true, it will finish the function.
+- I.e. `if (!Number.isFinite(distance)) return alert('Inputs have to be positive numbers!')`
 
 - Intersection Observer API - allows us to observe changes to the way a certain target element intersects another element or the viewport.
 - All sections of the DOM will be observed when the page is loaded.
@@ -714,4 +715,5 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - Geolocation Navigator (API) - `navigator.geolocation.getCurrentPosition()` - takes 2 call back functions. The first function is the callback that works on 'success' - whenever the browsers get the coordinates of the user. The second function is the callback that works on an 'error' while getting the coordinates.
 - On forms, the default behaviour once things are submitted is to refresh the page, so just set the `e.preventDefault()` if using JS for forms.
 - An event handler function will always have the 'this' keyword of the DOM element of for which it is attached - i.e. `form.addEventListener('submit', this._newWorkout)` - would be `form`. To fix this you always use `bind()` as you want to point the this keyword to the object.
-- Any object should have some kind of unique identifier, so that later we can identify it through its ID - we would have to use an ID library usually. 
+- Any object should have some kind of unique identifier, so that later we can identify it through its ID - we would have to use an ID library usually.
+- It's a good habit to use 'small helper functions' to make your code a lot cleaner. 
