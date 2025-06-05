@@ -638,7 +638,7 @@ console.log(str1.padStart(2, "0"));
 - There are 3 ways of implementing prototypal inheritance in javascript - these are constructor functions, ES6 classes (more modern way - not the classes I mentioned above) and Object.create() - which is the easiest and staright forward way, but not used as much.
 
 - A constructor function is a normal function (only difference is that we call the constructor function with the `new` operator. Constructor functions always start with a capital letter. Arrow functions do not classify as a constructor function (as it doesn't have its own this keyword). In a regular function call, the 'this' keyword is undefined. 
-- Never create a method inside of a constructor function.
+- Never create a method inside of a constructor function. This is where you want to store all of the code that is executed right when the application loads. 
 
 - <strong>Prototypal inheritance/delegation</strong>
   
@@ -717,3 +717,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - An event handler function will always have the 'this' keyword of the DOM element of for which it is attached - i.e. `form.addEventListener('submit', this._newWorkout)` - would be `form`. To fix this you always use `bind()` as you want to point the this keyword to the object.
 - Any object should have some kind of unique identifier, so that later we can identify it through its ID - we would have to use an ID library usually.
 - It's a good habit to use 'small helper functions' to make your code a lot cleaner. 
+
+- <strong>Working with local storage</strong> - this is an API - `localStorage.setItem('name', 'string you want to store and be associated with a key')` - it is only advised to use for small amounts of data otherwise it will slow down the application. If you open up the console, go to application and have a look at local storage, you can see the results.
+- You can also use `.getItem`
+- `JSON.stringify()` - is how you can turn anything into a string. The opposite of this is `JSON.parse()` - I don't think stringify can return private variables. 
