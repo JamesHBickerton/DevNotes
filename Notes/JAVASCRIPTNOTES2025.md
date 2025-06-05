@@ -34,7 +34,7 @@
 <ol>
     <li>STRINGS (text we want to be displayed - it is a "string" of characters - these are immutable, meaning they cannot be changed - always put these in double/single quotes)</li>
     <li>NUMBERS (always have decimals i.e. 23.0)</li> 
-    <li>BOOLEANS (true/false)</li> 
+    <li>BOOLEANS (true/false) - just a note: can be common practice to list variables as `isRandom` or `hasCompleted`</li> 
     <li>UNDEFINED (variable that isn't defined)</li>
     <li>NULL (empty value)</li>
     <li>SYMBOL (value is unique and cannot be changed - not very useful)</li>
