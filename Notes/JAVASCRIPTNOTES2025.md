@@ -720,4 +720,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - <strong>Working with local storage</strong> - this is an API - `localStorage.setItem('name', 'string you want to store and be associated with a key')` - it is only advised to use for small amounts of data otherwise it will slow down the application. If you open up the console, go to application and have a look at local storage, you can see the results.
 - You can also use `.getItem`
-- `JSON.stringify()` - is how you can turn anything into a string. The opposite of this is `JSON.parse()` - I don't think stringify can return private variables. 
+- `JSON.stringify()` - is how you can turn anything into a string. The opposite of this is `JSON.parse()` - I don't think stringify can return private variables.
+
+### Asynchronous JS, AJAX & API's 
+
+- Most code is synchornous (code executed line by line where each line of code waits for the previous line to finish). Asynchronous code (take a setTimeout function for example) is executed after a task that runs in the background finishes (so the main code is not blocked and execution doesn't wait for an asynchronous task to finish its work). Call back functions are asynchronous JS.
