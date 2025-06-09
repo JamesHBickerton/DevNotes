@@ -724,4 +724,14 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 ### Asynchronous JS, AJAX & API's 
 
-- Most code is synchornous (code executed line by line where each line of code waits for the previous line to finish). Asynchronous code (take a setTimeout function for example) is executed after a task that runs in the background finishes (so the main code is not blocked and execution doesn't wait for an asynchronous task to finish its work). Call back functions are asynchronous JS.
+- Most code is synchornous (code executed line by line where each line of code waits for the previous line to finish). Asynchronous code (take a setTimeout function for example) is executed after a task that runs in the background finishes (so the main code is not blocked and execution doesn't wait for an asynchronous task to finish its work). Call back functions and event listeners alone, do not make javascript asynchronus though.
+- Setting a src of an image is actually asynchronus as it is loading the image in the "background".
+- <strong>AJAX</strong> - Asynchronus Javascript And XML - allows us to communcate with remote web servers in an asynchronus way. With AJAX calls, we can request data from web servers dynamically.
+- Online API - an application running on a serve that receives requests for data and sends data back as a response - we just call these Web API's or API.
+- `XML` is a data format that we don't really use any more. We use the `JSON` data format more - which is the most common (a data object just converted into a string making it easier to use).
+
+- Old school way of doing AJAX in JS - `const request = new XMLHttpRequest(); ` - check useful screenshots folder for whole code.
+- `Callback hell` - when we have a lot of nested call backs - noticed by a lot of indentations on lines. This makes our code look very messy and hard to maintain/understand. This leads to more bugs.
+- A way to escape callback hell is by using 'promises'.
+- A `promise` is an object used as a placeholder for a future result of an asynchronous operation (container for a future value - i.e. a response from AJAX call). The big advantage of using promises is that we no longer need to rely on event and callback functions to handle asynchronous results. Also allows us to escape callback hell to avoid the nesting of callbacks.
+- `Promises` are time sensitive. At the beginning, the promise is pending (before the future value is available), when the asynchronous task is finished (settled), they can either be fulfilled promises (successfully resulted in a value) or rejected promises (there has been an error during the asynchronous task). 
