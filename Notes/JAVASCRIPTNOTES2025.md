@@ -1,4 +1,4 @@
-# JavaScript Notes from Angela Yu Course + Jonas Course
+e# JavaScript Notes from Angela Yu Course + Jonas Course
 
 ### Best Way to Plan a Project 
 
@@ -734,4 +734,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - `Callback hell` - when we have a lot of nested call backs - noticed by a lot of indentations on lines. This makes our code look very messy and hard to maintain/understand. This leads to more bugs.
 - A way to escape callback hell is by using 'promises'.
 - A `promise` is an object used as a placeholder for a future result of an asynchronous operation (container for a future value - i.e. a response from AJAX call). The big advantage of using promises is that we no longer need to rely on event and callback functions to handle asynchronous results. Also allows us to escape callback hell to avoid the nesting of callbacks.
-- `Promises` are time sensitive. At the beginning, the promise is pending (before the future value is available), when the asynchronous task is finished (settled), they can either be fulfilled promises (successfully resulted in a value) or rejected promises (there has been an error during the asynchronous task). 
+- `Promises` are time sensitive. At the beginning, the promise is pending (before the future value is available), when the asynchronous task is finished (settled), they can either be fulfilled promises (successfully resulted in a value) or rejected promises (there has been an error during the asynchronous task).
+
+- The new way of doing AJAX is using the `fetch()` method. Inside will be the url of the API.
+- The fetch method can also have the `.then(function(response){})` method which will need to include a callback function to use as soon as the promise is fulfilled. Check useful screenshots for full code.
+- The `.json()` method is available on all of the response parameters of the fetch method. This will also return a new promise as it is an asynchronous function. 
