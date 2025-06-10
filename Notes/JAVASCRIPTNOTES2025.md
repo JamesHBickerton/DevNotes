@@ -729,6 +729,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - <strong>AJAX</strong> - Asynchronus Javascript And XML - allows us to communcate with remote web servers in an asynchronus way. With AJAX calls, we can request data from web servers dynamically.
 - Online API - an application running on a serve that receives requests for data and sends data back as a response - we just call these Web API's or API.
 - `XML` is a data format that we don't really use any more. We use the `JSON` data format more - which is the most common (a data object just converted into a string making it easier to use).
+- Asynchronus tasks only run in the WEB API's environment of the browser. If it was synchronous, it would be happening in the callstack. That is why loading images is asynchronous. 
 
 - Old school way of doing AJAX in JS - `const request = new XMLHttpRequest(); ` - check useful screenshots folder for whole code.
 - `Callback hell` - when we have a lot of nested call backs - noticed by a lot of indentations on lines. This makes our code look very messy and hard to maintain/understand. This leads to more bugs.
@@ -738,4 +739,23 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - The new way of doing AJAX is using the `fetch()` method. Inside will be the url of the API.
 - The fetch method can also have the `.then(function(response){})` method which will need to include a callback function to use as soon as the promise is fulfilled. Check useful screenshots for full code.
-- The `.json()` method is available on all of the response parameters of the fetch method. This will also return a new promise as it is an asynchronous function. 
+- The `.json()` method is available on all of the response parameters of the fetch method. This will also return a new promise as it is an asynchronous function.
+- The fulfilled result of the promise will always be the value that we return from the `then()` method.
+- To handle rejected promises (such as losing an internet connection). The first way to handle a rejected promise is to add a `catch()` method at the end of the chain. i.e. `.then(data => renderCountry(data, 'neighbour')).catch(err => alert(err))`.
+- The `finally()` method is a callback function that can be useful (i.e. hiding a loading spinner when an asynchronous item starts)
+- You can also manually throw an error. For example - please see important screenshots.
+- Handling errors is the only way we can display error messages on the screen for the user - it is bad practice.
+
+- The `event loop` looks into the call stack and determines whether it's empty or not (except for the global execution context). If it is empty, it will take the first callback of the callback queue to put into the execution context to be executed. This is called an event loop tick ✅. It basically coordinates when each callback is executed. 
+- Promises work a little differently. Callbacks that come from a promise will not be moved into the callback queue. They have a `microtasks queue` which has `priority` over the callback queue. It will run all of the microtasks queue before the callback queue (doesn't matter if it is empty or not).
+
+- INTERVIEW QUESTION: HOW CAN ASYNCHRONOUS CODE BE EXECUTED IN A NON-BLOCKING WAY, IF THERE IS ONLY ONE THREAD OF EXECUTION IN THE ENGINE? -
+- THE WEB API'S, CALL STACK, AND CALLBACK QUEUE ALL WORK TOGETHER IN A NON-BLOCKING WAY, EVEN THOUGH THERE IS ONLY ONE THREAD OF EXECUTION IN THE ENGINE - good to explain how they all relate together.
+
+- To create a new promise - `const variableName = new Promise(resolve, reject) {})` - it takes one argument which is an executing function (to automatically execute the executing function).
+- In practice, most of the time we just consume promises. We only build promises 'promisifying' - to wrap old callback based functions into functions. 
+- The executing function will contain the asynchronous behaviour we are trying to handle with the function - the future value of the promise).
+- The `resolve()` part of the executing function will set the promise as `fulfilled/resolved`. You would pass the fulfilled value of the promise here, and then match it with the `then()` method/handler.
+- The `reject()` function of the executing function will set the promise as an error message, that we would later want available in the `catch()` method. 
+- You would then 'consume' the promise (check out useful screenshots folder).
+- 
