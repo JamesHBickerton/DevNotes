@@ -761,6 +761,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - An easier way to consume promises - is to create an `async` function - i.e. `const whereAmI = async function (country) {}`. This will mean that the function will keep running in the background while performing the code that is inside of it.
 - We can have 1 or more `await` statements - which will 'await' for the result of the promise (i.e using the fetch() method). This await will not stop the call stack (this is what is so special, it makes it look like synchronous code, but will actually be asynchronous code). We can then assign this value to a variable (which we can't do while using the `then()` method).  Check useful screenshots.
+- It is probably better to use `await` statements. They can only be used inside of an `async` function or an async IIFE. 
 
 - `try...catch` is a way to handle errors in JavaScript without crashing your whole program - it allows you to try some code that might throw an error - see below:
   
