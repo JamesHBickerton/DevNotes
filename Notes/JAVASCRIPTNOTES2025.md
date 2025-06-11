@@ -758,4 +758,17 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The `resolve()` part of the executing function will set the promise as `fulfilled/resolved`. You would pass the fulfilled value of the promise here, and then match it with the `then()` method/handler.
 - The `reject()` function of the executing function will set the promise as an error message, that we would later want available in the `catch()` method. 
 - You would then 'consume' the promise (check out useful screenshots folder).
-- 
+
+- An easier way to consume promises - is to create an `async` function - i.e. `const whereAmI = async function (country) {}`. This will mean that the function will keep running in the background while performing the code that is inside of it.
+- We can have 1 or more `await` statements - which will 'await' for the result of the promise (i.e using the fetch() method). This await will not stop the call stack (this is what is so special, it makes it look like synchronous code, but will actually be asynchronous code). We can then assign this value to a variable (which we can't do while using the `then()` method).  Check useful screenshots.
+
+- `try...catch` is a way to handle errors in JavaScript without crashing your whole program - it allows you to try some code that might throw an error - see below:
+  
+  `try {
+  let result = someFunctionThatMightFail(); // This might throw an error
+  console.log(result); // Won't run if the above throws
+} catch (err) {
+  console.log("Something went wrong!");
+  console.log(err.message); // Shows what the error was
+}`
+
