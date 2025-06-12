@@ -763,7 +763,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - We can have 1 or more `await` statements - which will 'await' for the result of the promise (i.e using the fetch() method). This await will not stop the call stack (this is what is so special, it makes it look like synchronous code, but will actually be asynchronous code). We can then assign this value to a variable (which we can't do while using the `then()` method).  Check useful screenshots.
 - It is probably better to use `await` statements. They can only be used inside of an `async` function or an async IIFE. 
 
-- `try...catch` is a way to handle errors in JavaScript without crashing your whole program - it allows you to try some code that might throw an error - see below:
+- `try...catch` is a way to handle errors in JavaScript without crashing your whole program - it allows you to try some code that might throw an error - see below: - we always should wrap `async` functions in `try... catch` blocks. 
   
   `try {
   let result = someFunctionThatMightFail(); // This might throw an error
@@ -773,3 +773,9 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
   console.log(err.message); // Shows what the error was
 }`
 
+- `Promise.all()` function takes in an array of promises, to return a new promise. To run all of the promises in the array at the same time (able to run in parallel). If one promise rejects here, then all of the promises will reject.
+- Whenever you have to do multiple asynchronous operations at the same time (that don't depend on one another) always run them in parallel in `Promise.all()`.
+- `Promise.race()` function takes in an array of promises to return a new promise BUT it will be settled as soon as one of the input promises is settled (or is available) - the first settled promise wins the race. A promise that gets rejected can also win the race. `Promise.race()` is very useful to prevent against never ending promises, or long running promises. Check useful screenshots folder.
+- `Promise.race()` and `promise.all()` are the most important to know.
+- `Promise.allSettled()` will take in an array of promises, and will simply return an array of all of the settled promises (similar to promise.all() but promise.allSettled() will return all of the results).
+- Promise.any() takes an array of multiple promises and will return the first fulfilled promise (ignoring the rejected promise - will always be a fulfilled promise). 
