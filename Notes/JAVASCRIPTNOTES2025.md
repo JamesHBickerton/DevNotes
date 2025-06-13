@@ -778,4 +778,21 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - `Promise.race()` function takes in an array of promises to return a new promise BUT it will be settled as soon as one of the input promises is settled (or is available) - the first settled promise wins the race. A promise that gets rejected can also win the race. `Promise.race()` is very useful to prevent against never ending promises, or long running promises. Check useful screenshots folder.
 - `Promise.race()` and `promise.all()` are the most important to know.
 - `Promise.allSettled()` will take in an array of promises, and will simply return an array of all of the settled promises (similar to promise.all() but promise.allSettled() will return all of the results).
-- Promise.any() takes an array of multiple promises and will return the first fulfilled promise (ignoring the rejected promise - will always be a fulfilled promise). 
+- Promise.any() takes an array of multiple promises and will return the first fulfilled promise (ignoring the rejected promise - will always be a fulfilled promise).
+
+### Modern JavaScript Development 
+
+### Modules
+- Modules are reusable pieces of code that encapsulates implementation details (they make it very easy to compose software). Modules are a great way to isolate components too (can be developed in isolation without thinking about the entire codebase). They can also abstract code and make code easier to understand (more resuable code and organised code).
+- Modules involve importing (dependency) and exporting (public API). Imports and exports can only occur in the top level. All imports are also hoisted. Importing values is always the first thing that occurs in the module 
+- <strong>Differences between old school scripts and ES6 modules</strong> - In modules, all top level code are scoped to the module. The only way an outside module can access a value that's inside of a module is by exporting the value. In scripts, all top level variables are always global. ES6 modules are always in strict mode, the top-level `this` keyword is undefined (whereas in script it is the `window` object), and file downloading always occurs in an asynchronous way for ES6 modules. 
+- To link the module to the html file - `<script type="module">`.
+  
+- <strong>How ES6 modules are imported</strong> -
+  
+<ol>
+  <li>Parsing occurs (reading of the code) - this is the part where imports are hoisted (even before the code is executed). Modules are imported synchronously (only after all imported modules have been downloaded and executed, the main index.js module will be executed) which makes the imports known before their execution (doing this synchronously makes bundling and dead code elimination possible).</li>
+  <li>Modules are then downloaded from the server in an asynchronous way (they are also parsed and the modules exports are linked/connected to the imports in the index.js module).</li>
+  <li>The code in the imported module is executed (and process of importing is finished).</li>
+</ol>
+
