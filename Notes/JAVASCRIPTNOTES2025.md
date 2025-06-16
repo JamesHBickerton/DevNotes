@@ -740,6 +740,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The new way of doing AJAX is using the `fetch()` method. Inside will be the url of the API.
 - The fetch method can also have the `.then(function(response){})` method which will need to include a callback function to use as soon as the promise is fulfilled. Check useful screenshots for full code.
 - The `.json()` method is available on all of the response parameters of the fetch method. This will also return a new promise as it is an asynchronous function.
+- Async functions will only return promises. 
 - The fulfilled result of the promise will always be the value that we return from the `then()` method.
 - To handle rejected promises (such as losing an internet connection). The first way to handle a rejected promise is to add a `catch()` method at the end of the chain. i.e. `.then(data => renderCountry(data, 'neighbour')).catch(err => alert(err))`.
 - The `finally()` method is a callback function that can be useful (i.e. hiding a loading spinner when an asynchronous item starts)
@@ -761,7 +762,9 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - An easier way to consume promises - is to create an `async` function - i.e. `const whereAmI = async function (country) {}`. This will mean that the function will keep running in the background while performing the code that is inside of it.
 - We can have 1 or more `await` statements - which will 'await' for the result of the promise (i.e using the fetch() method). This await will not stop the call stack (this is what is so special, it makes it look like synchronous code, but will actually be asynchronous code). We can then assign this value to a variable (which we can't do while using the `then()` method).  Check useful screenshots.
-- It is probably better to use `await` statements. They can only be used inside of an `async` function or an async IIFE. 
+- It is probably better to use `await` statements. They can only be used inside of an `async` function or an async IIFE.
+- In ES6 we can now use await statements outside of async functions (in modules). 
+
 
 - `try...catch` is a way to handle errors in JavaScript without crashing your whole program - it allows you to try some code that might throw an error - see below: - we always should wrap `async` functions in `try... catch` blocks. 
   
@@ -801,4 +804,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - To import everything you can use `import * as` which will import everything from the module that you declare.
 - `Default exports` are used only when we want to explore one thing per module. This would take in a 'value'. You would use `export default`. To import it, you would use `import add from ./path.js`
 - We never mix named and default exports in the same module
-- IMPORTANT - imports are not copies of the exports (they are a live connection - pointing to the same place in memory). 
+- IMPORTANT - imports are not copies of the exports (they are a live connection - pointing to the same place in memory).
+
+- <strong>Top level await</strong> - only works in modules. You can do this outside of an async function. While this is useful, it actually blocks the execution of the entire module now (which is sometimes not what we want) - use this with great care. 
+- If one module imports a module with a top level await, then the importing module will wait for the imported module to finish the blocking code. 
