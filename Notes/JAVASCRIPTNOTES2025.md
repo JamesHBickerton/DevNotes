@@ -824,4 +824,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 <strong>Using NPM</strong>
 - using NPM in the terminal to create `package.json` which is a file that will store the entire configuration of your project.
 - We can't use common JS modules without a module bundler.
-- Never include the node modules folder when copying your project folder to somewhere else (because it is too huge). 
+- Never include the node modules folder when copying your project folder to somewhere else (because it is too huge).
+
+- Bundling using <strong>PARCEL</strong>: `npm i parcel --save-dev`.
+- `npx` is an application built into npm. `npx parcel index.html`.
+- Have a look at proper bundling on lecture 290 as quite confusing. 
