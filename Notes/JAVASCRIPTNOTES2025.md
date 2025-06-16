@@ -808,3 +808,20 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - <strong>Top level await</strong> - only works in modules. You can do this outside of an async function. While this is useful, it actually blocks the execution of the entire module now (which is sometimes not what we want) - use this with great care. 
 - If one module imports a module with a top level await, then the importing module will wait for the imported module to finish the blocking code. 
+
+- All modules in the NPM (code sharing) use the common JS module system (so it is still very important to know). Check useful screenshots for importing/exporting in Node.JS.
+
+- <strong>The command line</strong> - terminal inside of VS code.
+- The `ls` keyword will show all of the files.
+- The `cd` keyword will change directory (to go up and down the file tree). To go up one tree `..`, to go up two levels - `../..`.
+- The `clear` would obviously clear the terminal.
+- To create a new folder - `mkdir FOLDER NAME`.
+- To go into the new folder - `cd FOLDER NAME`.
+- To create a new file - `touch FILE NAME`.
+- To remove a new file - `rm FILE NAME`. To remove an empty folder - `rmdir FOLDER NAME`. To remove an entire file - `rm -R FOLDER NAME`. 
+- To move a file in the terminal - `mv FILENAME ../` for example.
+
+<strong>Using NPM</strong>
+- using NPM in the terminal to create `package.json` which is a file that will store the entire configuration of your project.
+- We can't use common JS modules without a module bundler.
+- Never include the node modules folder when copying your project folder to somewhere else (because it is too huge). 
