@@ -1,4 +1,4 @@
-e# JavaScript Notes from Angela Yu Course + Jonas Course
+# JavaScript Notes from Angela Yu Course + Jonas Course
 
 ### Best Way to Plan a Project 
 
@@ -785,8 +785,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 ### Modules
 - Modules are reusable pieces of code that encapsulates implementation details (they make it very easy to compose software). Modules are a great way to isolate components too (can be developed in isolation without thinking about the entire codebase). They can also abstract code and make code easier to understand (more resuable code and organised code).
 - Modules involve importing (dependency) and exporting (public API). Imports and exports can only occur in the top level. All imports are also hoisted. Importing values is always the first thing that occurs in the module 
-- <strong>Differences between old school scripts and ES6 modules</strong> - In modules, all top level code are scoped to the module. The only way an outside module can access a value that's inside of a module is by exporting the value. In scripts, all top level variables are always global. ES6 modules are always in strict mode, the top-level `this` keyword is undefined (whereas in script it is the `window` object), and file downloading always occurs in an asynchronous way for ES6 modules. 
-- To link the module to the html file - `<script type="module">`.
+- <strong>Differences between old school scripts and ES6 modules</strong> - In modules, all top level code are scoped to the module. The only way an outside module can access a value that's inside of a module is by exporting the value. In scripts, all top level variables are always global. ES6 modules are always in strict mode (by default), the top-level `this` keyword is undefined (whereas in script it is the `window` object), and file downloading always occurs in an asynchronous way for ES6 modules. 
+- To link the module to the html file - `<script type="module">`. We also usually list all of the imports at the start of the file. 
   
 - <strong>How ES6 modules are imported</strong> -
   
@@ -796,3 +796,9 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
   <li>The code in the imported module is executed (and process of importing is finished).</li>
 </ol>
 
+- By default, all top level variables are private inside of the current module (unlike traditional scripts). If you wanted to use them, then you would have to use exports (named exports and default exports).
+- To change the name of some exports you can do `totalPrice as price` for example - this would change totalPrice name to price.
+- To import everything you can use `import * as` which will import everything from the module that you declare.
+- `Default exports` are used only when we want to explore one thing per module. This would take in a 'value'. You would use `export default`. To import it, you would use `import add from ./path.js`
+- We never mix named and default exports in the same module
+- IMPORTANT - imports are not copies of the exports (they are a live connection - pointing to the same place in memory). 
