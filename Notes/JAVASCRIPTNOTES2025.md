@@ -154,13 +154,14 @@ The start of the splice is the first number of the array you want, and the last 
 - <strong>Conditional/ternary operators</strong> are used to write if/else statements in shorter amount of code. These are expressions.
 - `console.log(BACKSLASH I like to drink ${age >= 18 ? "wine" : "water"}BACKSLASH);`
 - The `?` indicates the IF STATEMENT PART and the `:` indicates the ELSE STATEMENT PART. Remember the `${}` are template literals.
-- The turnary/conditional operators are perfect for taking a quick decision
+- The turnary/conditional operators are perfect for taking a quick decision. It is actually better to use ternary or logical operators instead of if statements. Instead of doing if/else statements, it is also even better to use more if statements (without the else/if). 
 
 - Expressions produce values, whereas statements are bigger pieces of code which do not produce a value (such as an operator). Examples of statements are 'if else statements' and 'switch statements'. Statements end in semi-colons. GO BACK TO THEORY LECTURE AROUND SWITCH STATEMENTS, NOT SURE WHY I HAVE NO NOTES FOR THIS. 
 
 - 3 weeks off - a little worried to get back into it just in case I forgot everything (:
 
 - <strong>OBJECTS</strong> - can define <strong>key (variable name)</strong> value pairs. Instead of Arrays using the square brackets, you would use the curly brackets to define the object.
+- It is good practice not to use arrow functions in objects (as they won't get access to the 'this' keyword in the object). 
 - The object name is called the key, whereas the amount of items in the object are called properties.
 - These are the most fundamental concepets in the javascript language.
 - We use objects to group together different variables that belong together.
@@ -170,7 +171,8 @@ The start of the splice is the first number of the array you want, and the last 
 - To call a function with the brackets, you would do the following: `console.log(james["calcAge"](1995));`
   
   
-- `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator/counter</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). This is usually `i`. 
+- `for` <strong>loops</strong> are used when you have to repeat a task multiple times. Loops need an <strong>iterator/counter</strong>, which is a variable you can declare specifically in your loop to control how the loop iterates (or goes through logic). This is usually `i`.
+- It is actually good practice to avoid using loops (just important to know how to do them). It is better to use array methods instead (like map, filter and reduce). 
 - `for` loops will keep running while the condition is TRUE. This can create a loop for an infinite amount of times (whereas `while` loops are used when it is needed for an infinite amount of times). 
 - `for (let rep = 1; rep <= 10; rep++) {
   console.log(BACKSLASHLifting weights repetition ${rep}BACKSLASH);`
@@ -776,7 +778,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
   console.log(err.message); // Shows what the error was
 }`
 
-- `Promise.all()` function takes in an array of promises, to return a new promise. To run all of the promises in the array at the same time (able to run in parallel). If one promise rejects here, then all of the promises will reject.
+- `Promise.all()` function takes in an array of promises, to return a new promise. To run all of the promises in the array at the same time (able to run in parallel). If one promise rejects here, then all of the promises will reject. 
 - Whenever you have to do multiple asynchronous operations at the same time (that don't depend on one another) always run them in parallel in `Promise.all()`.
 - `Promise.race()` function takes in an array of promises to return a new promise BUT it will be settled as soon as one of the input promises is settled (or is available) - the first settled promise wins the race. A promise that gets rejected can also win the race. `Promise.race()` is very useful to prevent against never ending promises, or long running promises. Check useful screenshots folder.
 - `Promise.race()` and `promise.all()` are the most important to know.
@@ -828,4 +830,10 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - Bundling using <strong>PARCEL</strong>: `npm i parcel --save-dev`.
 - `npx` is an application built into npm. `npx parcel index.html`.
-- Have a look at proper bundling on lecture 290 as quite confusing. 
+- Have a look at proper bundling on lecture 290 as quite confusing.
+
+- Using <strong>Babel</strong> for ES5 - Parcel automatically uses it. Babel can only compile ES6 syntax.
+- We can polyfill these new features in our code. Babel used to do it, but now we have to manually import a new library - `import 'core-js/stable';` in the script or `npm i core-js`. This would import everything so leading to a large bundle size, otherwise you can do - `import 'core-js/stable/array/find';` if you are looking for the find() array method for example - but we usually don't do this.
+- To polyfill async functions - `import 'regenerator-runtime/runtime';` and `npm i regenerator-runtime`
+
+- 
