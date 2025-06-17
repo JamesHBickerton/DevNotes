@@ -836,4 +836,13 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - We can polyfill these new features in our code. Babel used to do it, but now we have to manually import a new library - `import 'core-js/stable';` in the script or `npm i core-js`. This would import everything so leading to a large bundle size, otherwise you can do - `import 'core-js/stable/array/find';` if you are looking for the find() array method for example - but we usually don't do this.
 - To polyfill async functions - `import 'regenerator-runtime/runtime';` and `npm i regenerator-runtime`
 
+- <strong>Declarative vs Imperative Code</strong>
+- <strong>Imperative code/programming</strong>: is like us explaining to the computer HOW to do things - every single step it has to take to achieve a result (like a baker following instructions on how to make a cake).
+- <strong>Declarative code/programming</strong>: is like us telling the computer WHAT to do - the how (step-by-step instructions) gets abstracted away (like describing what the cake looks like). This has given rise to <strong>functional programming</strong> - writing software by combining many pure functions and avoiding side effects/mutating data.
+- Some examples of declarative syntax include - array and object destructuring, the spread(...) operator, ternary/conditional operators and template literals. 
+- <strong>Side effects</strong> are modifications/mutations outside of the function (mutating external variables, logging to console, writing to DOM etc).
+- <strong>Pure functions</strong> are functions without side effects and does not depend on any external variables.
+- <strong>Immutability</strong> - means that the state/data is never modified (instead the state is then copied, and it is the copy of the original state that is mutated). This makes it easier to keep track of code and write better code without bugs.
+
+- `Object.freeze()` can freeze objects and arrays to make them immutable. Object.freeze() only 'freezes' the first level of the object (meaning we can still change values/properties - it just means we can't add new things to it). 
 - 
