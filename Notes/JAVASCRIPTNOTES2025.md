@@ -3,7 +3,7 @@
 ### Best Way to Plan a Project 
 
 1. <strong>User Stories</strong> - will clearly describe the functionality of the application from the user's perspective. A common format could be `As a [type of user], I want [an action] so that [a benefit]`. I.e. "As a user, I want to log my workouts with location, distance, time, pace and steps/minute, so I can keep a log of all of my running". 
-2. <strong>Features</strong> - User stories will allow us to think of the features. I.e. "Map where user clicks to add new workout". 
+2. <strong>Features</strong> - User stories will allow us to think of the features. I.e. "Map where user clicks to add new workout", "Search results with input field", "bookmarking functionality", "user can upload files/recipes" etc. 
 3. <strong>Flow chart</strong> - what we're going to build - should contain the features, how the different parts of the app react with each other and how the data will flow across the application. It's always a good idea to start with events - i.e. the page loading - "get current location coordinates --> render map on current location". This is only what the program should do, not how it does it.
 4. <strong>Architecture</strong> - how we are going to build it. Can have a look at section 15: 248 - project architecture is a good idea. 
 5. <strong>Development</strong> - implementing the code. 
@@ -542,7 +542,7 @@ console.log(str1.padStart(2, "0"));
 - `document.querySelector` and `document.querySelectorAll` are the most common.
 
 - <strong>Creating and inserting elements</strong>
-- The `.insertAdjacentHTML()` is probably the most common use for creating.
+- The `.insertAdjacentHTML()` is probably the most common use for creating. You will need to add this on the parent element. 
 - The `const = variableName = document.createElement('div')` for example, will create an element, and store it in the message (it is just a DOM object that we can use). If we want it on the page we need to insert it. You can then use this variableName and do things with it - i.e. `variableName.classList.add()`. 
 - To insert it for example, `header.prepend(variableName);` - the prepend() inserts the element into the HTML/DOM - it adds it as the first child of the header element for example. The `header.append(variableName)` will do the same, but it will be the last child of the header for example. It can't be put in both places (can't be at the same place at the same time).
 - You can also insert it before `header.before` - this will be a sibling element, before the header, and after (same concept).
@@ -741,8 +741,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - The new way of doing AJAX is using the `fetch()` method. Inside will be the url of the API.
 - The fetch method can also have the `.then(function(response){})` method which will need to include a callback function to use as soon as the promise is fulfilled. Check useful screenshots for full code.
-- The `.json()` method is available on all of the response parameters of the fetch method. This will also return a new promise as it is an asynchronous function.
-- Async functions will only return promises. 
+- The `.json()` method is available on all of the `response/res` parameters of the fetch method. This will also return a new promise as it is an asynchronous function.
+- Async functions will only return promises. You can use the `.json()` method on top of the 
 - The fulfilled result of the promise will always be the value that we return from the `then()` method.
 - To handle rejected promises (such as losing an internet connection). The first way to handle a rejected promise is to add a `catch()` method at the end of the chain. i.e. `.then(data => renderCountry(data, 'neighbour')).catch(err => alert(err))`.
 - The `finally()` method is a callback function that can be useful (i.e. hiding a loading spinner when an asynchronous item starts)
@@ -824,13 +824,15 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - To move a file in the terminal - `mv FILENAME ../` for example.
 
 <strong>Using NPM</strong>
-- using NPM in the terminal to create `package.json` which is a file that will store the entire configuration of your project.
+- using NPM in the terminal to create `package.json` which is a file that will store the entire configuration of your project. Start with the new terminal - `npm init`.
 - We can't use common JS modules without a module bundler.
 - Never include the node modules folder when copying your project folder to somewhere else (because it is too huge).
 
+- Install `npm i parcel@2` for version 2 of parcel in the terminal after editing the package.json files. - adding under "scripts": - `"start"` and `"build"`.
+- To run the start of the script - `npm start` - which will call the 'start script'
 - Bundling using <strong>PARCEL</strong>: `npm i parcel --save-dev`.
 - `npx` is an application built into npm. `npx parcel index.html`.
-- Have a look at proper bundling on lecture 290 as quite confusing.
+- Have a look at proper bundling on lecture 290 as quite confusing. Parcel can also translate CSS into SASS (which is a better way to store CSS for big projects). 
 
 - Using <strong>Babel</strong> for ES5 - Parcel automatically uses it. Babel can only compile ES6 syntax.
 - We can polyfill these new features in our code. Babel used to do it, but now we have to manually import a new library - `import 'core-js/stable';` in the script or `npm i core-js`. This would import everything so leading to a large bundle size, otherwise you can do - `import 'core-js/stable/array/find';` if you are looking for the find() array method for example - but we usually don't do this.
