@@ -135,7 +135,7 @@ The start of the splice is the first number of the array you want, and the last 
 - These are called if/else control structures/statements - if/else statements aren't actually used as much anymore. Usually just (in modern JS) would be multiple if statements. 
 
 - <strong>Type conversion</strong> - when we want to convert from one type to another. For example: if you have a string 'const inputYear = 1995' it isn't a number so you may have to convert it to a number. To do this `console.log(Number(inputYear)); this should convert it to a number.
-- <strong>UPDATE: you can actually use the + instead of Number() now as it is a strategy to tell Javascript to do type conversion. 
+- <strong>UPDATE:</strong> you can actually use the + instead of Number() now as it is a strategy to tell Javascript to do type conversion. 
 - You can also do the above with a String function (just replace the Number). 
 - NaN - "not a number".
 - <strong>Type coercion</strong> - happens whenever an operater is dealing with a value of two different types. JavaScript will do this in the background. I.e. It usually converts numbers into strings if you concatenate numbers and strings.
