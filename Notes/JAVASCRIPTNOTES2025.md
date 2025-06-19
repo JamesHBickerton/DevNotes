@@ -847,4 +847,11 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - <strong>Immutability</strong> - means that the state/data is never modified (instead the state is then copied, and it is the copy of the original state that is mutated). This makes it easier to keep track of code and write better code without bugs.
 
 - `Object.freeze()` can freeze objects and arrays to make them immutable. Object.freeze() only 'freezes' the first level of the object (meaning we can still change values/properties - it just means we can't add new things to it). 
-- 
+
+- <strong>MVC Architecture</strong> - This stands for the `model`, `view`, and `controller`.
+  
+- The `model` - this contains the state, the business logic and the HTTP library.
+- The `view` - is for presentation logic - the part interacting with the user. 
+- The `controller` - this contains the application logic - creating a bridge between the `model` and the `view` (that shouldn't know anything about each other/completely independent of one another). This can 'dispatch tasks' to the `model` and the `view`
+  
+- An example of flow through the MVC architecture would be - an event listener is added that is 'doing something in the application' through the `controller`. This handling might involve updating of the UI and may ask the model for some data (i.e. dispatching tasks). The `model` may then ask for an AJAX request to the web. When the data arrives, the `controller` takes this data and then sends it to the `view` for the data to be rendered. 
