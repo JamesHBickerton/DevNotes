@@ -850,7 +850,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - <strong>MVC Architecture</strong> - This stands for the `model`, `view`, and `controller`.
   
-- The `model` - this contains the state, the business logic and the HTTP library.
+- The `model` - this contains the `state`, the business logic and the HTTP library.
 - The `view` - is for presentation logic - the part interacting with the user. 
 - The `controller` - this contains the application logic - creating a bridge between the `model` and the `view` (that shouldn't know anything about each other/completely independent of one another). This can 'dispatch tasks' to the `model` and the `view`
   
