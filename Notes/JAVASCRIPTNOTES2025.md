@@ -748,6 +748,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The `finally()` method is a callback function that can be useful (i.e. hiding a loading spinner when an asynchronous item starts)
 - You can also manually throw an error. For example - please see important screenshots.
 - Handling errors is the only way we can display error messages on the screen for the user - it is bad practice.
+- In order to handle/handling errors in the 'real world' - have a look at useful screenshots.
 
 - The `event loop` looks into the call stack and determines whether it's empty or not (except for the global execution context). If it is empty, it will take the first callback of the callback queue to put into the execution context to be executed. This is called an event loop tick ✅. It basically coordinates when each callback is executed. 
 - Promises work a little differently. Callbacks that come from a promise will not be moved into the callback queue. They have a `microtasks queue` which has `priority` over the callback queue. It will run all of the microtasks queue before the callback queue (doesn't matter if it is empty or not).
