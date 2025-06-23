@@ -851,9 +851,11 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - <strong>MVC Architecture</strong> - This stands for the `model`, `view`, and `controller`.
   
 - The `model` - this contains the `state`, the business logic and the HTTP library.
-- The `view` - is for presentation logic - the part interacting with the user. 
-- The `controller` - this contains the application logic - creating a bridge between the `model` and the `view` (that shouldn't know anything about each other/completely independent of one another). This can 'dispatch tasks' to the `model` and the `view`
+- The `view` - is for presentation logic - the part interacting with the user. All events should be `listened for` in the `view`. 
+- The `controller` - this contains the application logic - creating a bridge between the `model` and the `view` (that shouldn't know anything about each other/completely independent of one another). This can 'dispatch tasks' to the `model` and the `view`. All events should be `handled` in the `controller`. 
   
 - An example of flow through the MVC architecture would be - an event listener is added that is 'doing something in the application' through the `controller`. This handling might involve updating of the UI and may ask the model for some data (i.e. dispatching tasks). The `model` may then ask for an AJAX request to the web. When the data arrives, the `controller` takes this data and then sends it to the `view` for the data to be rendered. The `model` and the `view` kind of sit and wait for the instructions from the `controller`.
 
-- It is a good idea to create a 'config.js' file to store your API into a new variable - as API's are likely to change over the years. Creating a configuration variable - such as `const API_URL = 'url';`
+- It is a good idea to create a 'config.js' file to store your API into a new variable - as API's are likely to change over the years. Creating a configuration variable - such as `const API_URL = 'url';`.
+
+- `The Publisher-Subscriber Design Pattern` - The publisher is some code that knows when to react (i.e. functions that contain add event listeners). Subscribers are the code that should be executed when the event happens. The publisher does not know that the subscriber exists due to living in different MVC. We can now subscribe to the publisher by passing in a subscriber function as an argument as the controller can import both the view and the model - this is the way you can make them interact with each other. 
