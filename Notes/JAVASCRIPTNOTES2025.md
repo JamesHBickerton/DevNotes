@@ -863,4 +863,6 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - To create a virtual DOM (still don't really get this) but - `const newDOM = document.createRange().createContextualFragment(variableName)`. This means you can create a new DOM without manipulating the main DOM. 
 - The `createRange()` method is primarily used for manipulating selections and content within the DOM.
-- The `createContextualFragment()` method is used to parse HTML to a document fragment. 
+- The `createContextualFragment()` method is used to parse HTML to a document fragment.
+
+- In order to store data in local storage it is a good idea to use the `model` - as it has to do with data. 
