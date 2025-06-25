@@ -321,7 +321,8 @@ for (const [index, value] of fruits.entries()) {
 
 - In objects, We can loop over property names (keys) and property values. You can use this with the `Object.keys` for properties, and `Object.values` for values.
 - To loop over both the property names (keys) and values in objects, you would need the entries().
-- Remember, you can't use .entries() directly on an object. You would have to do Object.entries(fruits) if an object. 
+- Remember, you can't use .entries() directly on an object. You would have to do Object.entries(fruits) if an object.
+- Object.fromEntries() - can convert entries to an object. This takes an array of entries and converts it into an object. 
 
 - <strong>Sets</strong> - to create a new set you type in `= new Set([])` after declaring a variable. A set is a set of unique elements without duplicates.
 - The main use of sets is to remove duplicate values of arrays. 
