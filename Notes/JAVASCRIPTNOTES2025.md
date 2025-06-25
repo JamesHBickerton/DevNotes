@@ -859,4 +859,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 
 - It is a good idea to create a 'config.js' file to store your API into a new variable - as API's are likely to change over the years. Creating a configuration variable - such as `const API_URL = 'url';`.
 
-- `The Publisher-Subscriber Design Pattern` - The publisher is some code that knows when to react (i.e. functions that contain add event listeners). Subscribers are the code that should be executed when the event happens. The publisher does not know that the subscriber exists due to living in different MVC. We can now subscribe to the publisher by passing in a subscriber function as an argument as the controller can import both the view and the model - this is the way you can make them interact with each other. 
+- `The Publisher-Subscriber Design Pattern` - The publisher is some code that knows when to react (i.e. functions that contain add event listeners). Subscribers are the code that should be executed when the event happens. The publisher does not know that the subscriber exists due to living in different MVC. We can now subscribe to the publisher by passing in a subscriber function as an argument as the controller can import both the view and the model - this is the way you can make them interact with each other.
+
+- To create a virtual DOM (still don't really get this) but - `const newDOM = document.createRange().createContextualFragment(variableName)`. This means you can create a new DOM without manipulating the main DOM. 
+- The `createRange()` method is primarily used for manipulating selections and content within the DOM.
+- The `createContextualFragment()` method is used to parse HTML to a document fragment. 
