@@ -2,7 +2,7 @@
 
 ### Best Way to Plan a Project 
 
-1. <strong>User Stories</strong> - will clearly describe the functionality of the application from the user's perspective. A common format could be `As a [type of user], I want [an action] so that [a benefit]`. I.e. "As a user, I want to log my workouts with location, distance, time, pace and steps/minute, so I can keep a log of all of my running". 
+1. <strong>User Stories</strong> - clearly describe the functionality of the application from the user's perspective. A common format could be `As a [type of user], I want [an action] so that [a benefit]`. I.e. "As a user, I want to log my workouts with location, distance, time, pace and steps/minute, so I can keep a log of all of my running". 
 2. <strong>Features</strong> - User stories will allow us to think of the features. I.e. "Map where user clicks to add new workout", "Search results with input field", "bookmarking functionality", "user can upload files/recipes" etc. 
 3. <strong>Flow chart</strong> - what we're going to build - should contain the features, how the different parts of the app react with each other and how the data will flow across the application. It's always a good idea to start with events - i.e. the page loading - "get current location coordinates --> render map on current location". This is only what the program should do, not how it does it.
 4. <strong>Architecture</strong> - how we are going to build it. Can have a look at section 15: 248 - project architecture is a good idea. 
