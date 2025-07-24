@@ -866,4 +866,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - The `createRange()` method is primarily used for manipulating selections and content within the DOM.
 - The `createContextualFragment()` method is used to parse HTML to a document fragment.
 
-- In order to store data in local storage it is a good idea to use the `model` - as it has to do with data. 
+- In order to store data in local storage it is a good idea to use the `model` - as it has to do with data.
+- `window.history.pushState()` will allow us to change the URL without reloading the page. It takes 3 arguments - `state`, `title`, and `url` - which is obviously the most important.
+- `window.history.pushState(null, '', '#${model.state.recipe.id}');` for example
+- 
