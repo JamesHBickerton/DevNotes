@@ -204,7 +204,7 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
 - E.g. (to find the h1 element): `let h1 = document.querySelector("h1");`
 - In order to use the query Selector for all elements (i.e. if multiple elements have the same class, then you would use `.querySelectorAll`. 
 - The above should be encased in a string i.e. for an ID: "#h1".
-- The `getElementId` is a lot faster than using query selector and '#h1' for selecting ID's. 
+- The `getElementId` is a lot faster than using query selector and '#h1' for selecting ID's. - using this for freecodecamp.
 - The `.textContent` property sets the text content of an element and all of its descendants. The `.innerText` property only sets the text content of visible elements of all of the element's descendants. `.textContent` is usually faster.
 
 - The `.value` property can be useful for getting the value for inputs for example.
