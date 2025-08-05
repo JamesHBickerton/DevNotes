@@ -106,7 +106,7 @@ The start of the splice is the first number of the array you want, and the last 
 - `.push()` method is the first method associated with arrays and it allows you to "PUSH" or add a value to the end of an array. i.e. `arrays.push("value")` will add "value" at the end of your array. `.push()` will return the new length of the array, after adding the value you give it.
 - The `unshift` method allows you to add a value to the start of the array. I.e. `arrays.unshift`. The `shift` method allows you to remove a value at the start of the array and return it back to you. 
 - `.pop()` method allows you to remove the last element and returns this element back to you. You don't need parameters into this
-- `indexOf()` can tell you what number in the string the value is that you want. I.e. `console.log(friends.indexOf("Steven"));`. If an element is not in there, it will be -1 in the console. This only checks for one character at a time. 
+- `indexOf()` can tell you what number in the string the value is that you want. I.e. `console.log(friends.indexOf("Steven"));`. It returns the first index at which a given element can be found in the array, or -1 if the element is not present. This only checks for one character at a time. 
 - To find out if an element is in the array or it isn't, you can use the `.includes()` method. I.e. `console.log(friends.includes("Steven"));` this will come out in 'true' if it is in there, 'false' if not.
 - Common example of `.includes()` is in if/else statements. I.e. `if (friends.includes("Steven")) {console.log("You have a friend called Steven");` would be true.
 - The `shift` method allows you to remove the first element of an array.
@@ -312,7 +312,7 @@ for (const [index, value] of fruits.entries()) {
   console.log(index, value);
 }`
 
-- Optional chaining - if a way of using `?.` to check if a variable or method exists. For example, if you use:
+- Optional chaining - if a way of using `?.` to check if a variable or method exists. It also helps to prevent errors when accessing properties from objects that might be 'null' or 'undefined'. For example, if you use:
 -  `const city = user.profile?.location?.city;` - this would check if first user.profile exists, and then if the location exists - then it will return the city value. If anything is missing it just returns undefined instead of throwing an error.
 -  These can also be used for methods - i.e.
 -  These are frequently used with the `??` to ensure that there is another option/operant. - IMPORTANT
@@ -448,7 +448,7 @@ console.log(str1.padStart(2, "0"));
 - The `flat()` method creates a new array with all sub-array elements concactenated together. Useful for nested arrays and combining them into one to "flatten" the array. This only goes one level deep though. This also doesn't need a callback function. If it is one level deep of nesting, you would just use the `flat()`, but if it is 2 for example then you would just use `flat(2)`.
 - The `flatMap()` method is used when you want to Map something and flatten it, however it only goes 1 level deep, no matter what, otherwise you will have to use the `flat()` method. This requires a call back function.
 
-- To <strong>sort</strong> array's from A-Z (by default), you can use the `.sort()` method, bearing in mind that this will mutate the array. The sort method only does this on strings(by default). Numbers will be converted into strings first. To fix this, you can use a callback function in the sort() using the compare function (parameters of a, b). Have a look at useful screenshots, quite difficult to understand here. If you have a mix with numbers/strings in an array, DON'T use the sort method.
+- To <strong>sort</strong> array's from A-Z (by default), you can use the `.sort()` method, bearing in mind that this will mutate the array. The sort method only does this on strings (by default). Numbers will be converted into strings first. To fix this, you can use a callback function in the sort() using the compare function (parameters of a, b). Have a look at useful screenshots, quite difficult to understand here. If you have a mix with numbers/strings in an array, DON'T use the sort method.
 - <strong>Array grouping</strong> - occurs by `const elementName = Object.groupBy(array callback function(condition inside))`. This will loop over the array, and again can use the shorthand arrow callback function.
 
 - To create an empty array, you can use the empty array method - `const x = new Array(7)` to create 7 blank arrays. 
