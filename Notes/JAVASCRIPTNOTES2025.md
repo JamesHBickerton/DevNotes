@@ -71,6 +71,7 @@ The start of the splice is the first number of the array you want, and the last 
 - Function declarations vs function expressions: you can CALL declarations before they are listed in the code, but can't do this with the expression (remember expressions create values). It is good to know how to use both. Function expressions is when the function is assigned to a variable - i.e. `const functionName = function() {}`
   
 - <strong>Arrow functions</strong> are another type of function that you can use `=>`. With arrow functions, you drop the "function" keyword and place a `=>` between the `()` and `{}`. If you have a function that is only returning things, you can drop the curly brackets all together.
+- Arrow functions do not have names, and are always anonymous. 
 - If you don't return anything in the curly brackets, the function should automatically return a result. That is the benefit of arrow functions. 
   
 - We don't usually console.log the function, we usually use the return. 
@@ -868,4 +869,8 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - In order to store data in local storage it is a good idea to use the `model` - as it has to do with data.
 - `window.history.pushState()` will allow us to change the URL without reloading the page. It takes 3 arguments - `state`, `title`, and `url` - which is obviously the most important.
 - `window.history.pushState(null, '', '#${model.state.recipe.id}');` for example
+
+- In order to generate audio into a web page - WebAudio API -
+  `const audio = new Audio();`
+
 - 
