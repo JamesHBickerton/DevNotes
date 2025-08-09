@@ -514,8 +514,24 @@ console.log(str1.padStart(2, "0"));
 - You can also use the `bigInt()` function without the `n` which will do the same thing, but for smaller numbers.
 - It is not possible to mix bigInt() numbers with regular numbers in mathematical equations and name spaces (like Math). But you can do `<` and `>` and `==`.
 
-- <strong>Dates</strong> - to create the data currently, you would use the `new Data();` which would give you the current day/year/time.
+- <strong>Dates</strong> - to create the data currently, you would use the `new Date();` which would give you the current day/year/time.
 - Months in JS are zero based, so starting at 0 - meaning June would be 7, December would be 13 etc.
+
+- The `getDate()` method returns a number between 1 and 31 that represents the day and month for the specific date.
+- The `getMonth()` method returns a number between 0 and 11. Because the number this method returns is zero-based, you need to add 1 to it to get the expected month number. `const month = date.getMonth() + 1;`
+- The `.getFullYear()` method returns a number which represents the year for the provided date.
+- The `.getHours()` method returns a number between 0 and 23. I.e. `const hours = date.getHours();`
+- The `.getMinutes()` method returns a number between 0 and 59
+
+- Example:
+
+`const date = new Date();
+const day = date.getDate();
+const month = date.getMonth() + 1;
+const year = date.getFullYear();
+const hours = date.getHours();
+const minutes = date.getMinutes();`
+  
 - Dates have their own methods, as they are objects.
 - Parameters - `new Date(year, month, day, hours, minutes, seconds)`
 - Look at useful screenshots folder for all of the relevant information for dates.
