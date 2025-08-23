@@ -149,6 +149,7 @@ The start of the splice is the first number of the array you want, and the last 
 - <strong>Equality operators</strong> include `===` and `==`. The `===` is a strict equality operator, and does not perform type coercion (whereas `==` does as it a loose equality operator - meaning it can convert string to number).
 - As a general rule, always use `===` as it helps to avoid bugs in the future as a default.
 - The <strong>different</strong> operator is represented as an `!==`.
+- Ensure to look at the switch statements.
 
 - <strong>Boolean logic</strong> - these are the `AND - &&` operators and `OR - ||` operators. For an `AND` operator to be true, all outcomes will need to be true (vice versa). For the `OR` operator to be true, only one variable needs to be true. The `NOT - !` operator will invert the variable (i.e. if it is true, it will become false). The not operator is `!Variable`. The NOT operator has precendence over the AND and OR operators.
 
