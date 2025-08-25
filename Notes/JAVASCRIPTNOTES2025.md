@@ -149,7 +149,6 @@ The start of the splice is the first number of the array you want, and the last 
 - <strong>Equality operators</strong> include `===` and `==`. The `===` is a strict equality operator, and does not perform type coercion (whereas `==` does as it a loose equality operator - meaning it can convert string to number).
 - As a general rule, always use `===` as it helps to avoid bugs in the future as a default.
 - The <strong>different</strong> operator is represented as an `!==`.
-- Ensure to look at the switch statements.
 
 - <strong>Boolean logic</strong> - these are the `AND - &&` operators and `OR - ||` operators. For an `AND` operator to be true, all outcomes will need to be true (vice versa). For the `OR` operator to be true, only one variable needs to be true. The `NOT - !` operator will invert the variable (i.e. if it is true, it will become false). The not operator is `!Variable`. The NOT operator has precendence over the AND and OR operators.
 
@@ -158,7 +157,8 @@ The start of the splice is the first number of the array you want, and the last 
 - The `?` indicates the IF STATEMENT PART and the `:` indicates the ELSE STATEMENT PART. Remember the `${}` are template literals.
 - The turnary/conditional operators are perfect for taking a quick decision. It is actually better to use ternary or logical operators instead of if statements. Instead of doing if/else statements, it is also even better to use more if statements (without the else/if). 
 
-- Expressions produce values, whereas statements are bigger pieces of code which do not produce a value (such as an operator). Examples of statements are 'if else statements' and 'switch statements'. Statements end in semi-colons. GO BACK TO THEORY LECTURE AROUND SWITCH STATEMENTS, NOT SURE WHY I HAVE NO NOTES FOR THIS. 
+- Expressions produce values, whereas statements are bigger pieces of code which do not produce a value (such as an operator). Examples of statements are 'if else statements' and 'switch statements'. Statements end in semi-colons. GO BACK TO THEORY LECTURE AROUND SWITCH STATEMENTS, NOT SURE WHY I HAVE NO NOTES FOR THIS.
+- A switch statement is used to compare an expression against multiple possible values and execute different code blocks based on the match.
 
 - 3 weeks off - a little worried to get back into it just in case I forgot everything (:
 
@@ -371,7 +371,9 @@ for (const [index, value] of fruits.entries()) {
 `const str1 = "5";
 console.log(str1.padStart(2, "0"));
 // Expected output: "05"`
-- You can do this on numbers too, but obviously would have to use the String() to convert it. 
+- You can do this on numbers too, but obviously would have to use the String() to convert it.
+
+- The `.split()` method divides a string into substrings based on a specified separator. It then returns these substrings as elements of an array.
 
 <strong>Advanced Functions</strong>
 - Javascript does not have 'passing by reference', only 'passing by value' - unlike C++.
