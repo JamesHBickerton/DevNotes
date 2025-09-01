@@ -159,6 +159,8 @@ The start of the splice is the first number of the array you want, and the last 
 
 - Expressions produce values, whereas statements are bigger pieces of code which do not produce a value (such as an operator). Examples of statements are 'if else statements' and 'switch statements'. Statements end in semi-colons. GO BACK TO THEORY LECTURE AROUND SWITCH STATEMENTS, NOT SURE WHY I HAVE NO NOTES FOR THIS.
 - A switch statement is used to compare an expression against multiple possible values and execute different code blocks based on the match.
+- The break part of the switch statement will tell JS to stop executing statements.
+- The default case, goes at the end, and this is executed if none of the statements match the value. 
 
 - 3 weeks off - a little worried to get back into it just in case I forgot everything (:
 
