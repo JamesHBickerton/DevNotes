@@ -228,7 +228,8 @@ JavaScript interacts with HTML via DOM (Document Object Model). This is a tree o
   - The bracket notation is when you are trying to access a property that has spaces in it - i.e. `"Space name"` would be `console.log["Space name"];`
   - To add on top of an already existing string (i.e. in a function) use the += operator.
   - The `style` property is used to change the inline style of an element.
-  - You can add or remove classes to an element using JavaScript by using `classList.add` or `classList.remove` and even toggle using `classList.toggle` to toggle on and off the style/action. Whenn adding/removing a class, you don't need to use the "." before the new class. 
+  - You can add or remove classes to an element using JavaScript by using `classList.add` or `classList.remove` and even toggle using `classList.toggle` to toggle on and off the style/action. When adding/removing a class, you don't need to use the "." before the new class.
+  - The toggle method will add the class if it is not present on the element, and remove the class if it is present on the element.
   - The `display` property is used to set the visibility of an element.
   - Example: `const monsterStats = document.querySelector("#monsterStats");
               monsterStats.style.display = "block";`
@@ -743,6 +744,7 @@ These 4 steps work for the ES6 classes and constructor functions, but not `Objec
 - It's a good habit to use 'small helper functions' to make your code a lot cleaner. 
 
 - <strong>Working with local storage</strong> - this is an API - `localStorage.setItem('name', 'string you want to store and be associated with a key')` - it is only advised to use for small amounts of data otherwise it will slow down the application. If you open up the console, go to application and have a look at local storage, you can see the results.
+- A good way to structure your local storage can be to create an empty array (this array will store all the tasks along with their associated data to enable you to keep track of tasks and save them to local storage). You can then use an empty object to track the state when editing and discarding tasks. 
 - You can also use `.getItem`
 - `JSON.stringify()` - is how you can turn anything into a string. The opposite of this is `JSON.parse()` - I don't think stringify can return private variables.
 
