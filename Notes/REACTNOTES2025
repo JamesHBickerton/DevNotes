@@ -1,1 +1,5 @@
+# REACT NOTES 2025
 
+- State is the most important concept in React. Whenever we need something to change in the UI, we change the state.
+- JSX is similar to HTML, but we can add JS to it. To enter 'JS mode' you would use the curly braces in your code. 
+- `useState` is a React Hook that lets you add a state variable to your component.
