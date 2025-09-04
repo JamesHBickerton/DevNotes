@@ -1,4 +1,4 @@
-# HTML, CSS AND JS NOTES
+# HTML, CSS, JS & React Notes
 
 ## DEVELOPMENT NOTES 
 
