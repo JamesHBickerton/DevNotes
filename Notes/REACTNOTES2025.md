@@ -11,7 +11,6 @@
 <ol>
 <li>It requires a lot of direct DOM manipulation and DOM traversing - this means that making bigger projects you would have a HUGE mess of code.</li>
   <li>Data/state is usually stored in the DOM, which can cause a lot of bugs.</li>
-  <li></li>
 </ol>
 - Front-end frameworks make it easier for us to keep UI and DATA in sync over time. They also give developers a consistent way of building front-end applications. 
 
