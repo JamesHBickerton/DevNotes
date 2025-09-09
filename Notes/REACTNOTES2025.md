@@ -16,7 +16,12 @@
 - Each component has its own data, logic, and appearance.
 - Make sure to wrap elements in a `<div></div>` element if you want to include more than one per component.
 - `React.createElement(type, props, ...children)`
-- The `type` must be a valid React component type. The `prop` must be an object or 'null'. The `...children` is optional, and can be any React nodes or elements. 
+- The `type` must be a valid React component type. The `prop` must be an object or 'null'. The `...children` is optional, and can be any React nodes or elements.
+- In JSX we do not use `class='container'` we would use `className='container'`.
+
+- `Props` are how we pass data from parent to child components.
+- In the parent component you would define what you want i.e. `name="Pizza Spinaci"`.
+- Then to pass it onto the child you would pass a `props` parameter into the child component. and then enter for example - `<h3>{props.name}</h3>`. 
 
 - `useState` is a React Hook that lets you add a state variable to your component.
 - Pieces of data are called pieces of state. 
