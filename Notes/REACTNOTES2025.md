@@ -15,6 +15,8 @@
 - We can call components multiple times in order to reuse it. 
 - Each component has its own data, logic, and appearance.
 - Make sure to wrap elements in a `<div></div>` element if you want to include more than one per component.
+- `React.createElement(type, props, ...children)`
+- The `type` must be a valid React component type. The `prop` must be an object or 'null'. The `...children` is optional, and can be any React nodes or elements. 
 
 - `useState` is a React Hook that lets you add a state variable to your component.
 - Pieces of data are called pieces of state. 
