@@ -14,7 +14,9 @@
 
 - Front-end frameworks make it easier for us to keep UI and DATA in sync over time. React will update the UI automatically (so less work in code basically). They also give developers a consistent way of building front-end applications.
   
-- `JSX` is declarative syntax to describe how components work and what they look like (based on their data and logic). It is an extension of JavaScript. 
+- `JSX` is declarative syntax to describe how components work and what they look like (based on their data and logic). It is an extension of JavaScript.
+- In JSX you cannot use if/else, for loops, switch statements etc.
+- A piece of JSX can only have one root element. If you need more you need to use react fragment. 
 - Next.js contains solutions for routing, data fetching and server side rendering.
  
 - There are two options to create a React app - create-react-app (everything is already configured, comes with a development server and testing library - the problem with this however is that it is quite outdated - don't use these for BIG PROBLEMS - just tutorials/learning) or VITE (what you would want to use for your DearResident APP - need to manually set up ESlint, but is a lot faster).
@@ -42,4 +44,6 @@
 - <strong>Using Create-React-App</strong>
 - To start: Go into the package.json file, have a look at scripts, and then start for the code.
 - Open up the terminal. Then type 'npm start' - which will open up the new browser tab.
-- To clear things on the terminal `ctrl c`. 
+- To clear things on the terminal `ctrl c`.
+
+- Rendering lists
