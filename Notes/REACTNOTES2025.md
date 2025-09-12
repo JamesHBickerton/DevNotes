@@ -1,9 +1,5 @@
 # REACT NOTES 2025;
 
-# React Cheat Sheet 2025
-
-A concise reference for React concepts, components, state, and hooks.
-
 ---
 
 ## What is React?
