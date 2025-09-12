@@ -25,38 +25,7 @@
 - Cannot use `if/else` or loops directly (use ternary operators or `map`)
 - Use `className` instead of `class`
 
-```jsx
-function MyComponent() {
-  return <div>Hello World</div>
-}
-
-
-
-
-Component-based & state-driven JS library for building UIs.
-
-Declarative: UI reflects state/data automatically.
-
-View layer only → use Next.js for routing, data fetching, SSR.
-
-- React is a component based, state-driven javascript library for building UI - initially built by Facebook (most popular framework). 
-- React is declarative (meaning we tell the component what it should look like based on current data/state - using JSX (HTML, CSS, JS and other).
-- State or 'data' is the most important concept in React. Whenever we need something to change in the UI, we change the state. When the state changes, we manually update the state in our app, and then React will 'react' by re-rendering the UI for us.
-- React is only the 'view' layer, if we want to build a real world application for routing/data fetching, we would use `Next.js`.
-
-- - <strong>Problems with using Vanilla JS</strong> -
-  
-<ol>
-<li>It requires a lot of direct DOM manipulation and DOM traversing - this means that making bigger projects you would have a HUGE mess of code.</li>
-  <li>Data/state is usually stored in the DOM, which can cause a lot of bugs.</li>
-</ol>
-
-- Front-end frameworks make it easier for us to keep UI and DATA in sync over time. React will update the UI automatically (so less work in code basically). They also give developers a consistent way of building front-end applications.
-  
-- `JSX` is declarative syntax to describe how components work and what they look like (based on their data and logic). It is an extension of JavaScript.
-- In JSX you cannot use if/else, for loops, switch statements etc.
-- A piece of JSX can only have one root element. If you need more you need to use react fragment. 
-- Next.js contains solutions for routing, data fetching and server side rendering.
+---
  
 - There are two options to create a React app - create-react-app (everything is already configured, comes with a development server and testing library - the problem with this however is that it is quite outdated - don't use these for BIG PROBLEMS - just tutorials/learning) or VITE (what you would want to use for your DearResident APP - need to manually set up ESlint, but is a lot faster).
 
