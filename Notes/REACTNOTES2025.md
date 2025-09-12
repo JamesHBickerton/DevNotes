@@ -63,6 +63,13 @@
 
 ---
 
+## Rendering Lists
+- To create multiple components from an array of data you would render a list (usually using the .map() method).
+- `array.map((item, index) => <Component key={uniqueKey} prop={item.prop} />)`
+- Components can also be 'conditionally rendered' based on a condition (i.e. using the ternary operator). 
+
+---
+
 ## React Fragments
 - <strong>React Fragments</strong> - lets us group together elements without leaving any trace in the DOM tree (if you want to have more than one element in a component).
 - Fragments are empty `<>` that allow us to add more than one element, without messing with the formatting. This won't create any new element.
