@@ -96,5 +96,6 @@
 
 - `useState` is a `hook` lets you add a state variable to your component. It will return an array. The first value is the default value we want for the state, and the second value is the function we can use to update your state variable - so usually we destructure the array first i.e. `const [step, setStep] = useState(1);`.
 - We can only call hooks on the top level of the function (i.e. not inside a function or loop/if statement etc).
+- For data that should not trigger a re-render, you don't have to use state for this (common for beginners to use state for everything). Just use a variable instead. 
 
   
