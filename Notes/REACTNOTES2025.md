@@ -50,7 +50,6 @@
 - Props data can only be updated by the parent component (as it is the parent's component that 'owns' the data).
 - To avoid having to use the `.props` in all of your components, you can destructure the object you want to use in your parameter for the component. 
 
-- `useState` is a React Hook that lets you add a state variable to your component.
 - Pieces of data are called pieces of state. 
 - `useEffect` is a React Hook that lets you synchronize a component with an external system. It takes 2 arguments - first a function, and the dependancy array.
 - In React we try to divide user interfaces into components. All components should start with a capital letter i.e. below: 
@@ -75,4 +74,27 @@
 - Fragments are empty `<>` that allow us to add more than one element, without messing with the formatting. This won't create any new element.
 - Sometimes you need to add keys to react fragments (i.e. when rendering lists). To do this: `<React.fragment>code</React.fragment>`
 
-- 
+---
+
+- You can use the `onClick` prop to use an inline feature for your JSX. The 'Click' is the event name, and the prefix is the 'on'. Example:
+- `onClick={function}`  - just important to note we are handing in the function value, not calling the function. 
+- Similar to the `onMouseEnter` prop is used when the mouse 'enters' the element - i.e. moves across it. 
+
+---
+
+## State
+- State is the most important concept in React. State is data that a component can hold over time (think of it as the memory for a certain component).
+- A `piece of state` or `state variable` is just ONE variable in a component that we can define in our code.
+- Updating a piece of state triggers React to re-render a component in the UI - to create a new updated view.
+
+- To add a new piece of state, we use 3 steps:
+<ol>
+ <li>We add a new state variable</li>
+ <li>We use it in the code - usually JSX</li>
+ <li>We then update the piece of state in some event handler</li>
+</ol>
+
+- `useState` is a `hook` lets you add a state variable to your component. It will return an array. The first value is the default value we want for the state, and the second value is the function we can use to update your state variable - so usually we destructure the array first i.e. `const [step, setStep] = useState(1);`.
+- We can only call hooks on the top level of the function (i.e. not inside a function or loop/if statement etc).
+
+  
