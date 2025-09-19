@@ -98,4 +98,17 @@
 - We can only call hooks on the top level of the function (i.e. not inside a function or loop/if statement etc).
 - For data that should not trigger a re-render, you don't have to use state for this (common for beginners to use state for everything). Just use a variable instead. 
 
+---
+
+## Forms
+
+- When using form it's good practice (when using a function in JS) to e.preventDefault() - just to prevent the page from reloading.
+
+---
+
+## Controlled Elements
+
+- This is a way to keep data inside of the application (state) and not the DOM.
+- First, create a piece of state. I.e. `const [description, setDescription] = useState("")`.
+- Use state to choose the input field you want to control - i.e. if it was an input: `<input type="text' placeholder="item..." value={description} onChange={(e) => setDescription(e.target.value)}/>`
   
