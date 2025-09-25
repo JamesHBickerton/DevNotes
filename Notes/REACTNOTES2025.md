@@ -111,4 +111,13 @@
 - This is a way to keep data inside of the application (state) and not the DOM.
 - First, create a piece of state. I.e. `const [description, setDescription] = useState("")`.
 - Use state to choose the input field you want to control - i.e. if it was an input: `<input type="text' placeholder="item..." value={description} onChange={(e) => setDescription(e.target.value)}/>`
+- Third - we update the state variable with the onChange handler.
+
+---
+
+## Differences between State & Props 
+
+- State is internal data (owned by components) whereas props are external data owned by the parent component. Think of props as function parameters.
+- State can be updated by the components themselves - to make components interactive.
+- Props are read-only and cannot be modified. Receiving props causes components to re-render. 
   
