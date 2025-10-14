@@ -53,7 +53,7 @@
 - Pieces of data are called pieces of state. 
 - `useEffect` is a React Hook that lets you synchronize a component with an external system. It takes 2 arguments - first a function, and the dependancy array.
 - In React we try to divide user interfaces into components. All components should start with a capital letter i.e. below: 
-`function Message() { return CODE }`
+`function Message() { return CODE }` - similar to a function but just with a capital letter.
 
 - <strong>Using Create-React-App</strong>
 - To start: Go into the package.json file, have a look at scripts, and then start for the code.
