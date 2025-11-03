@@ -119,5 +119,19 @@
 
 - State is internal data (owned by components) whereas props are external data owned by the parent component. Think of props as function parameters.
 - State can be updated by the components themselves - to make components interactive.
-- Props are read-only and cannot be modified. Receiving props causes components to re-render. 
+- Props are read-only and cannot be modified. Receiving props causes components to re-render.
+
+---
+
+## Thinking in React / State Management
+
+1. Break the desired UI into components (establishing the component tree).
+2. Build a static environment (without State).
+3. Think about state
+   - When to use state, global vs. local state, and where to place each piece of state.
+4. Establish the data flow
+
+- <strong>Global state</strong> - is a shared state that many components might need. 
+- <strong>Local state</strong> - state that is only needed in one or few components (like child or sibling components). This means that only that component and its child components will have access to the state (via passing props).
+- Always start with local state and only use global state when you really need it (will learn more about it later). 
   
