@@ -134,4 +134,6 @@
 - <strong>Global state</strong> - is a shared state that many components might need. 
 - <strong>Local state</strong> - state that is only needed in one or few components (like child or sibling components). This means that only that component and its child components will have access to the state (via passing props).
 - Always start with local state and only use global state when you really need it (will learn more about it later). 
-  
+
+- Whenever multiple sibling components need access to the same state, we move the piece of state up to the first common parent component.
+- 
